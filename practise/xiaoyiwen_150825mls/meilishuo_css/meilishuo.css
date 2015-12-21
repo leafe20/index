@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* header */
+
+.headertop{ height:18px; background:#f5f5f5; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0;}
+.headertop a{ float:right; border-right:1px dotted #ccc; height:18px; line-height:18px;}
+.headertop .a1{  background:url(../meilishuo_img1/i_wx_single.png) no-repeat; padding:0 16px 0 19px;}
+.headertop a:hover{ color:#ff6599;}
+.headertop .a2{ padding: 0 16px 0 19px;}
+.headertop .a2 .spanqq{ width:15px; height:16px; background: url(../meilishuo_img1/mls_global140607.png) no-repeat -189px -21px; float:left; margin-right:3px;}
+.headertop .a2.span1{ float:left; }
+.headertop .a3{ padding: 0 16px 0 15px;}
+.headertop .a4{ padding:0 15px 0 15px;}
+.headertop .a4 span{ float:left; line-height:18px;}
+.headertop .a4 .spancar{ float:left; width:19px; height:16px; background:url(../meilishuo_img1/mls_global140607.png) no-repeat 0 -163px; margin-right:4px;}
+.headertop .a4 img{ float:left; margin-left:7px;}
+.headertop .a5 { padding:0 16px 0 15px;}
+.headertop .a5 .spanlist{ width:13px; height:15px; background:url(../meilishuo_img1/mls_global140607.png) no-repeat -223px -45px; float:left; margin-right:9px;}
+.headertop .a6 { padding:0 15px 0 16px;}
+.headertop .a6 .spanlist{ width:10px; height:16px; background:url(../meilishuo_img1/mls_global140607.png) no-repeat -171px -45px; float:left; margin-right:9px;} 
+.headertop .a7 { padding:0 11px 0 15px; border-right:none;}
+
+.headermid{ height:66px;}
+.headermid a{ float:left;}
+.headermid div{ float:left; background: #f5f5f5 url(../meilishuo_img1/mls_head3.png) no-repeat right center; margin:14px 0 0 254px; position:relative;}
+.headermid div .a1{ width:70px; height:30px; background:url(../meilishuo_img1/mls_head2.png) no-repeat 54px 13px; border:2px solid #ff6699; border-right:none; text-align:center; line-height:30px;}
+.headermid .img1{ margin:15px 0 0 10px;}
+.headermid .img2{ margin-top:14px;}
+
+.headernav{ height:40px; background:#ff6599; padding-left:136px;}
+.headernav a{ font-size:14px; color:#fff; font-weight:bold; float:left;  padding:0 15px 0 14px; height:40px; line-height:40px;}
+.headernav .a1{ background:#ed3577; margin-right:2px;}
+.headernav a:hover{ background:#ed3577;}
+.headernav .a2{ background: #ff6599 url(../meilishuo_img1/mls_head4.png) no-repeat 49px 20px;}
+.headernav .a3{ background: #ff6599 url(../meilishuo_img1/mls_head4.png) no-repeat 96px 20px;}
+.headernav .a2:hover{ background: #ed3577 url(../meilishuo_img1/mls_head4.png) no-repeat 49px 20px;}
+.headernav .a3:hover{ background: #ed3577 url(../meilishuo_img1/mls_head4.png) no-repeat 96px 20px;}
+
+/* content */
+
+.content{ border-bottom:1px solid #e6e6e6; background:url(../meilishuo_img1/60a7aa26a36bc094eefbfe44a067_2000_420.ch.jpg) no-repeat center 0; } 
+.contentbox1{ width:1201px; height:419px; position:relative; margin:0 auto;}
+.contentbox1 .boxl{ width:218px; height:559px; border:1px solid #e6e6e6; position:absolute; left:0; top:0; background:#fff; padding:13px 0 0 20px;}
+.contentbox1 .boxl ul{ width:198px; border-bottom:1px dotted #e6e6e6; position:relative;}
+.contentbox1 .boxl li{ margin-bottom:11px;} 
+.contentbox1 .boxl .li1{ margin-bottom:12px; } 
+.contentbox1 .boxl .li1 i{ width:15px; height:17px; background:url(../meilishuo_img1/mls_content5.png) no-repeat -1px -1px; float:left;}
+.contentbox1 .boxl .li1 a{ color:#ff6699; font-size:16px; font-weight:bold; }
+.contentbox1 .boxl .li1 .a1{ float:left; margin-left:7px;}
+.contentbox1 .boxl .a2{ margin:0 15px; color:#ff6699;}
+.contentbox1 .boxl img{ position:absolute; right:0px; top:39px;}
+.contentbox1 .boxl .lastul{ border-bottom:none;}
+.contentbox1 .boxr{ width:200px; height:419px; position:absolute; right:0; top:0; background:#fff;}
+.contentbox1 .boxr img{ border-bottom:1px solid #e6e6e6;} 
+.contentbox1 .boxb{ width:949px; height:144px; position:absolute; right:0px; bottom:-155px; background:#fff;}
+.contentbox1 .boxb img{ border:1px solid #e6e6e6; margin-right:10px;}
+.contentbox1 .boxb .img1{ margin-right:0; margin-left:1px;}
+
+.contentbox2{ width:1201px; height:206px; margin:0 auto; border:1px solid white; border-bottom:1px solid #e6e6e6; }
+.contentbox2 div{ width:157px; height:25px; background: url(../meilishuo_img1/wel_ico2.png) 0 0; margin-top:174px; } 
+
+.contentbox3{ width:1201px; margin:15px auto 0; }
+.contentbox3 .p1{ margin:9px 0 29px 0;}
+.contentbox3 .p2{ width:180px; height:24px; border-bottom:1px dotted #cbcbcb; margin-bottom:10px; color:#ff7dc8; font-size:16px;}
+.contentbox3 .p2 span{ color:#999; text-decoration:line-through;}
+
+.contentbox3 .div1{ float: left; margin-right:24px; margin-bottom:42px;}
+.contentbox3 .div2{ margin-bottom:41px;}
+.contentbox3 .lastdiv{ margin-right:-28px;}
+
+.contentbox4{ width:1201px; margin:0 auto; border-bottom:1px solid #e6e6e6; padding-bottom:8px;}
+.contentbox4 i{ width:156px; height:23px; background:url(../meilishuo_img1/wel_ico2.png) no-repeat -1px -240px; float:left; }
+.contentbox4 p{ float:right;}
+
+.contentbox5{ width:1201px; margin:15px auto 0;}
+.contentbox5 .p1{ margin:9px 0 29px 0;}
+.contentbox5 .p2{ width:180px; height:24px; border-bottom:1px dotted #cbcbcb; margin-bottom:10px; color:#ff7dc8; font-size:16px;}
+.contentbox5 .p2 span{ color:#999; text-decoration:line-through;}
+
+.contentbox5 .div1{ float: left; margin-right:24px; margin-bottom:40px;}
+.contentbox5 .div2{ margin-bottom:41px;}
+.contentbox5 .lastdiv{ margin-right:-28px;}
+
+.contentbox6{ width:1201px; margin:0 auto; }
+
+.contentbox7{ width:1201px; margin:0 auto; padding:19px 0 9px 0; border-bottom:1px solid #ccc;}
+.contentbox7 i{ width:76px; height:22px; background:url(../meilishuo_img1/wel_ico2.png) 0 -44px; float:left;}
+.contentbox7 .p1{ border-left:1px dotted #ccc; float:left; line-height:22px; margin-left:12px; padding-left:12px;}
+.contentbox7 .p1 span{ font-size:14px; font-weight:bold; color:#ccc; margin:0 6px;}
+.contentbox7 .p2{ float:right; line-height:}
+
+.contentbox8{ width:1201px; margin:0 auto; }
+.contentbox8 .left{ width:940px; float:left; padding-top:20px;}
+.contentbox8 .leftx1{ width:180px; height:254px; position:relative; float:left; margin-right:5px; margin-bottom:5px;}
+.contentbox8 .imga{ position:absolute; left:0; bottom:0; opacity:0;}
+.contentbox8 .leftx1 p{ width:100%; position:absolute; left:0; bottom:0; color: #fff; line-height:34px; text-align:center; font-size:14px;}
+.contentbox8 .leftb{ float:left; width:940px; margin-top:13px;}
+.contentbox8 .leftb .pa{ float:left; height:45px; text-align:center; line-height:45px; font-size:16px; color:#ff6699; margin-right:19px;}
+.contentbox8 .leftb .ula{ float:left;}
+.contentbox8 .leftb .lia{ margin-bottom:10px; padding-top:5px;}
+.contentbox8 .leftb .diva{ border-right:1px dotted #ccc; width:300px; margin-left:12px; float:left;}
+.contentbox8 .leftb .divb{ border-right:none;}
+.contentbox8 .leftb .ula a{ margin-right:11px;}
+.contentbox8 .right{ float:right; border-left:1px solid #ccc; padding-top:20px; padding-left:19px;}
+.contentbox8 .right h2{ width:240px; margin-bottom:16px;}
+.contentbox8 .right .p1{ float:left; font-size:18px;}
+.contentbox8 .right .p2{ float:right; font-size:16px; font-weight:normal; line-height:18px; color:#ccc;}
+.contentbox8 .right img{ float:left; border:1px solid #ccc; margin-right:12px;}
+.contentbox8 .right ul{ float:left;}
+.contentbox8 .right .lia{ margin-top:10px; color:#ccc;}
+.contentbox8 .right div{ border-bottom:1px dotted #ccc; padding-bottom:14px; margin-bottom:14px;}
+.contentbox8 .right .div3{ border-bottom:none;}
+
+.contentbox9{ width:1201px; margin:0 auto; padding:19px 0 9px 0; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+.contentbox9 i{ width:76px; height:22px; background:url(../meilishuo_img1/wel_ico2.png) 0 -82px; float:left;}
+.contentbox9 .p1{ border-left:1px dotted #ccc; float:left; line-height:22px; margin-left:12px; padding-left:12px;}
+.contentbox9 .p1 span{ font-size:14px; font-weight:bold; color:#ccc; margin:0 6px;}
+.contentbox9 .p2{ float:right; line-height:}
+
+.contentbox10{ width:1201px; margin:0 auto; }
+.contentbox10 .left{ width:940px; float:left; padding-top:20px;}
+.contentbox10 .leftx1{ width:180px; height:254px; position:relative; float:left; margin-right:5px; margin-bottom:5px;}
+.contentbox10 .imga{ position:absolute; left:0; bottom:0; opacity:0;}
+.contentbox10 .leftx1 p{ width:100%; position:absolute; left:0; bottom:0; color: #fff; line-height:34px; text-align:center; font-size:14px;}
+.contentbox10 .leftb{ float:left; width:940px; margin-top:13px;}
+.contentbox10 .leftb .pa{ float:left; height:45px; text-align:center; line-height:45px; font-size:16px; color:#ff6699; margin-right:19px;}
+.contentbox10 .leftb .ula{ float:left;}
+.contentbox10 .leftb .lia{ margin-bottom:10px; padding-top:5px;}
+.contentbox10 .leftb .diva{ border-right:1px dotted #ccc; width:300px; margin-left:12px; float:left;}
+.contentbox10 .leftb .divb{ border-right:none;}
+.contentbox10 .leftb .ula a{ margin-right:11px;}
+.contentbox10 .right{ float:right; border-left:1px solid #ccc; padding-top:20px; padding-left:19px;}
+.contentbox10 .right h2{ width:240px; margin-bottom:16px;}
+.contentbox10 .right .p1{ float:left; font-size:18px;}
+.contentbox10 .right .p2{ float:right; font-size:16px; font-weight:normal; line-height:18px; color:#ccc;}
+.contentbox10 .right img{ float:left; border:1px solid #ccc; margin-right:12px;}
+.contentbox10 .right ul{ float:left;}
+.contentbox10 .right .lia{ margin-top:10px; color:#ccc;}
+.contentbox10 .right div{ border-bottom:1px dotted #ccc; padding-bottom:14px; margin-bottom:14px;}
+.contentbox10 .right .div3{ border-bottom:none;}
+
+.contentbox11{ width:1201px; margin:0 auto; padding:19px 0 9px 0; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+.contentbox11 i{ width:76px; height:22px; background:url(../meilishuo_img1/wel_ico2.png) 0 -120px; float:left;}
+.contentbox11 .p1{ border-left:1px dotted #ccc; float:left; line-height:22px; margin-left:12px; padding-left:12px;}
+.contentbox11 .p1 span{ font-size:14px; font-weight:bold; color:#ccc; margin:0 6px;}
+.contentbox11 .p2{ float:right; line-height:}
+
+.contentbox12{ width:1201px; margin:0 auto; }
+.contentbox12 .left{ width:940px; float:left; padding-top:20px;}
+.contentbox12 .leftx1{ width:180px; height:254px; position:relative; float:left; margin-right:5px; margin-bottom:5px;}
+.contentbox12 .imga{ position:absolute; left:0; bottom:0; opacity:0;}
+.contentbox12 .leftx1 p{ width:100%; position:absolute; left:0; bottom:0; color: #fff; line-height:34px; text-align:center; font-size:14px;}
+.contentbox12 .leftb{ float:left; width:940px; margin-top:13px;}
+.contentbox12 .leftb .pa{ float:left; height:45px; text-align:center; line-height:45px; font-size:16px; color:#ff6699; margin-right:19px;}
+.contentbox12 .leftb .ula{ float:left;}
+.contentbox12 .leftb .lia{ margin-bottom:10px; padding-top:5px;}
+.contentbox12 .leftb .diva{ border-right:1px dotted #ccc; width:300px; margin-left:12px; float:left;}
+.contentbox12 .leftb .divb{ border-right:none;}
+.contentbox12 .leftb .ula a{ margin-right:11px;}
+.contentbox12 .right{ float:right; border-left:1px solid #ccc; padding-top:20px; padding-left:19px;}
+.contentbox12 .right h2{ width:240px; margin-bottom:16px;}
+.contentbox12 .right .p1{ float:left; font-size:18px;}
+.contentbox12 .right .p2{ float:right; font-size:16px; font-weight:normal; line-height:18px; color:#ccc;}
+.contentbox12 .right img{ float:left; border:1px solid #ccc; margin-right:12px;}
+.contentbox12 .right ul{ float:left;}
+.contentbox12 .right .lia{ margin-top:10px; color:#ccc;}
+.contentbox12 .right div{ border-bottom:1px dotted #ccc; padding-bottom:14px; margin-bottom:14px;}
+.contentbox12 .right .div3{ border-bottom:none;}
+
+.contentbox13{ width:1201px; margin:0 auto; padding:19px 0 9px 0; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+.contentbox13 i{ width:76px; height:22px; background:url(../meilishuo_img1/wel_ico2.png) 0 -158px; float:left;}
+.contentbox13 .p1{ border-left:1px dotted #ccc; float:left; line-height:22px; margin-left:12px; padding-left:12px;}
+.contentbox13 .p1 span{ font-size:14px; font-weight:bold; color:#ccc; margin:0 6px;}
+.contentbox13 .p2{ float:right; }
+
+.contentbox14{ width:1201px; margin:0 auto; }
+.contentbox14 .left{ width:940px; float:left; padding-top:20px;}
+.contentbox14 .leftx1{ width:180px; height:254px; position:relative; float:left; margin-right:5px; margin-bottom:5px;}
+.contentbox14 .imga{ position:absolute; left:0; bottom:0; opacity:0;}
+.contentbox14 .leftx1 p{ width:100%; position:absolute; left:0; bottom:0; color: #fff; line-height:34px; text-align:center; font-size:14px;}
+.contentbox14 .leftb{ float:left; width:940px; margin-top:13px;}
+.contentbox14 .leftb .pa{ float:left; height:45px; text-align:center; line-height:45px; font-size:16px; color:#ff6699; margin-right:19px;}
+.contentbox14 .leftb .ula{ float:left;}
+.contentbox14 .leftb .lia{ margin-bottom:10px; padding-top:5px;}
+.contentbox14 .leftb .diva{ border-right:1px dotted #ccc; width:300px; margin-left:12px; float:left;}
+.contentbox14 .leftb .divb{ border-right:none;}
+.contentbox14 .leftb .ula a{ margin-right:11px;}
+.contentbox14 .right{ float:right; border-left:1px solid #ccc; padding-top:20px; padding-left:19px;}
+.contentbox14 .right h2{ width:240px; margin-bottom:16px;}
+.contentbox14 .right .p1{ float:left; font-size:18px;}
+.contentbox14 .right .p2{ float:right; font-size:16px; font-weight:normal; line-height:18px; color:#ccc;}
+.contentbox14 .right img{ float:left; border:1px solid #ccc; margin-right:12px;}
+.contentbox14 .right ul{ float:left;}
+.contentbox14 .right .lia{ margin-top:10px; color:#ccc;}
+.contentbox14 .right div{ border-bottom:1px dotted #ccc; padding-bottom:14px; margin-bottom:14px;}
+.contentbox14 .right .div3{ border-bottom:none;}
+
+.contentbox15{ width:1201px; margin:0 auto; padding:19px 0 9px 0; border-top:1px solid #ccc;}
+.contentbox15 i{ width:114px; height:22px; background:url(../meilishuo_img1/wel_ico2.png) 0 -201px; float:left;}
+.contentbox15 .p1{ border-left:1px dotted #ccc; float:left; line-height:22px; margin-left:12px; padding-left:12px;}
+.contentbox15 .p1 span{ font-size:14px; font-weight:bold; color:#ccc; margin:0 6px;}
+.contentbox15 .p2{ float:right; margin-right:-14px; }
+.contentbox15 .p2 a{ float:right; padding:0 14px 0 17px; border-left:1px dotted #ccc; }
+.contentbox15 .p2 .a2{ border-left:none;}
+
+.contentbox16{ width:1201px; margin:0 auto; }
+.contentbox16 .box1{ width:213px; height:271px; border:1px solid #ccc; padding:12px 0 0 13px; float:left; margin-right:14px;}
+.contentbox16 .box1 h2{ font-size:14px; font-weight: bold; margin-bottom:11px;}
+.contentbox16 .box1 .img1{ margin-bottom:13px;}
+.contentbox16 .box1 .aa{ float:left; line-height:20px; color:#ccc;}
+.contentbox16 .box1 .ab{ float:right;}
+.contentbox16 .marginfu{ margin-right:-14px;}
+
+.footer{ height:312px; background:#f5f5f5; color:#666; margin-top:20px;}
+.xy_footerbox1{ width:1201px; margin:0 auto; padding-top:30px; border-bottom:1px solid #ccc; height:190px; }
+.xy_footerbox1 ul{  width:178px; padding-left:50px; background:url(../meilishuo_img1/xy_msl24.png) no-repeat ; float:left;}
+.xy_footerbox1 .lia{ color:#666; font-size:14px; font-weight:bold; }
+.xy_footerbox1 .lib{ font-size:14px; margin:10px 0 14px 0;}
+
+.xy_footerbox1 dl{ padding-left:12px; float:left; margin-right:43px;}
+.xy_footerbox1 dt{ font-size:14px; font-weight:bold; margin-bottom:20px;}
+.xy_footerbox1 .dda{ margin: 10px 0;}
+.xy_footerbox1 .ddb{ margin: 10px 0;}
+.xy_footerbox1 .div1{ float:left;}
+.xy_footerbox1 .div1 h2{ color:#666; font-size:14px; font-weight:bold; margin-bottom:22px;} 
+.xy_footerbox1 .div2 { float:right;}
+.xy_footerbox1 .div2 h2{ color:#666; font-size:14px; font-weight:bold; margin-bottom:22px;} 
+
+.xy_footerbox2{ width:1201px; margin:0 auto; border-bottom:1px solid #ccc; padding: 9px 0;}
+.xy_footerbox2 a{ margin-left:11px; color:#666; float:left;}
+.xy_footerbox2 .a1{ float:right;}
+
+.xy_footerbox3{ width:1201px; margin:0 auto; padding-top:10px;}
+.xy_footerbox3 .p1{ margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+

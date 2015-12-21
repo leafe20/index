@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	.xy_wrap1{ height:42px; background:url(img/xy-1.png) repeat-x;}
+	.xy_header1 .logo{ width:178px; height:42px; background:url(img/xy-2.png); float:left; margin-left:20px;}
+	.xy_header1 .logo a{ float:left;}
+	.xy_header1 .logo .a1{ text-indent:-999em;}
+	.xy_header1 .logo .a2{ float:right; height:18px; width:56px; color:#ccc; line-height:18px; border-right:1px dotted #717171; margin-top:13px; background:url(img/xy-4.png) no-repeat 36px center;}
+	.xy_header1 .logo .a2:hover{ color:#ccff99;}
+	.xy_header1 .div1{ float:left; }
+	.xy_header1 .div1 a{ float:left; height:18px; color:#ccc; line-height:18px; margin-top:13px; margin-right:16px;}
+	.xy_header1 .div1 a:hover{ color:#ccff99;}
+	.xy_header1 .div1 .a1{ margin:13px 16px 0 8px; color:#ccff99;}
+	.xy_header1 .div1 .a2{ background:url(img/xy-4.png) no-repeat 25px center; width:36px;}
+	.xy_header1 .div1 .a3{ width:36px; height:18px; position:relative;}
+	.xy_header1 .div1 .a3 i{ width:26px; height:22px; position:absolute; right:-26px; bottom:4px; background:url(img/xy-5.png);}
+	.xy_header1 .div1 .a4{ background:url(img/xy-4.png) no-repeat 50px center; width:60px;}
+	.xy_header1 .div2{float:left; margin-left:50px; width:130px; height:29px; background:url(img/xy-6.png); margin-top:7px;}
+	.xy_header1 .div2 input{ float:left; width:86px; height:18px; background:#d9d9d9; margin-left:10px; margin-top:6px;}
+	.xy_header1 .div2 a{ float:left; width:16px; height:18px; background:url(img/xy-7.png); margin-top:6px; margin-left:4px;}
+	.xy_header1 .div3{ float:right; margin-right:20px;}
+	.xy_header1 .div3 a{ float:left; color:#ccc; height:14px; margin-top:13px;}
+	.xy_header1 .div3 a:hover{ color:#ccff99;}
+	.xy_header1 .div3 .a1{ width:42px; border-left:1px solid #666; text-indent:15px;}
+	.xy_header1 .div3 .a2{ margin:13px 14px 0 7px;}
+	
+	.xy_wrap2{}
+	.xy_header2{ margin:0 auto; position:relative;}
+	.xy_header2 li{ display:none;}
+	.xy_header2 .bgshow{ display:block;}
+	.xy_header2 li img{ width:100%;}
+	.xy_header2 .div1{ width:334px; position:absolute; left:50%; margin-left:-167px; bottom:20px;}
+	.xy_header2 .div1 a{ width:13px; height:12px; float:left; margin-right:24px; background:url(img/xy-11.png);}
+	.xy_header2 .div1 .show{ background:url(img/xy-10.png);}
+	
+	.xy_cwrap{ background:#f2f2f2;}
+	.xy_content{ width:972px; margin:0 auto;}
+	.xy_contentbox1{ margin-bottom:60px;}
+	.xy_contentbox1 .img1{ float:left; margin:20px 0 10px 0;}
+	.xy_contentbox1 .div1{ float:right; margin-top:34px;}
+	.xy_contentbox1 .div1 a{ float:left; padding:4px;}
+	.xy_contentbox1 .div1 a:hover{  background:#669900;}
+	.xy_contentbox1 .div1 .a1{ border-bottom:2px solid #669900;} 
+	.xy_contentbox1 .div1 .a1:hover{ background:none;}
+	.xy_contentbox1 .div1 img{ float:left; margin:4px 15px 0;}
+	
+	.xy_contentbox1 .divshow{}
+	.xy_contentbox1 .divshow .diva{ float:left; width:468px; height:273px; padding:2px; border:1px solid #e8e8e8; background:#fff; position:relative;}
+	.xy_contentbox1 .divshow .diva .p1{ position:absolute; left:12px; bottom:35px; color:#fff; font-weight:bold;}
+	.xy_contentbox1 .divshow .diva .p2{ position:absolute; left:12px; bottom:16px; color:#ccff99;}
+	.xy_contentbox1 .divshow .ula{ float:right; width:496px;  position:relative;}
+	.xy_contentbox1 .divshow .ula li{ float:left; width:220px; height:124px; padding:2px; border:1px solid #e8e8e8; background:#fff; position:relative; margin-left:22px; cursor:pointer;}
+	.xy_contentbox1 .divshow .ula .lia{ margin-top:19px;}
+	.xy_contentbox1 .divshow .ula .p1{ position:absolute; left:12px; bottom:32px; color:#fff; font-weight:bold;}
+	.xy_contentbox1 .divshow .ula .p2{ position:absolute; left:12px; bottom:14px; color:#ccff99;}
+	.xy_contentbox1 .divshow .imgpo{ position:absolute; right:0; bottom:50%; margin-bottom:-33px; }
+	
+	.xy_contentbox2{ margin-bottom:60px;}
+	.xy_contentbox2 .divs1{ float:left; position:relative; width:137px; height:39px; margin:20px 0 10px 0;}
+	.xy_contentbox2 .divs1 .img2{ float:none; margin:0;}
+	.xy_contentbox2 .divs1 a{ position:absolute; right:-45px; bottom:26px; width:45px; height:31px; background:url(img/xy20.png);}
+	.xy_contentbox2 .img1{ float:left; margin:20px 0 10px 0;}
+	.xy_contentbox2 .abox2{ float:left; height:32px; line-height:32px; text-align:center;#999; border-left:1px solid #d5d5d5; margin:20px 0 0 56px; padding-left:10px;}
+	.xy_contentbox2 .div1{ float:right; margin-top:34px;}
+	.xy_contentbox2 .div1 a{ float:left; padding:4px;}
+	.xy_contentbox2 .div1 a:hover{  background:#669900;}
+	.xy_contentbox2 .div1 .a1{ border-bottom:2px solid #669900;} 
+	.xy_contentbox2 .div1 .a1:hover{ background:none;}
+	.xy_contentbox2 .div1 img{ float:left; margin:4px 15px 0;}
+	
+	.xy_contentbox2 .divshow{}
+	.xy_contentbox2 .divshow .diva{ float:left; width:718px; height:273px; padding:2px; border:1px solid #e8e8e8; background:#fff; position:relative;}
+	.xy_contentbox2 .divshow .diva img{ float:left;}
+	.xy_contentbox2 .divshow .diva h2{ float:left; width:218px; padding:0 17px 0 15px;}
+	.xy_contentbox2 .divshow .diva h2 .pa{ font-size:18px; line-height:27px; margin-top:10px; }
+	.xy_contentbox2 .divshow .diva h2 .aa:hover{ color:#669900;}
+	.xy_contentbox2 .divshow .diva h2 .pb{ color:#666; line-height:20px; margin-top:6px;}
+	.xy_contentbox2 .divshow .diva .imgs2{ margin:25px 0 0 200px;}
+	
+	.xy_contentbox2 .divshow .diva .p1{ position:absolute; left:12px; bottom:35px; color:#fff; font-weight:bold;}
+	.xy_contentbox2 .divshow .diva .p2{ position:absolute; left:12px; bottom:16px; color:#ccff99;}
+	
+	.xy_contentbox2 .divshow .ula{ float:right; width:226px;  position:relative;}
+	.xy_contentbox2 .divshow .ula li{ float:left; width:220px; height:124px; padding:2px; border:1px solid #e8e8e8; background:#fff; position:relative; cursor:pointer;}
+	.xy_contentbox2 .divshow .ula .lia{ margin-bottom:19px;}
+	.xy_contentbox2 .divshow .ula .p1{ position:absolute; left:12px; bottom:32px; color:#fff; font-weight:bold;}
+	.xy_contentbox2 .divshow .ula .p2{ position:absolute; left:12px; bottom:14px; color:#ccff99;}
+	.xy_contentbox2 .divshow .imgpo{ position:absolute; right:0; bottom:50%; margin-bottom:-33px; }
+	
+	.xy_contentbox3{ margin-bottom:60px;}
+	.xy_contentbox3 .divs1{ float:left; position:relative; width:137px; height:39px; margin:20px 0 10px 0;}
+	.xy_contentbox3 .divs1 .img2{ float:none; margin:0;}
+	.xy_contentbox3 .divs1 a{ position:absolute; right:-45px; bottom:26px; width:45px; height:31px; background:url(img/xy20.png);}
+	.xy_contentbox3 .img1{ float:left; margin:20px 0 10px 0;}
+	.xy_contentbox3 .abox2{ float:left; height:32px; line-height:32px; text-align:center;#999; border-left:1px solid #d5d5d5; margin:20px 0 0 56px; padding-left:10px;}
+	.xy_contentbox3 .div1{ float:right; margin-top:34px;}
+	.xy_contentbox3 .div1 a{ float:left; padding:4px;}
+	.xy_contentbox3 .div1 a:hover{  background:#669900;}
+	.xy_contentbox3 .div1 .a1{ border-bottom:2px solid #669900;} 
+	.xy_contentbox3 .div1 .a1:hover{ background:none;}
+	.xy_contentbox3 .div1 img{ float:left; margin:4px 15px 0;}
+	
+	.xy_contentbox3 .divshow{}
+	.xy_contentbox3 .divshow .diva{ float:left; width:472px; height:276px; border:1px solid #e8e8e8; background:#fff; position:relative;}
+	.xy_contentbox3 .divshow .diva img{ float:left;}
+	.xy_contentbox3 .divshow .diva .p1{ position:absolute; left:12px; bottom:35px; color:#fff; font-weight:bold;}
+	.xy_contentbox3 .divshow .diva .p2{ position:absolute; left:12px; bottom:16px; color:#ccff99;}
+	
+	.xy_contentbox3 .divshow .divb{ float:left; width:224px; height:276px; border:1px solid #e8e8e8; margin-left:22px; background:#fff; cursor:pointer;}
+	.xy_contentbox3 .divshow .divb .lia{ width:222px; height:124px; padding:2px 0 0 2px; position:relative; cursor:pointer; margin-bottom:8px;}
+	.xy_contentbox3 .divshow .divb .lia .p1{ position:absolute; left:7px; top:2px; background:url(img/xy31.png);}
+	.xy_contentbox3 .divshow .divb .lia .p2{ position:absolute; left:17px; bottom:8px; color:#fff; }
+	.xy_contentbox3 .divshow .divb .lib{ height:28px; line-height:28px; border-bottom:1px solid #e8e8e8;}
+	.xy_contentbox3 .divshow .divb .lic{ border-bottom:none;}
+	
+	.xy_contentbox4{ padding-bottom:60px;}
+	.xy_contentbox4 .divs1{ float:left; position:relative; width:137px; height:39px; margin:20px 0 10px 0;}
+	.xy_contentbox4 .divs1 .img2{ float:none; margin:0;}
+	.xy_contentbox4 .divs1 a{ position:absolute; right:-45px; bottom:26px; width:45px; height:31px; background:url(img/xy20.png);}
+	.xy_contentbox4 .img1{ float:left; margin:20px 0 10px 0;}
+	.xy_contentbox4 .abox2{ float:left; height:32px; line-height:32px; text-align:center;#999; border-left:1px solid #d5d5d5; margin:20px 0 0 56px; padding-left:10px;}
+	.xy_contentbox4 .div1{ float:right; margin-top:34px;}
+	.xy_contentbox4 .div1 a{ float:left; padding:4px;}
+	.xy_contentbox4 .div1 a:hover{  background:#669900;}
+	.xy_contentbox4 .div1 .a1{ border-bottom:2px solid #669900;} 
+	.xy_contentbox4 .div1 .a1:hover{ background:none;}
+	.xy_contentbox4 .div1 img{ float:left; margin:4px 15px 0;}
+	
+	.xy_contentbox4 .divshow{ margin-right:-22px;}
+	.xy_contentbox4 .divshow .diva{ float:left; width:222px; height:282px; border:1px solid #e8e8e8; background:#fff; position:relative; padding:2px 0 0 2px; cursor:pointer; margin-right:22px;}
+	.xy_contentbox4 .divshow .diva .imgb{ position:absolute; left:8px; bottom:40px;}
+	.xy_contentbox4 .divshow .diva .p1{ width:72px; margin-left:66px; color:#cc0000; margin-top:5px; background:url(img/xy34.png) no-repeat right; padding-right:20px; }
+	.xy_contentbox4 .divshow .diva .p2{ margin:18px 0 0 18px;}
+	.xy_contentbox4 .divshow .diva .imgpo{ position:absolute; right:0; top:50%; margin-top:-33px;}
+	
+	.xy_fwrap{ background:#fff;} 
+	.xy_footer{ width:972px; margin:0 auto;}
+	.xy_footerbox1{ margin-bottom:20px;}
+	.xy_footerbox1 .img1{ float:left; margin:20px 0 10px 0;}
+	
+	.xy_footerbox1 .div1{ float:right; margin-top:34px;}
+	.xy_footerbox1 .div1 .ab{ float:left; width:20px; height:16px; background:url(img/xy35.png) no-repeat;}
+	.xy_footerbox1 .div1 .aa{ float:left; padding:2px; }
+	.xy_footerbox1 .div1 .aa:hover{  background:#669900;}
+
+	.xy_footerbox1 .divshow{ margin-right:-22px;}
+	.xy_footerbox1 .divshow .diva{ float:left; width:222px; height:126px; border:1px solid #e8e8e8; background:#fff; position:relative; padding:2px 0 0 2px; cursor:pointer; margin-right:22px;}
+	
+	.xy_footerbox1 .divshow .diva .p1{ color:#fff; position:absolute; left:12px; bottom:30px;}
+	.xy_footerbox1 .divshow .diva .p2{ color:#b5ff75; position:absolute; left:12px; bottom:12px; }
+	
+	.xy_fwrap1{ height:129px; background:url(img/xy38.png) repeat-x; }
+	.xy_footer1{ width:972px; margin:0 auto; padding-top:53px; position:relative;}
+	.xy_footer1 p{ width:268px; margin:0 auto; font-size:24px; color:#666; cursor:pointer;}
+	.xy_footer1 p span{ color:#669900;}
+	.xy_footer1 div{ position:absolute; left:50%; margin-left:-21px; top:0; width:42px; height:21px; background:url(img/xy39.png) no-repeat;}
+	
+	.lf{background:#f5f5f5;}
+	.lf .f10{ height:150px; background:#fff;}
+	.lf .f10 li{ padding:0 12px; border-right:1px dashed #ccc;}
+	.lf .f10 .box{ width:1000px; height:150px; margin:0 auto; position:relative;}
+	.lf .f10 .box ul{ margin-left:248px; padding-top:40px; padding-bottom:30px;}
+	.lf .f10 .kf{ border-right:none}
+	.lf .f10 p{ text-align:center; margin-bottom:10px;}
+	.lf .f10 i{ width:33px; height:51px; background:url(img/beijingtu.png) -35px -43px; position:absolute; right:28px; bottom:45px;}

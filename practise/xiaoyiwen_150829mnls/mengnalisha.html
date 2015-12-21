@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="marryphoto_css/base.css" />
+<style>
+	.banner{ position:fixed; right:0; top:50%; margin-top:-64px;}
+	.xy_headerwrap1{ height:120px; background:url(marryphoto_img/xy_marry1.png); position:relative;}
+	.xy_headerwrap1 a{ position:absolute; left:270px; top:42px;}
+	.xy_headerwrap2{ height:40px; background:url(marryphoto_img/xy_marry2.png);}
+	.xy_headerbox2{ width:960px; margin:0 auto;}
+	.xy_headerbox2 a{ float:left; font-size:14px; color:#fff; margin-top:15px;}
+	.xy_headerbox2 .div1{ float:right;}
+	.xy_headerbox2 .div1 a{ text-align:center; line-height:24px;}
+	.xy_headerbox2 img{ float:left; margin:9px 16px 0 17px;}
+	.xy_headerbox2 .ar{ height:24px; float:right; background:url(marryphoto_img/xy_marry6.png) repeat-x; float:left; color:#a87f5f; margin-top:8px;}
+	.xy_headerbox2 .left{ width:7px; height:24px; float:left; background:url(marryphoto_img/xy_marry4.png);}
+	.xy_headerbox2 .right{ width:7px; height:24px; float:right; background:url(marryphoto_img/xy_marry5.png); }
+	.xy_headerbox2 a:hover{ color:#eeb88c;}
+	.xy_headerwrap3{ height:2px; background:url(marryphoto_img/xy_marry7.png);}
+	.xy_headerwrap4{ height:450px; background:url(marryphoto_img/xy_marry1.jpg) center;}
+	.xy_headerwrap5{ height:9px; background:url(marryphoto_img/xy_marry10.png);}
+	.xy_headerbox5{ width:90px; margin:0 auto;}
+	.xy_headerwrap6{ margin-top:20px;}
+	.xy_headerbox6{  width:960px; margin:0 auto; background:url(marryphoto_img/xy_marry14.png) repeat-y;}
+	.xy_headerbox6 img{ float:left;}
+	.xy_headerbox6 a{ float:left; margin:15px 11px 0 0;}
+	.xy_contentbox1{ width:960px; margin:0 auto;}
+	.xy_contentbox1 a{ float:left; margin:15px 15px 15px 0;}
+	.xy_contentbox1 .a1{ margin-right:-15px;}
+	.xy_contentbox1 img{ width:310px; height:310px;}
+	.xy_contentbox2{ width:960px; margin:0 auto 20px;}
+	.xy_contentbox3{ width:960px; height:55px; margin:0 auto 20px; border-bottom:1px solid #dbdbdb; position:relative;}
+	.xy_contentbox3 .img1{ float:left; position:absolute; left:0; bottom:-4px;}
+	.xy_contentbox3 .img2{ float:right; position:absolute; right:0; bottom:-4px;}
+	.xy_contentbox3 a{ float:right; border-right:1px solid #ba9bba; color:#787878; padding:0 11px; margin-top:24px;}
+	.xy_contentbox3 .a1{ border-right:none;}
+	.xy_contentbox3 a:hover{ color:#eeb88c;}
+	.xy_contentbox4{ width:960px; margin:0 auto;}
+	.xy_contentbox4 .div1{ width:310px; height:496px; position:relative; border-bottom:1px solid #6d6d6d; float:left; margin-right:15px;}
+	.xy_contentbox4 .div1 .a1 img{ width:310px; height:496px;}
+	.xy_contentbox4 .div1 .opa{ position:absolute; left:0; bottom:0; height:40px; background:#000; width:100%; opacity:0.5; filter:alpha(opacity:50);}
+	.xy_contentbox4 .div1 .a2{ font-size:16px; color:#fff; position:absolute; right:10px; bottom:12px;}
+	.xy_contentbox4 .div1 .a3{ position:absolute; left:15px; bottom:233px; width:31px; height:61px; background:url(marryphoto_img/xy_marry17.png)}
+	.xy_contentbox4 .div1 .a4{ position:absolute; right:15px; bottom:233px; width:31px; height:61px; background:url(marryphoto_img/xy_marry18.png)}
+	.xy_contentbox4 .div1 .img1{ position:absolute; left:0; bottom:-8px;}
+	.xy_contentbox4 .div1 .a2:hover{ color: #eeb88c;}
+	.xy_contentbox4 .div1 .a3:hover{ background:url(marryphoto_img/arr_l.gif);}
+	.xy_contentbox4 .div1 .a4:hover{ background:url(marryphoto_img/arr_r.gif);}
+	
+	.xy_contentbox4 .div2{ width:304px; height:232px; position:relative; padding:4px 0 0 4px; border:1px solid #e5e5e5; float:left; margin-bottom:20px;}
+	.xy_contentbox4 .marl{ margin-left:15px;}
+	.xy_contentbox4 .div2 .a1 img{ width:300px; height:195px; margin-bottom:14px;}
+	.xy_contentbox4 .div2 .a2{ margin-left:4px;}
+	.xy_contentbox4 .div2 .img1{ position:absolute; left:0; bottom:-8px;}
+	.xy_contentbox4 .div2:hover{ background:#e7e7e7;}
+	.xy_contentbox4 .div2:hover .a2{ color: #aa1f24;}
+	
+	.xy_contentbox5{ width:960px; height:55px; margin:10px auto 20px; border-bottom:1px solid #dbdbdb; position:relative;}
+	.xy_contentbox5 .img1{ float:left; position:absolute; left:0; bottom:-4px;}
+	.xy_contentbox5 .img2{ float:right; position:absolute; right:0; bottom:-4px;}
+	.xy_contentbox5 a{ float:right; border-right:1px solid #ba9bba; color:#787878; padding:0 11px; margin-top:24px;}
+	.xy_contentbox5 .a1{ border-right:none;}
+	.xy_contentbox5 a:hover{ color:#eeb88c;}
+	
+	.xy_contentbox6{ width:960px; margin:0 auto;}
+	.xy_contentbox6 .div1{ width:310px; height:496px; position:relative; border-bottom:1px solid #6d6d6d; float:left; margin-right:15px;}
+	.xy_contentbox6 .div1 .a1 img{ width:310px; height:496px;}
+	.xy_contentbox6 .div1 .opa{ position:absolute; left:0; bottom:0; height:40px; background:#000; width:100%; opacity:0.5; filter:alpha(opacity:50);}
+	.xy_contentbox6 .div1 .a2{ font-size:16px; color:#fff; position:absolute; right:10px; bottom:12px;}
+	.xy_contentbox6 .div1 .a3{ position:absolute; left:15px; bottom:233px; width:31px; height:61px; background:url(marryphoto_img/xy_marry17.png)}
+	.xy_contentbox6 .div1 .a4{ position:absolute; right:15px; bottom:233px; width:31px; height:61px; background:url(marryphoto_img/xy_marry18.png)}
+	.xy_contentbox6 .div1 .img1{ position:absolute; left:0; bottom:-8px;}
+	.xy_contentbox6 .div1 .a2:hover{ color: #eeb88c;}
+	.xy_contentbox6 .div1 .a3:hover{ background:url(marryphoto_img/arr_l.gif);}
+	.xy_contentbox6 .div1 .a4:hover{ background:url(marryphoto_img/arr_r.gif);}
+	.xy_contentbox6 .div2{ width:304px; height:232px; position:relative; padding:4px 0 0 4px; border:1px solid #e5e5e5; float:left; margin-bottom:20px;}
+	.xy_contentbox6 .marl{ margin-left:15px;}
+	.xy_contentbox6 .div2 .a1 img{ width:300px; height:195px; margin-bottom:14px;}
+	.xy_contentbox6 .div2 .a2{ margin-left:4px;}
+	.xy_contentbox6 .div2 .img1{ position:absolute; left:0; bottom:-8px;}
+	.xy_contentbox6 .div2:hover{ background:#e7e7e7;}
+	.xy_contentbox6 .div2:hover .a2{ color: #aa1f24;}
+	
+	.xy_contentbox7{ width:960px; height:55px; margin:10px auto 20px; border-bottom:1px solid #dbdbdb; position:relative;}
+	.xy_contentbox7 .img1{ float:left; position:absolute; left:0; bottom:-4px;}
+	.xy_contentbox7 .img2{ float:right; position:absolute; right:0; bottom:-4px;}
+	.xy_contentbox7 a{ float:right; border-right:1px solid #ba9bba; color:#787878; padding:0 11px; margin-top:24px;}
+	.xy_contentbox7 .a1{ border-right:none;}
+	.xy_contentbox7 a:hover{ color:#eeb88c;}
+	
+	.xy_contentbox8{ width:960px; margin:0px auto}
+	.xy_contentbox8 div{ width:221px; height:388px; border:1px solid #b9b9b9; padding:6px 0 0 6px; position:relative; float:left; margin-right:14px; margin-bottom:17px;}
+	.xy_contentbox8 .divr{ margin-right:0; }
+	.xy_contentbox8 .img1{ width:215px; height:360px;}
+	.xy_contentbox8 p{ margin:7px 0 0 10px;}
+	.xy_contentbox8 div:hover{ background: #8ccdf6;}
+	.xy_contentbox8 .img2{ position: absolute; left:0; bottom:-7px;}
+	
+	.xy_contentbox9{ width:960px; height:55px; margin:10px auto 20px; border-bottom:1px solid #dbdbdb; position:relative;}
+	.xy_contentbox9 .img1{ float:left; position:absolute; left:0; bottom:-4px;}
+	.xy_contentbox9 .img2{ float:right; position:absolute; right:0; bottom:-4px;}
+	.xy_contentbox9 a{ float:right; border-right:1px solid #ba9bba; color:#787878; padding:0 11px; margin-top:24px;}
+	.xy_contentbox9 .a1{ border-right:none;}
+	.xy_contentbox9 a:hover{ color:#eeb88c;}
+	
+	.xy_contentbox10{ width:960px; margin:0 auto;}
+	.xy_contentbox10 .div2{ width:304px; height:232px; position:relative; padding:4px 0 0 4px; border:1px solid #e5e5e5; float:left;}
+	.xy_contentbox10 .div2 .a1 img{ width:300px; height:195px; margin-bottom:14px; float:left;}
+	.xy_contentbox10 .div2 .a2{ margin-left:4px; float:left;}
+	.xy_contentbox10 .div2 .a3{ font-size:14px; color:#ba1911; font-weight:bold; float:right; margin-right:9px;}
+	.xy_contentbox10 .div2 .img1{ position:absolute; left:0; bottom:-8px;}
+	.xy_contentbox10 .div2:hover{ background:#e7e7e7;}
+	.xy_contentbox10 .div2:hover .a2{ color: #aa1f24;}
+	.xy_contentbox10 .div3{ width:620px; height:232px; color:#3c2112; margin-left:20px;  float:left; margin-top:4px;  margin-bottom:20px;} 
+	.xy_contentbox10 .div3 h2{ font-size:16px; margin-bottom:10px;}
+	.xy_contentbox10 .div3 p{ line-height:24px;}
+	.xy_contentbox10 .div3 .p1 { text-align:right; }
+	.xy_contentbox10 .div3 .p1 a{ color:#a94740;}
+	.xy_contentbox10 .div4{ margin-left:15px;}
+	
+	.xy_contentbox11{ width:960px; height:32px; margin:27px auto 20px; border-bottom:1px solid #dbdbdb; position:relative;}
+	.xy_contentbox11 .img1{ float:left; position:absolute; left:0; bottom:-4px;}
+	.xy_contentbox11 .img2{ float:right; position:absolute; right:0; bottom:-4px;}
+	.xy_contentbox11 .a3{ float:right; position:absolute; left:489px; bottom:-4px;}
+	.xy_contentbox11 .a4{ float:right; position:absolute; left:730px; bottom:-4px;}
+	
+	.xy_contentbox12{ width:960px; margin:0 auto;}
+	.xy_contentbox12 .left{ width:489px; float:left;}
+	.xy_contentbox12 .left .div1{ width:144px; height:129px; border:1px solid #ccc; position:relative; padding-left:4px; float:left; margin-right:10px; margin-bottom:13px; padding-top:4px;}
+	.xy_contentbox12 .left .div1:hover{ background:#1178ba;}
+	.xy_contentbox12 .left .div1 .img1{ position:absolute; left:0; bottom:-2px;}
+	.xy_contentbox12 .left p{ margin-top:6px;}
+	.xy_contentbox12 .mid{ width:203px; height:259px; border:1px solid #ccc; float:left; padding:15px 0 0 15px;}
+	
+	.xy_contentbox12 .mid .img1{ float:left; margin:2px 10px 0 0;}
+	.xy_contentbox12 .mid .img2{ margin-top:14px;}
+	.xy_contentbox12 .mid .div5{ float:left;}
+	.xy_contentbox12 .mid .div5 p{ background:url(marryphoto_img/xy_marry24.png) no-repeat right center;  width:130px;}
+	.xy_contentbox12 .mid .div5 p a{ color:#5093d5; font-size:14px;}
+	.xy_contentbox12 .mid .div2{ width:182px; height:58px; border:1px solid #ccc; margin:28px 0 21px 0; line-height:26px; position:relative; padding-left:4px;}
+	.xy_contentbox12 .mid .div2:hover{ background: #f1f5f8; }
+	.xy_contentbox12 .mid .div2 .img1{ position:absolute; left:-5px; top:-8px;}
+	.xy_contentbox12 .mid .div2 .img2{ position:absolute; left:-5px; bottom:-8px;}
+	.xy_contentbox12 .mid .div3{ margin-right:16px;}
+	.xy_contentbox12 .mid .div3 p{ float:left;}
+	.xy_contentbox12 .mid .div3 span{ font-weight:bold;}
+	.xy_contentbox12 .mid .div3 a{ float:right; color:blue;}
+	.xy_contentbox12 .mid .div4{ margin-top:14px;}
+	.xy_contentbox12 .mid .div4 p{ width:50px; color:blue; text-align:center; margin-top:6px;}
+	.xy_contentbox12 .mid .div4 .first{ float:left; margin-right:16px;}
+	
+	.xy_contentbox12 .right{ float:left; margin-left:15px;}
+	.xy_contentbox12 .right ul{ padding-top:6px;}
+	.xy_contentbox12 .right li{ padding-left:7px; background:url(marryphoto_img/xy_marry32.png) no-repeat left center; font-size:14px; margin-bottom:16px;}
+	.xy_contentbox12 .right li a{ color:#787878;}
+	
+	.xy_contentbox13{ width:960px; height:32px; margin:10px auto 20px; border-bottom:1px solid #dbdbdb; position:relative;}
+	.xy_contentbox13 .img1{ float:left; position:absolute; left:0; bottom:-4px;}
+	.xy_contentbox13 .img2{ float:right; position:absolute; right:0; bottom:-4px;}
+	.xy_contentbox13 a{ float:right; color:#787878; padding:0 11px; margin-top:14px;}
+	.xy_contentbox13 a:hover{ color:#eeb88c;}
+	
+	.xy_contentbox14{ width:960px; margin:0 auto;}
+	.xy_contentbox14 a{ float:left; color:#83471d; margin:0 26px 13px 0;}
+	.xy_contentbox14 a:hover{ color:#ba1911;}
+	
+	.xy_footerwrap1{ height:175px; background:#eee; border-top:1px solid #ddd;}
+	.xy_footerbigbox{ width:960px; margin:0 auto; background:url(marryphoto_img/xy_marry33.png) no-repeat 566px 0;}
+	.xy_footerboxle dt{ width:118px; height:27px; border-bottom:1px solid #705c51; padding-top:20px; font-size:14px;; font-weight:bold; margin-bottom:14px;}
+	.xy_footerboxle dl{ float:left; margin-right:20px;}
+	.xy_footerboxle dl a{ color:#787878;}
+	.xy_footerboxle dd{ margin-bottom:13px;}
+	.xy_footerboxle dl a:hover{ color:#ba1911;}
+	.xy_footerboxle{ float:left;}
+	.xy_footerboxri{ float:left; margin-left:50px;}
+	.xy_footerboxri .div1{ margin-top:25px; }
+	.xy_footerboxri .div1 a{ float:left;}
+	.xy_footerboxri .div3{ float:left; margin-left:10px;}
+	.xy_footerboxri .div3 p{ font-size:14px; font-weight:bold; color:#8f8f90; margin:8px 0;}
+	.xy_footerboxri .div2{ margin-top:15px;}
+	.xy_footerboxri .div4 a{ float:left; margin-right:5px;}
+	
+	.xy_footerwrap2{ height:124px; background:#3c2112 url(marryphoto_img/xy_marry40.png) no-repeat;}
+</style>
+</head>
+
+<body>
+<div class="banner">
+	<a href="#"><img src="marryphoto_img/banner1.png"/></a>
+</div>
+
+<div class="xy_header">
+	<div class="xy_headerwrap1">
+    	<a href="#"><img src="marryphoto_img/logo.gif"/></a>
+    </div>
+    <div class="xy_headerwrap2">
+		<div class="xy_headerbox2 clearfix">
+        	<a href="#">首页</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">影楼报价</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">作品展示</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">场馆介绍</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">客片欣赏</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">积分商城</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">官方汇款</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">网络预约</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <a href="#">官方微博</a>
+            <img src="marryphoto_img/xy_marry3.png"/>
+            <div class="div1">
+                <a class="ar clearfix" href="#">
+                    <i class="left"></i>
+                    收藏
+                    <i class="right"></i>    
+                </a>
+            </div>    
+        </div>    
+    </div>
+    <div class="xy_headerwrap3"></div>
+    <a href="#"><div class="xy_headerwrap4"></div></a>
+    <div class="xy_headerwrap5"></div>
+    <div class="xy_headerbox5">
+    	<a href="#"><img src="marryphoto_img/xy_marry8.png"/></a>
+        <a href="#"><img src="marryphoto_img/xy_marry9.png"/></a>
+        <a href="#"><img src="marryphoto_img/xy_marry9.png"/></a>
+        <a href="#"><img src="marryphoto_img/xy_marry9.png"/></a>
+    </div>
+    <div class="xy_headerwrap6">
+    	<div class="xy_headerbox6 clearfix">
+        	<img src="marryphoto_img/xy_marry11.png"/>
+            <img src="marryphoto_img/xy_marry12.png"/>
+            <img src="marryphoto_img/xy_marry13.png"/>
+            <a href="#"><img src="marryphoto_img/online1.gif"/></a>
+            <a href="#"><img src="marryphoto_img/online2.gif"/></a>
+            <a href="#"><img src="marryphoto_img/online3.gif"/></a>
+            <a href="#"><img src="marryphoto_img/online4.gif"/></a>
+        </div>
+    </div>
+</div>
+
+<div class="xy_contentbox1 clearfix">
+	<a href="#"><img src="marryphoto_img/xy_marry15.jpg"/></a>
+    <a href="#"><img src="marryphoto_img/xy_marry15.png"/></a>
+    <a class="a1" href="#"><img src="marryphoto_img/xy_marry16.jpg"/></a> 
+</div>
+
+<div class="xy_contentbox2">
+	<a href="#"><img src="marryphoto_img/banner.jpg"/></a>
+</div>
+
+<div class="xy_contentbox3 clearfix">
+	<a class="a2" href="#"><img class="img1" src="marryphoto_img/hometitle_03.gif"/></a>
+    <img class="img2" src="marryphoto_img/xy_marry16.png"/>
+    <a class="a1" href="#">唐山</a>
+    <a href="#">西安</a>
+    <a href="#">洛阳</a>
+    <a href="#">北京</a>    
+</div>
+
+<div class="xy_contentbox4 clearfix">
+	<div class="div1">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_17.jpg"/></a>
+        <div class="opa"></div>
+        <a class="a2" href="#">场馆包间</a>
+        <a class="a3" href="#"></a>
+        <a class="a4" href="#"></a>
+        <img class="img1" src="marryphoto_img/xy_marry19.png" />
+    </div>
+    
+    <div class="div2">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_18.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div>
+    <div class="div2 marl">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_19.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div>
+    <div class="div2">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_20.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div>
+    <div class="div2 marl">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_22.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div> 
+</div>
+
+<div class="xy_contentbox5 clearfix">
+	<a class="a2" href="#"><img class="img1" src="marryphoto_img/hometitle_06.gif"/></a>
+    <img class="img2" src="marryphoto_img/xy_marry16.png"/>
+    <a class="a1" href="#">唐山</a>
+    <a href="#">西安</a>
+    <a href="#">洛阳</a>
+    <a href="#">北京</a>    
+</div>
+
+<div class="xy_contentbox6 clearfix">
+	<div class="div1">
+    	<a class="a1" href="#"><img src="marryphoto_img/xym7.jpg"/></a>
+        <div class="opa"></div>
+        <a class="a2" href="#">场馆包间</a>
+        <a class="a3" href="#"></a>
+        <a class="a4" href="#"></a>
+        <img class="img1" src="marryphoto_img/xy_marry19.png" />
+    </div>
+    
+    <div class="div2">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_24.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div>
+    <div class="div2 marl">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_21.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div>
+    <div class="div2">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_23.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div>
+    <div class="div2 marl">
+    	<a class="a1" href="#"><img src="marryphoto_img/xy_18.jpg"/></a>
+        <a class="a2" href="#">丽络塔</a>
+        <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+    </div> 
+</div>
+
+<div class="xy_contentbox7 clearfix">
+	<a class="a2" href="#"><img class="img1" src="marryphoto_img/hometitle_08.gif"/></a>
+    <img class="img2" src="marryphoto_img/xy_marry16.png"/>
+    <a class="a1" href="#">唐山</a>
+    <a href="#">西安</a>
+    <a href="#">洛阳</a>
+    <a href="#">北京</a>    
+</div>
+
+<div class="xy_contentbox8 clearfix">
+        <div>
+            <img class="img1" src="marryphoto_img/xym1.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>
+         <div>
+            <img class="img1" src="marryphoto_img/xym2.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>
+         <div>
+            <img class="img1" src="marryphoto_img/xym3.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>
+        
+         <div class="divr">
+            <img class="img1" src="marryphoto_img/xym4.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>   
+          <div>
+            <img class="img1" src="marryphoto_img/xym5.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>
+         <div>
+            <img class="img1" src="marryphoto_img/xym6.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>
+         <div>
+            <img class="img1" src="marryphoto_img/xy_last1.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div>
+        
+         <div class="divr">
+            <img class="img1" src="marryphoto_img/xym8.jpg"/>
+            <p>客片</p>
+            <img class="img2" src="marryphoto_img/xy_marry21.png"/>
+        </div> 
+</div>
+
+<div class="xy_contentbox9 clearfix">
+	<a class="a2" href="#"><img class="img1" src="marryphoto_img/hometitle_11.gif"/></a>
+    <img class="img2" src="marryphoto_img/xy_marry16.png"/>
+    <a class="a1" href="#">&gt;&gt;更多报价</a> 
+</div>
+
+<div class="xy_contentbox10">
+    <div class="div1 clearfix">
+        <div class="div2 clearfix">
+            <a class="a1" href="#"><img src="marryphoto_img/xy_last3.jpg"/></a>
+            <a class="a2" href="#">丽络塔</a>
+            <a class="a3" href="#">RMB:10999</a>
+            <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+        </div>
+        
+        <div class="div3">
+        	<h2>蒙娜丽莎 “克里斯丁会所</h2>
+            <p>1995年，中国和新加坡金尼影像合力打造的蒙娜丽莎在西安创立，凭借专业先进的摄影技术和贴心周到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几...</p>
+            <p>北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！</p>
+            <p>到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！</p>
+            <p class="p1"><a href="#">&gt;&gt;详细介绍</a></p>
+        </div>
+        
+        <div class="div2 clearfix">
+            <a class="a1" href="#"><img src="marryphoto_img/xy_last4.jpg"/></a>
+            <a class="a2" href="#">丽络塔</a>
+            <a class="a3" href="#">RMB:10999</a>
+            <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+        </div>
+        <div class="div2 div4 clearfix">
+            <a class="a1" href="#"><img src="marryphoto_img/xy-last2.jpg"/></a>
+            <a class="a2" href="#">丽络塔</a>
+            <a class="a3" href="#">RMB:10999</a>
+            <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+        </div>
+        <div class="div2 div4 clearfix">
+            <a class="a1" href="#"><img src="marryphoto_img/xy_24.jpg"/></a>
+            <a class="a2" href="#">丽络塔</a>
+            <a class="a3" href="#">RMB:10999</a>
+            <img class="img1" src="marryphoto_img/xy_marry20.png"/>
+        </div>
+    </div>
+</div>
+
+<div class="xy_contentbox11 clearfix">
+	<a class="a2" href="#"><img class="img1" src="marryphoto_img/hometitle_14.gif"/></a>
+    <a class="a3" href="#"><img class="img3" src="marryphoto_img/hometitle_17.gif"/></a>
+    <a class="a4" href="#"><img class="img4" src="marryphoto_img/hometitle_19.gif"/></a>
+    <img class="img2" src="marryphoto_img/xy_marry16.png"/>  
+</div>
+
+<div class="xy_contentbox12 clearfix">
+	<div class="left clearfix">
+    	<div class="div1">
+        	<img src="marryphoto_img/xy_h1.jpg"/>
+            <p>chanel 香奈儿 no5女...</p>
+            <img class="img1" src="marryphoto_img/xy_marry22.png"/> 
+        </div>
+        <div class="div1">
+        	<img src="marryphoto_img/xy_h2.jpg"/>
+            <p>chanel 香奈儿 no5女...</p>
+            <img class="img1" src="marryphoto_img/xy_marry22.png"/> 
+        </div>
+        <div class="div1">
+        	<img src="marryphoto_img/xy_h3.jpg"/>
+            <p>chanel 香奈儿 no5女...</p>
+            <img class="img1" src="marryphoto_img/xy_marry22.png"/> 
+        </div>
+        <div class="div1">
+        	<img src="marryphoto_img/xy_h4.jpg"/>
+            <p>chanel 香奈儿 no5女...</p>
+            <img class="img1" src="marryphoto_img/xy_marry22.png"/> 
+        </div>
+        <div class="div1">
+        	<img src="marryphoto_img/xy_h5.jpg"/>
+            <p>chanel 香奈儿 no5女...</p>
+            <img class="img1" src="marryphoto_img/xy_marry22.png"/> 
+        </div>
+        <div class="div1">
+        	<img src="marryphoto_img/xy_h6.jpg"/>
+            <p>chanel 香奈儿 no5女...</p>
+            <img class="img1" src="marryphoto_img/xy_marry22.png"/> 
+        </div>
+        
+    </div>
+    
+    <div class="mid">
+    	<div class="div1 clearfix">
+        	<a href="#"><img class="img1" src="marryphoto_img/xy_marry23.png"/></a>
+            <div class="div5">
+            	<p><a href="#">北京蒙娜丽莎摄影</a></p>
+                <a href="#"><img class="img2" src="marryphoto_img/xy_marry25.png"/></a>
+            </div>
+        </div>
+        <div class="div2">
+        	<p>美<img src="marryphoto_img/xy_marry26.png"/>如果有需要的朋友，我推荐北京蒙娜丽莎，真的很棒喔<img src="marryphoto_img/xy_marry27.png"/><img src="marryphoto_img/xy_marry30.png"/></p>
+            <a href="#"><img class="img1" src="marryphoto_img/xy_marry28.png"/></a>
+            <a href="#"><img class="img2" src="marryphoto_img/xy_marry29.png"/></a>
+        </div>
+        <div class="div3 clearfix">
+        	<p>TA的粉丝（<span>126847</span>）</p>
+            <a href="#">全部&gt;&gt;</a>
+        </div>
+        <div class="div4 clearfix">
+        	<div class="first">
+            	<a href="#"><img src="marryphoto_img/xy_marry31.png"/></a>
+                <a href="#"><p>张VS</p></a>
+            </div>
+            <div class="first">
+            	<a href="#"><img src="marryphoto_img/xy_marry31.png"/></a>
+                <a href="#"><p>张VS</p></a>
+            </div>
+            <div class="first">
+            	<a href="#"><img src="marryphoto_img/xy_marry31.png"/></a>
+                <a href="#"><p>张VS</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+    	<ul>
+        	<li><a href="#">新郎拍婚纱照的注意事项</a></li>
+            <li><a href="#">新郎拍婚纱飞照的注意事项</a></li>
+            <li><a href="#">新郎 拍婚纱粉丝飞 注意事项...</a></li>
+            <li><a href="#">新郎拍婚纱照 的 范围注意事...</a></li>
+            <li><a href="#">新郎飞拍 婚纱 照的注意事项...</a></li>
+            <li><a href="#">新郎 拍婚纱照粉丝的注意事项...</a></li>
+            <li><a href="#">新郎拍婚飞是纱照的注意事项...</a></li>
+            <li><a href="#">新郎拍婚纱照的注意事项</a></li>
+            <li><a href="#">新郎拍婚纱照附件里意事</a></li>
+            <li><a href="#">新郎拍婚纱照的注意项辅导费...</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="xy_contentbox13 clearfix">
+	<a class="a2" href="#"><img class="img1" src="marryphoto_img/hometitle_24.gif"/></a>
+    <img class="img2" src="marryphoto_img/xy_marry16.png"/>
+    <a class="a1" href="#">友情链接QQ：787835815</a> 
+</div>
+
+<div class="xy_contentbox14">
+	<div class="clearfix">
+    	<a href="#">北京儿童摄影</a>
+        <a href="#">北京儿童摄</a>
+        <a href="#">北京儿童摄影</a>
+        <a href="#">北京儿童影</a>
+        <a href="#">北京儿童摄影</a>
+        <a href="#">北京儿童摄费影</a>
+        <a href="#">北京儿童影</a>
+        <a href="#">北京儿童摄影</a>
+        <a href="#">北京儿童发的摄影</a>
+        <a href="#">北京儿影</a>
+        <a href="#">摄影</a>
+    </div>
+</div>
+
+<div class="xy_footerwrap1">
+	<div class="xy_footerbigbox clearfix">
+    	<div class="xy_footerboxle clearfix">
+        	<dl>
+            	<dt><a href="#">蒙娜丽莎/主页</a></dt>
+            	<dd><a href="#">北京婚纱摄影网</a></dd>
+                <dd><a href="#">北京婚纱摄影</a></dd>
+                <dd><a href="#">北京婚纱摄</a></dd>
+                <dd><a href="#">北京婚纱摄影</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">作品展示</a></dt>
+            	<dd><a href="#">北京婚纱影网</a></dd>
+                <dd><a href="#">北京婚纱摄影</a></dd>
+                <dd><a href="#">北京婚纱摄飞</a></dd>
+                <dd><a href="#">北京婚纱摄影</a></dd>
+            </dl>
+            <dl>
+            	<dt><a href="#">新闻动态</a></dt>
+            	<dd><a href="#">北京婚纱</a></dd>
+                <dd><a href="#">北京婚纱</a></dd>
+                <dd><a href="#">北京纱摄飞</a></dd>
+                <dd><a href="#">北京婚纱摄影</a></dd>
+            </dl>
+             <dl>
+            	<dt><a href="#">SCENE 场景介绍</a></dt>
+            	<dd><a href="#">北京婚纱飞</a></dd>
+                <dd><a href="#">北京婚的纱</a></dd>
+                <dd><a href="#">北京飞</a></dd>
+            </dl>
+        </div>
+        
+        <div class="xy_footerboxri">
+        	<div class="div1 clearfix">
+            	<a href="#"><img src="marryphoto_img/xy_marry34.png"/></a>
+                <div class="div3">
+                	<p>ONLINE SERVICE</p>
+                    <div class="div4 clearfix">
+                        <a href="#"><img src="marryphoto_img/xy_marry37.png"/></a>
+                        <a href="#"><img src="marryphoto_img/xy_marry38.png"/></a>
+                        <a href="#"><img src="marryphoto_img/xy_marry39.png"/></a>
+                        <a href="#"><img src="marryphoto_img/xy_marry35.png"/></a>
+                        <a href="#"><img src="marryphoto_img/xy_marry35.png"/></a>
+                	</div>
+                </div>
+            </div>
+            <div class="div2"><img src="marryphoto_img/xy_marry36.png"/></div>
+        </div>
+    </div>
+</div>
+
+<div class="xy_footerwrap2"></div>
+
+</body>
+</html>

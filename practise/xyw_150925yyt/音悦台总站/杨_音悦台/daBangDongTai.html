@@ -1,0 +1,934 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script>
+	window.onload=function(){
+		var nav2=document.getElementById('nav2');
+		var list2=nav2.getElementsByClassName('list2');	
+		var xia=nav2.getElementsByClassName('xia');	
+		var share1=nav2.getElementsByClassName('share');	
+		for(var i=0;i<list2.length;i++){
+			list2[i].index=i;
+				list2[i].onclick=function(){
+					if(xia[this.index].className=='xia show'){
+					    xia[this.index].className='xia';
+						share1[this.index].innerHTML='分享排名';
+				   	
+					}else{
+						for(var j=0;j<xia.length;j++){
+						xia[j].className='xia';	
+					   }
+					xia[this.index].className='xia show';
+					share1[this.index].innerHTML='收起分享';	
+					}
+					
+		}}
+		
+	}
+</script>
+</head>
+
+<body class="YL_body">
+<div class="YL_header1 clearfix">
+	<h1><a href="#">音悦V榜</a></h1>
+    <ul>
+    	<li>
+        	<a href="#">聚焦</a>
+            <i></i>
+        </li>
+        <li class="active">
+        	<a href="#">打榜动态</a>
+            <i></i>
+        </li>
+        <li>
+        	<a href="#">周榜TOP20</a>
+            <i></i>
+        </li>
+        <li>
+        	<a href="#">月榜TOP10</a>
+            <i></i>
+        </li>
+        <li class="last">
+        	<a href="#">2014音悦V榜盛典</a>
+        </li>
+    </ul>
+</div>
+
+<div class="YL_content">
+	<div class="YL_first clearfix">
+    	<h2></h2>
+        <div class="time clearfix">
+        	<div class="time_l">
+        	<p class="p1">当前打榜周期</p>
+            <p class="p2">2014.11.10-2014.11.16</p>
+            </div>
+            <div class="time_r">46</div>
+        </div>
+    </div>
+    <div class="YL_bigbox clearfix">
+    	<div class="YL_bigbox_l">
+        	<ul class="nav1 clearfix">
+            	<li class="last">
+                	<a href="#">
+                    	<i class="l"></i>
+                        日本篇
+                        <i class="r"></i>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<i class="l"></i>
+                        韩国篇
+                        <i class="r"></i>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<i class="l"></i>
+                        欧美篇
+                        <i class="r"></i>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                    	<i class="l"></i>
+                        港台篇
+                        <i class="r"></i>
+                    </a>
+                </li>
+                <li class="active">
+                	<a href="#">
+                    	<i class="l"></i>
+                        内地篇
+                        <i class="r"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="second clearfix">
+                <p>
+                    <a href="#" class="active">TOP1-20</a>
+                    <i></i>
+                    <a href="#">TOP21-40</a>
+                    <i></i>
+                    <a href="#">TOP41-50</a>
+                    <i></i>
+                </p>
+            </div>
+            <div class="third clearfix">
+            	<i class="time"></i>
+                <p class="p1">下次排名更新</p>
+                <p class="p2">
+                	<img src="img/YL_6.jpg" class="pg1" />
+                    <img src="img/YL_5.jpg" class="pg2" />
+                </p>
+            </div>
+            <div class="biglist">
+            <ul class="nav2" id="nav2">
+            	<li class="list2 clearfix">
+                	<i class="num">1</i>
+                    <div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div>
+                    <div class="msg">
+                    	<p class="name1">幸运符号 官方版</p>
+                        <p class="name2"><i>--</i> TFBOYS</p>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+                  <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num nums2">2</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s1.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2 num22">95.74</p>
+                        <p class="num3 num33"><i class="i2"></i>0.000</p>
+                    </div>
+                </li>
+                 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num nums2">3</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s2.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2 num22">95.74</p>
+                        <p class="num3 num33"><i class="i2"></i>0.000</p>
+                    </div>
+                </li>
+                 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num nums2">4</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s3.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2 num22">95.74</p>
+                        <p class="num3 num33"><i class="i2"></i>0.000</p>
+                    </div>
+                </li>
+				 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num nums2">5</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s4.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2 num22">95.74</p>
+                        <p class="num3 num33"><i class="i2"></i>0.000</p>
+                    </div>
+                </li>
+                 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                 <li class="list2 clearfix">
+                	<i class="num">6</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">7</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+				 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">8</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">9</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+  					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">10</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">11</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">12</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">13</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">14</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">15</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s5.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+  					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">16</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s7.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">17</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s8.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">18</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s9.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+					 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">19</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s10.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+                 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+                <li class="list2 clearfix">
+                	<i class="num">20</i>
+                    <a href="#"><div class="pg">
+                    	<img src="img/YL_s11.jpg" />
+                    </div></a>
+                    <div class="msg">
+                    	<a href="#"><p class="name1">幸运符号 官方版</p></a>
+                        <a href="#"><p class="name2"><i>--</i> TFBOYS</p></a>
+                        <p class="name3">发布时间：2014-09-24</p>
+                    </div>
+                    <a href="#" class="share">分享排名</a>
+                    <div class="last">
+                    	<p class="num2">95.74</p>
+                        <p class="num3"><i></i>0.000</p>
+                    </div>
+                </li>
+				 <li class="xia clearfix">
+                	<img src="img/YL_16.jpg" class="jian" />
+                    <div class="xia_l">分享排名</div>
+                    <div class="xia_r">
+                    	<p class="pp1">离冠军就差一点点了，快把实时排名分享给大家，一起加油让它升到冠军吧！</p>
+                          <ul class="nav5 clearfix">
+                        	<a href="#"><li><i></i>分享到人人网</li></a>
+                            <a href="#"><li><i class="gpg2"></i>分享到新浪微博</li></a>
+                            <a href="#"><li><i class="gpg3"></i>分享到QQ空间</li></a>
+                            <a href="#"><li><i class="gpg4"></i>分享到腾讯微博</li></a>
+                            <a href="#"><li><i class="gpg5"></i>分享到腾讯朋友</li></a>
+                            <a href="#"><li><i class="gpg6"></i>分享到天涯</li></a>
+                            <a href="#"><li><i class="gpg7"></i>分享到搜狐微博</li></a>
+                            <a href="#"><li><i class="gpg8"></i>分享到开心网</li></a>
+                        </ul>
+                    </div>
+                 </li>
+            </ul>
+            <div class="second second2 clearfix">
+                <p>
+                    <a href="#" class="active">TOP1-20</a>
+                    <i></i>
+                    <a href="#">TOP21-40</a>
+                    <i></i>
+                    <a href="#">TOP41-50</a>
+                    <i></i>
+                </p>
+            </div>
+            </div>
+            <div class="shuo">
+            	<h3 class="clearfix">
+                	<img src="img/YL_11.jpg" />
+                    <b>规则说明</b>
+                </h3>
+                <p>
+1. 打榜MV范围声明：<br />
+(1) 榜单收录的MV为六周以内发行的官方MV，老歌新拍MV也可以打榜。现场版、饭制版不参与打榜。<br />
+(2) MV预告、MV花絮、网络翻唱视频、歌词剪辑版，不参与打榜。<br />
+(3) 同一首歌曲不同版本的MV均可以参与打榜，但如果对比两支MV，画面场景大同小异，则不重复打榜。<br />
+(4) 与音悦Tai有官方合作的纯影视画面剪辑的主题曲MV可参与打榜。<br />
+(5) 广告宣传片，公益歌曲，群星助阵某大型活动宣传类的MV，均不参与打榜。<br />
+(6) 如果唱片公司用录音室画面，演唱会画面，后台画面，巡演花絮等内容剪辑后作为某首歌曲的唯一官方MV，则可以作为正式MV参与打榜；但如果该歌曲有正式的MV，则录音室版本，演唱会花絮剪辑版本的MV不再参与打榜。<br />
+2. 打榜动态列出了所有符合入围条件MV中的前50支，即Top50。<br />
+3. 在打榜动态中可以看到下期周榜入围歌曲的实时排名，并显示了升降趋势和数据，十分钟更新一次。<br />
+4. 打榜动态根据当周累计数值进行实时排名。实时排名数据在当周周日24点后清零，并开始进行下一周排名。</p>
+            </div>
+        </div>
+        <div class="YL_bigbox_r">
+        	<div class="flash">
+            	<video src="video/nike.mp4" controls></video>
+            </div>
+            <div class="notice">
+            	<h3></h3>
+                <ul>
+                	<li class="clearfix">
+                    	<a href="#">【有奖问卷 快来点我！】</a>
+                        <i>11-06</i>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#">【有奖问卷 快来点我！】</a>
+                        <i>11-06</i>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#">【有奖问卷 快来点我！】</a>
+                        <i>11-06</i>
+                    </li>
+                </ul>
+            </div>
+            <div class="wei">
+            	<h3 class="clearfix">
+                	<b>打榜入围</b>
+                    <a href="#">更多..</a>
+                </h3>
+                <ul class="nav3">
+                	<li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="#"><div class="nav3_l"><img src="img/YL_14.jpg" /></div></a>
+                        <div class="nav3_r">
+                        	<a href="#"><p class="name1">要怎么办(What about..</p></a>
+                            <a href="#"><p class="name2">LABOUM</p></a>
+                            <p class="name3">发布时间：2014-11-12</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

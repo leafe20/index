@@ -1,0 +1,694 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+
+<style>
+	.xy_headerwrap{ width:980px; margin:0 auto;}
+	.xy_header1{width:980px; margin:0 auto; border-bottom:1px solid #dfdfdf; height:28px;}
+	.xy_header1 .left1{ float:left; font-weight:bold; margin-right:11px; line-height:28px; }
+	.xy_header1 .div1{ height:28px; position:relative; width:56px; float:left;}
+	.xy_header1 .div1 a{  color:#73abc9;}
+	.xy_header1 .div1 .p1{ height:28px; line-height:28px;}
+	.xy_header1 .div1 .p2{ height:28px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; width:211px; padding:0 45px 0 20px; line-height:28px; background:url(img/xyweb-18.png) no-repeat 245px center;}
+	.xy_header1 .div2{ position:absolute; top:0; right:-287px; display:none;}
+	.xy_header1 .div3{ position: relative; }
+	.xy_header1 .div3 img{ position:absolute; top:0; left:-5px;}
+	.xy_header1 .div1:hover .div2{ display: block;}	
+	.xy_header1 .right1{ float:right; padding:0 20px; border-left:1px solid #ccc; border-left:none; margin-top:8px; color:#73abc9;}
+	.xy_header1 .right2{ float:right; padding:0 20px; border-left:1px solid #ccc; background: url(img/xyweb-16.png) no-repeat 74px center; margin-top:8px; color:#73abc9;}
+	.xy_header1 .right3{ float:right; padding:0 20px; border-left:1px solid #ccc; margin-top:8px; color:#73abc9;}
+	.xy_header1 .right4{ float:right; padding:0 20px; border-left:1px solid #ccc; margin-top:8px; color:#73abc9;}	
+	.xy_header2{ margin:14px 0 7px 10px;}
+	.xy_header2 h2{ float:left;}
+	.xy_header2 a{ float:left;}
+	.xy_header2 .a1{ margin:0 30px;}	
+	.xy_header3{ margin-left:360px; padding:7px 0 9px 0;}
+	.xy_header3 a{ float:left; margin-right:15px; color:#999;}	
+	.xy_headerwrap2{ background:#ff658e; height:40px;}
+	.xy_header5{ height:38px; width:980px; margin:0 auto;}
+	.xy_header5 .div1{ float:left; width:258px; height:38px; border-left:1px solid #f0f0f0; border-right:1px solid #f0f0f0; position:relative;}
+	.xy_header5 .div1 img{ position:absolute; left:0; top:-7px;}	
+	.xy_header5 a{ float:left; color:white; height:38px; line-height:38px; font-size:14px; margin-top:1px; }
+	.xy_header5 .a1{ padding:0 20px 0 23px; background:#ee3968;}
+	.xy_header5 .a2{ padding:0 20px;  margin-left:1px;}
+	.xy_header5 .a3{ padding:0 22px; position:relative;}
+	.xy_header5 .a3 img{ position:absolute; right:6px; top:-4px;}
+	.xy_header5 .a4{ padding:0 7px 0 28px; background:url(img/xyweb-24.png) no-repeat 5px center;}
+	.xy_header5 .a5{ padding-left:7px; padding-right:18px; background: #ff658e url(img/xyweb-25.png) no-repeat 62px center;}
+	.xy_header5 a:hover{ background:#ee3968;}
+	.xy_header5 .a4:hover{ background:#ee3968 url(img/xyweb-24.png) no-repeat 5px center;}
+	.xy_header5 .a5:hover{ background:#ee3968 url(img/xyweb-25.png) no-repeat 62px center;}
+	
+	.xy_wraper{ height:486px; background:#fafafa;}
+	.xy_header4{ width:980px; margin:0 auto;}
+	.xy_header4left{ width:264px; float:left; background: url(img/xyweb-14.png) no-repeat right;}
+	.xy_header4left ul{ width:239px; height:486px; padding-left:21px; background: white url(img/xyweb-15.png) no-repeat bottom; }
+	.xy_header4left li{ width:219px; padding:9px 0 11px 0; border-bottom:1px solid #f6f6f6;}
+	.xy_header4left li .p_2 a,.xy_header4left li .p_1 a{ color:#666666;}
+	.xy_header4left li p{ color:#666666;}
+	.xy_header4left .li_1{ border-bottom:none;}
+	.xy_header4left img{ float:left; margin-right:15px;}
+	.xy_header4left div{ float:left;}
+	.xy_header4left .p_1{ margin-bottom:9px; font-size:14px; font-weight:bold;}
+	.xy_header4left span{ margin:0 10px; 0 11px;}
+	
+	.xy_header4right{ width:702px;  float:left; padding-left:14px; background:#fafafa;}
+	.xy_header4right ul{ width:710px; border-bottom:1px solid #f3f3f3;}
+	.xy_header4right .ul_1{ background:url(img/xyweb-2.png) no-repeat 698px 19px; }
+	.xy_header4right li{ float:left; padding:16px 0 14px 0; margin-left:21px;}
+	.xy_header4right li a{ color:#666;}
+	.xy_header4right .li_1 a{ color:#ff6699;}
+	.xy_header4right .li_2{ color:#999; margin:0 2px 0 11px;}
+	.xy_header4right .h2a{ padding:15px 0 14px 0;}
+	.xy_header4right .h2a p{ font-size:17px;}
+	.xy_header4right .img1{ float:left; margin-right:8px;}
+	.xy_header4right p{ float:left;}
+	.xy_header4right div{ float:right;}
+	.xy_header4right div img{ margin-right:13px;}
+	.xy_header4right .img2{ border:1px solid #f0f0f0;}
+	
+	.xy_contentwrap1{ background:#fafafa;  padding-top:11px; border-bottom:1px solid #ccc;}
+	.xy_contentbox1{ width:978px; height:263px; margin:0 auto; border:1px solid #e1e2e3; background:#fff;}
+	.xy_contentbox1 .div1{ width:938px; height:42px;  margin:0 auto;}
+	.xy_contentbox1 .div1 h2{ float:left; font-size:20px; margin-top:10px; line-height:20px;}
+	.xy_contentbox1 .div1 span{ float:left; color:#999; margin:17px 9px 0 32px;}
+	.xy_contentbox1 .div1 a{ float:left; margin-top:11px; margin-right:6px;}
+	.xy_contentbox1 .div1 p{ float: right; margin:15px 10px 0 0;}
+	
+	.xy_contentbox1 .div2{  width:938px; margin:0 auto; border-top:1px solid #e1e2e3; background:#fff; }
+	.xy_contentbox1 .div2 div{ float:left; margin-top:10px; margin-right:20px;}
+	.xy_contentbox1 .div2 img{ border:1px solid #e1e2e3; }
+	.xy_contentbox1 .div2 p{ font-size:16px;}
+	.xy_contentbox1 .div2 .pa{ margin:13px 0 17px 0;}
+	.xy_contentbox1 .div2 .pa span{ color:#666; font-size:14px; margin-left:10px;}
+	.xy_contentbox1 .div2 .pb{ color:#fd8e51; font-size:20px; margin-right:9px;}
+	.xy_contentbox1 .div2 .pb span{ font-size:14px; color:#999;}
+	.xy_contentbox1 .div2 .span1{ text-decoration:line-through; margin-left:4px;}
+	.xy_contentbox1 .div2 .span2{ margin-left:9px;}
+	.xy_contentbox1 .div2 .div4{ margin-right:-20px;}
+	
+	.xy_contentbox2{ width:980px; margin:0 auto;}
+	.xy_contentbox2 .div1{ padding:19px 0 14px 0;}
+	.xy_contentbox2 .div1 a{ float:left; font-weight:bold; float:left;}
+	.xy_contentbox2 .div1 .a1{ color:#fe6699; margin-left:20px; float:left;}
+	.xy_contentbox2 .div1 .a2{ margin-left:29px; float:left;}
+	.xy_contentbox2 .div1 .a3{ margin-left:6px; line-height:12px; float:left;}
+	.xy_contentbox2 .div1 .a4{ margin-left:21px; float:left;}
+	.xy_contentbox2 .div1 .a5{ margin-left:6px; float:left; width:7px; height:12px; position:relative;}
+	.xy_contentbox2 .div1 .a5 .img2{ position:absolute; bottom:0; left:0;}
+	.xy_contentbox2 .div1 .a6{ margin-left:21px; float:left;}
+	.xy_contentbox2 .div1 .a7{ margin-left:6px; float:left;}
+	.xy_contentbox2 .div1 .a8{ margin-left:21px; float:left;}
+	.xy_contentbox2 .div1 .a9{ margin-left:6px; float:left;}
+	.xy_contentbox2 .div1 .a10{ margin-left:30px; float:left;}
+	.xy_contentbox2 .div1 .a11{ margin-left:5px;}
+	.xy_contentbox2 .div1 .a12{ margin-left:10px; float:left;}
+	.xy_contentbox2 .div1 .a13{ margin-left:5px; float:left;}
+	.xy_contentbox2 .div1 .a14{ margin-left:14px; float:left;}
+	.xy_contentbox2 .div1 .a15{ margin-left:5px; float:left; position:relative;}
+	.xy_contentbox2 .div1 .a15 img{ position:absolute; right:-10px; top:-18px;}
+	.xy_contentbox2 .div1 .ab5{ margin-right:30px; float:right;}
+	.xy_contentbox2 .div1 .ab4{ margin-right:5px; float:right; font-weight:normal;}
+	.xy_contentbox2 .div1 .ab3 span{ font-weight:bold; color:#f69;}
+	.xy_contentbox2 .div1 .ab3{ margin-right:16px; float:right; font-weight:normal;}
+	.xy_contentbox2 .div1 .ab2{ margin-right:16px; float:right; font-weight:normal; color:#ccc;}
+	.xy_contentbox2 .div1 .ab1{ margin-right:5px; float:right;}
+	.xy_contentbox2 .div1 img{ margin-top:2px;}
+	.xy_contentbox2 .div1 .img1{ margin-top:0;}
+	
+	.xy_contentwrap2{ background:#f2f2f2;  padding-top:16px; padding-bottom:50px;}
+	.xy_contentwrap2box1{ width:980px; margin:0 auto;} 
+	.xy_contentwrap2box1 .left{ width:752px; float:left;}
+	.xy_contentwrap2box1 .left .divfix{ width:360px; height:400px; float:left; margin-right:16px; margin-bottom:16px;}
+	.xy_contentwrap2box1 .left .div2{ width:360px; height:220px; position:relative;}
+	.xy_contentwrap2box1 .left .img1{ position: absolute; left:10px; top:-4px;}
+	.xy_contentwrap2box1 .left .img2{ position: absolute; left:65px; top:-4px;}
+	.xy_contentwrap2box1 .left .img3{ position: absolute; left:120px; top:-4px;}
+	.xy_contentwrap2box1 .left .div3{ width:337px; height:162px; position:relative; padding:17px 0 0 19px; background:#fff; border:1px solid #d9d9d9; border-top:none; margin-left:1px;}
+	.xy_contentwrap2box1 .left .div3 img{ position:absolute; left:-2px; bottom:-3px;}
+	.xy_contentwrap2box1 .left .p1{ font-size:18px; line-height:18px; margin-bottom:14px; }
+	.xy_contentwrap2box1 .left .p2{ width:296px; font-size:14px; line-height:19px;}
+	.xy_contentwrap2box1 .left .p3{ margin-top:24px; border-bottom:1px solid #ccc; width:320px; padding-bottom:10px;}
+	.xy_contentwrap2box1 .left .p3 .span1{ font-size:26px; color:#fd8e51; line-height:26px; margin-right:16px;}
+	.xy_contentwrap2box1 .left .p3 .span2{ text-decoration:line-through; margin-left:6px;}
+	.xy_contentwrap2box1 .left .p4 span{  float:right; margin-top:9px; margin-right:24px; font-size:14px;}
+	
+	.xy_contentwrap2box1 .right{ float:left; width:227px;}
+	.xy_contentwrap2box1 .right .img1{ margin-bottom:10px;}
+	.xy_contentwrap2box1 .right h2{ font-size:16px; padding-left:10px; margin:6px 0 16px 0;}
+	.xy_contentwrap2box1 .right .div1{ background:#fff; width:227px; height:237px;}
+	.xy_contentwrap2box1 .right .div2{ margin-top:11px;}
+	.xy_contentwrap2box1 .right .h2a{ font-size:16px; padding-left:10px; margin:16px 0 16px 0;}
+	.xy_contentwrap2box1 .right .p1{ width:200px; font-size:14px; margin-left:15px; line-height:22px; }
+	.xy_contentwrap2box1 .right .p2{ margin-left:15px; margin-top:13px;}
+	.xy_contentwrap2box1 .right .p2 .a1{ float:left; color:#ff668f;}
+	.xy_contentwrap2box1 .right .p2 .a2{ float:right;}
+	.xy_contentwrap2box1 .right .p2 .a2 span{ color:#ff668f;}
+	
+	.xy_contentwrap2box2{ width:980px; margin:0 auto;} 
+	.xy_contentwrap2box2 p{ font-size:14px; color:#888;}
+	.xy_contentwrap2box2 p span{ color:#ff6699;}
+	
+	.xy_contentwrap2box3{ width:980px; margin:0 auto; }
+	.xy_contentwrap2box3 div{ margin:18px auto; width:400px;} 
+	.xy_contentwrap2box3 a{ float:left; padding:9px 8px; background:#ffffff; margin-left:10px; border:1px solid #f0f0f0;}
+	.xy_contentwrap2box3 a:hover{ border:1px solid black;}
+	
+	.xy_footer{ background:#fafafa; padding-bottom:14px; }
+	.xy_footerbox1{ width:980px; margin:0 auto;} 
+	.xy_footerbox1 dl{ width:170px; height:194px; border-left:1px solid #ccc; padding-top:1px; float:left; margin-top:45px;}
+	.xy_footerbox1 dt{ font-size:16px; width:143px; border-left:2px solid #fe8baa; height:31px; line-height:31px; padding-left:25px;}
+	.xy_footerbox1 dd{ color:#999; margin-left:26px; }
+	.xy_footerbox1 .dda{ margin:22px 0 16px 26px;}
+	.xy_footerbox1 .dlast{ border-right:1px solid #ccc; }
+	.xy_footerbox1 div{ float:left; margin-top:45px;}
+	.xy_footerbox1 div p{ margin:22px 0 16px 36px;}
+	.xy_footerbox1 div .img1{ margin-left:26px;}
+	.xy_footerbox2{ width:400px; margin:0 auto;} 
+	.xy_footerbox2 img{ margin:64px 0 54px 0;}
+	.xy_footerbox3{ width:900px; margin:0 auto;} 
+	
+	
+	
+</style>
+</head>
+<body>
+<div class="xy_headerwrap">
+    <div class="xy_header1 clearfix">
+        <span class="left1">北京</span>
+        <div class="div1">
+            <p class="p1"><a href="#">[切换城市]</a></p>
+            <div class="div2">
+                <div class="div3">
+                    <p class="p2">你正在北京市团购，是否<a href="#">切换城市?</a></p> 
+                    <img src="img/xyweb-17.png"/>
+                </div>
+            </div>
+        </div>
+        <a class="right4" href="#">注册</a>
+        <a class="right3" href="#">登陆</a>
+        <a class="right2" href="#">我的糯米</a>
+        <a class="right1" href="#">我的订单</a>
+    </div>
+    
+    <div class="xy_header2 clearfix">
+        <h2><a href="#"><img src="img/xyweb-19.png"/></a></h2>
+        <a class="a1" href="#"><img src="img/xyweb-20.png"/></a>
+        <a href="#"><img src="img/xyweb-21.png"/></a>
+    </div>
+    
+    <p class="xy_header3 clearfix">
+        <a href="#">火锅</a>
+        <a href="#">蛋糕</a>
+        <a href="#">杨国福麻辣烫</a>
+        <a href="#">东方宫中国兰州牛肉拉面</a>
+        <a href="#">黄记煌三汁焖锅</a>
+    </p>
+</div>
+
+<div class="xy_headerwrap2">
+	<div class="xy_header5 clearfix">
+    	<div class="div1">全部团购分类
+        	<img src="img/xyweb-22.png"/>
+        </div>
+        <a class="a1" href="#">首页</a>
+        <a class="a2" href="#">精选品牌</a>
+        <a class="a2" href="#">购物</a>
+        <a class="a3" href="#">电影 
+        	<img src="img/xyweb-23.png"/>
+        </a>
+        <a class="a2" href="#">酒店</a>
+        <a class="a2" href="#">今日订单</a>
+        <a class="a2" href="#">外卖</a>
+        <a class="a4" href="#">下载手机</a>
+        <a class="a5" href="#">最近浏览</a> 
+    </div>
+</div> 
+
+<div class="xy_wraper">
+	<div class="xy_header4 clearfix">
+        <div class="xy_header4left">
+            <ul>
+                <li class="clearfix">
+                    <a href="#"><img src="img/xyweb-1.png"/></a>
+                    <div>
+                         <p class="p_1"><a href="#">美食</a></p>
+                         <p class="p_2"><a href="#">精选品牌</a><a href="#"><span>自助餐</span></a><a href="#">甜点饮品</a></p>
+                    </div>
+                </li>
+                
+                <li class="clearfix">
+                     <a href="#"><img src="img/xyweb-7.png"/></a>
+                    <div>
+                         <a href="#"><p class="p_1">电影</p></a>
+                         <a href="#"><p class="p_2">精选品牌<span>自助餐团票</span></p></a>
+                    </div>
+                </li>
+                
+                 <li class="clearfix">
+                     <a href="#"><img src="img/xyweb-8.png"/></a>
+                    <div>
+                         <a href="#"><p class="p_1">休闲娱乐</p></a>
+                         <a href="#"><p class="p_2">KTV<span>景点</span>甜点饮品</p></a>
+                    </div>
+                </li>
+                
+                 <li class="clearfix">
+                     <a href="#"><img src="img/xyweb-9.png"/></a>
+                     <div>
+                         <a href="#"><p class="p_1">网购</p></a>
+                         <a href="#"><p class="p_2">精选品牌<span>自助餐</span>甜点饮品</p></a>
+                     </div>    
+                </li>
+                
+                 <li class="clearfix">
+                     <a href="#"><img src="img/xyweb-10.png"/></a>
+                    <div>
+                         <a href="#"><p class="p_1">生活服务</p></a>
+                         <a href="#"><p class="p_2">丽人<span>体检</span>甜点饮品</p></a>
+                    </div>
+                </li>
+                
+                 <li class="clearfix">
+                     <a href="#"><img src="img/xyweb-11.png"/></a>
+                    <div>
+                        <a href="#"> <p class="p_1">酒店</p></a>
+                         <a href="#"><p class="p_2">北京<span>上海</span>广州</p></a>
+                    </div>
+                </li>
+                
+                 <li class="clearfix">
+                     <a href="#"><img src="img/xyweb-12.png"/></a>
+                    <div>
+                         <a href="#"><p class="p_1">旅游</p></a>
+                         <a href="#"><p class="p_2">精选品牌<span>温泉洗浴</span>采摘</p></a>
+                    </div>
+                </li>
+                
+                 <li class="clearfix li_1">
+                     <a href="#"><img src="img/xyweb-13.png"/></a>
+                    <div>
+                         <a href="#"><p class="p_1">理人</p></a>
+                         <a href="#"><p class="p_2">美发<span>美容spa</span>美甲</p></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="xy_header4right">
+            <ul class="clearfix">
+                <li class="li_2">热门团购：</li>
+                <li><a href="#">电影</a></li>
+                <li class="li_1"><a href="#">自助餐</a></li>
+                <li><a href="#">KTV</a></li>
+                <li class="li_1"><a href="#">火锅</a></li>
+                <li><a href="#">蛋糕</a></li>
+                <li class="li_1"><a href="#">酒店</a></li>
+                <li><a href="#">小吃快餐</a></li>
+                <li><a href="#">西餐</a></li>
+                <li><a href="#">川菜</a></li>
+                <li class="li_1"><a href="#">家居家纺</a></li>
+                <li><a href="#">韩国料理</a></li> 
+            </ul> 
+            <ul class="clearfix  ul_1">
+                <li class="li_2">全部地区：</li>
+                <li><a href="#">地铁附近</a></li>
+                <li ><a href="#">朝阳区</a></li>
+                <li><a href="#">还定期</a></li>
+                <li ><a href="#">朝阳区</a></li>
+                <li><a href="#">朝阳区</a></li>
+                <li ><a href="#">朝阳的区</a></li>
+                <li><a href="#">朝阳区</a></li>
+                <li><a href="#">昌平区的</a></li>
+                <li><a href="#">昌平区</a></li>
+                <li ><a href="#">大兴区</a></li>
+             
+            </ul> 
+            <ul class="clearfix"> 
+                <li class="li_2">商业热门：</li>
+                <li><a href="#">电影</a></li>
+                <li ><a href="#">自助餐</a></li>
+                <li><a href="#">KTV</a></li>
+                <li ><a href="#">火锅</a></li>
+                <li><a href="#">蛋糕</a></li>
+                <li ><a href="#">酒店</a></li>
+                <li><a href="#">小吃快餐</a></li>
+                <li><a href="#">西餐</a></li>
+                <li><a href="#">川菜</a></li>
+                <li ><a href="#">家居家纺</a></li>
+                <li><a href="#">韩国料理</a></li> 
+            </ul> 
+        
+       
+        <h2 class="clearfix h2a">
+        	<img class="img1" src="img/xyweb-3.png"/>
+            <p><a href="#">本周精选</a></p>
+        	<div>
+            	<a href="#"><img src="img/xyweb-4.png"/></a><a href="#"><img src="img/xyweb-5.png"/></a><a href="#"><img src="img/xyweb-5.png"/></a><a href="#"><img src="img/xyweb-5.png"/></a>
+            </div>
+        </h2>
+        <a href="#"><img class="img2" src="img/xyweb-6.png"/></a>
+        
+    </div>
+</div>
+</div>
+
+<div class="xy_contentwrap1">
+	<div class="xy_contentbox1">
+    	<div class="div1 clearfix">
+        	<h2>精选品牌</h2>
+            <span>剧开始</span>
+            <a href="#"><img src="img/xyweb-26.png"/></a>
+            <a href="#"><img src="img/xyweb-27.png"/></a>
+            <a href="#"><img src="img/xyweb-28.png"/></a>
+            <p>更多&gt;</p>
+        </div>
+        <div class="div2 clearfix">
+            <div>
+                <img src="img/xyweb-29.png"/>
+                <p class="pa">百叶居<span>百叶居75元</span></p>
+                <p class="pb">￥55<span class="span2">价值</span><span class="span1">100</span></p>
+            </div>  
+             <div>
+                <img src="img/xyweb-29.png"/>
+                <p class="pa">百叶居<span>百叶居75元</span></p>
+                <p class="pb">￥55<span class="span2">价值</span><span class="span1">100</span></p>
+            </div> 
+            <div>
+                <img src="img/xyweb-29.png"/>
+                <p class="pa">百叶居<span>百叶居75元</span></p>
+                <p class="pb">￥55<span class="span2">价值</span><span class="span1">100</span></p>
+            </div> 
+            <div class="div4">
+                <img src="img/xyweb-29.png"/>
+                <p class="pa">百叶居<span>百叶居75元</span></p>
+                <p class="pb">￥55<span class="span2">价值</span><span class="span1">100</span></p>
+            </div>   
+        </div>
+    </div>
+    
+    <div class="xy_contentbox2">
+    	<div class="div1 clearfix">
+        	<a class="a1" href="#">默认</a>
+            <a class="a2"  href="#">销量</a>
+            <a class="a3"  href="#"><img src="img/xyweb-30.png"/></a>
+            <a class="a4"  href="#">价格</a>
+            <a class="a5"  href="#"><img src="img/xyweb-32.png"/><img class="img2" src="img/xyweb-33.png"/></a>
+            <a class="a6"  href="#">折扣</a>
+            <a class="a7"  href="#"><img src="img/xyweb-31.png"/></a>
+            <a class="a8"  href="#">最新发布</a>
+            <a class="a9"  href="#"><img src="img/xyweb-31.png"/></a>
+            <a class="a10"  href="#"><img class="img1" src="img/xyweb-34.png"/></a>
+            <a class="a11"  href="#">免预约</a>
+            <a class="a12"  href="#"><img class="img1"  src="img/xyweb-34.png"/></a>
+            <a class="a13"  href="#">代金卷</a>
+            <a class="a14"  href="#"><img class="img1"  src="img/xyweb-34.png"/></a>
+            <a class="a15"  href="#">全网低价
+            	<img src="img/xyweb-35.png"/>
+            </a>
+            <a class="ab5" href="#"><img src="img/xyweb-37.png"/></a> 
+            <a class="ab4" href="#">下一页</a>
+            <a class="ab3" href="#"><span>1</span>/494</a>
+            <a class="ab2" href="#">上一页</a> 
+            <a class="ab1" href="#"><img src="img/xyweb-36.png"/></a>
+        </div>
+    </div>
+</div>
+
+<div class="xy_contentwrap2">
+	<div class="xy_contentwrap2box1 clearfix">
+    	<div class="left clearfix">
+        	<div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+            <div class="divfix">
+            	<div class="div2">
+                	<img src="img/xyweb-38.png"/>
+                    <img class="img1" src="img/xyweb-39.png"/>
+                    <img class="img2"  src="img/xyweb-40.png"/>
+                    <img class="img3"  src="img/xyweb-41.png"/>
+                </div>
+                <div class="div3">
+                	<p class="p1">【方庄】八月海岸</p>
+                    <p class="p2">摄影艺术照！独特个性，时尚美丽，回归自我本色，享受真正的浪漫与激情！</p>
+                    <p class="p3"><span class="span1">￥299</span>价值<span class="span2">￥2999</span></p>
+                    <p class="p4 clearfix">
+                    	<span>122 人已团购</span>
+                    </p>
+                    <img src="img/xyweb-42.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        	<img class="img1" src="img/xyweb-43.png"/>
+            <img class="img1" src="img/xyweb-44.png"/>
+        	<img class="img1" src="img/xyweb-44.png"/>
+            <img class="img1" src="img/xyweb-44.png"/>
+            <h2>热门专题</h2>
+            <img src="img/xyweb-45.png"/>
+            <img src="img/xyweb-45.png"/>
+            <img src="img/xyweb-45.png"/>
+            <img src="img/xyweb-45.png"/>
+            <img src="img/xyweb-45.png"/>
+            <h2 class="h2a">热门排行</h2>
+            <div class="div1">
+            	<img src="img/xyweb-46.png"/>
+                <p class="p1">【CASTA COFFEE】 手调类饮品1杯！英伦第一品牌，7城联动</p>
+                <p class="p2 clearfix">
+                	<a class="a1" href="#">￥25</a>
+                    <a class="a2" href="#">每天<span>10123</span>人团购</a>
+                </p>
+            </div>
+            <div class="div1 div2">
+            	<img src="img/xyweb-46.png"/>
+                <p class="p1">【CASTA COFFEE】 手调类饮品1杯！英伦第一品牌，7城联动</p>
+                <p class="p2 clearfix">
+                	<a class="a1" href="#">￥25</a>
+                    <a class="a2" href="#">每天<span>10123</span>人团购</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="xy_contentwrap2box2">    
+        <p >共<span>44439</span>页/每页 90 条</p>
+    </div> 
+    
+    <div class="xy_contentwrap2box3">    
+        <div class="clearfix">
+        	<a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#">
+            	<img src="img/xyweb-47.png"/>
+            </a>
+        </div>
+    </div>    
+</div>
+
+<div class="xy_footer">
+	<div class="xy_footerbox1 clearfix">
+    	<dl>
+        	<dt>用户帮助</dt>
+            <dd class="dda">常见团购问题</dd>
+            <dd>开放API</dd>
+        </dl>
+        <dl>
+        	<dt>用户帮助</dt>
+            <dd class="dda">常见团购问题</dd>
+            <dd>开放API</dd>
+        </dl>
+        <dl>
+        	<dt>用户帮助</dt>
+            <dd class="dda">常见团购问题</dd>
+            <dd>开放API</dd>
+        </dl>
+        <dl class="dlast">
+        	<dt>用户帮助</dt>
+            <dd class="dda">常见团购问题</dd>
+            <dd>开放API</dd>
+        </dl>
+        
+        <div>
+        	<img src="img/xyweb-49.png"/>
+            <p>客服电话 免长途费 &gt;&gt; 周一至周日 9:00-22:00</p>
+            <img class="img1" src="img/xyweb-50.png"/>
+        </div>
+        
+    </div>
+    
+    
+    <div class="xy_footerbox2">
+    	<img src="img/xyweb-48.png"/>
+    </div>
+    <div class="xy_footerbox3">
+    	<p>@ 2014 nuoni.com 京ICP证060807号京公网安备 京公网安备1232433546454京 公东方网安备21435467789999京公网安备京公网安备京公网安备京公网安备</p>
+    </div>
+    
+    
+</div>
+
+
+
+</body>
+</html>
