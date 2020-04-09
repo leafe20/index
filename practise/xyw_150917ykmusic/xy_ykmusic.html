@@ -1,0 +1,1343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<style>
+	.header{ width:970px; margin:0 auto;}
+	.headerbox1{ margin:10px 0 30px 0;}
+	.headerbox1 a{ float:left; height:40px;}
+	.headerbox1 a:hover{ color:#ef3f22;}
+	.headerbox1 .a1{ line-height:40px;}
+	.headerbox1 .a2{ line-height:40px; background:url(img/xy_2.png); padding-left:41px; margin-right:71px;}
+	.headerbox1 input{ float:left; height:36px; width:228px; border:2px solid #a0a0a0; border-right:none;}
+	.headerbox1 .a3{ width:90px; height:40px; background:url(img/xy_3.png); font-size:16px; color:#fff; line-height:40px; text-indent:38px;}
+	.headerbox1 .a4{ margin:14px 20px 0 30px;}
+	.headerbox1 .a4 i{ float:left; width:16px; height:16px; background:url(img/xy_4.png);}
+	.headerbox1 .a4 span{ float:left;}
+	.headerbox1 .a4 b{ float:right; width:16px; height:16px; background:url(img/xy_5.png);}
+	.headerbox1 .a5{ line-height:40px; margin-right:20px;}
+	.headerbox1 .a6{ line-height:40px; background:url(img/xy_6.png) no-repeat 0 center; padding-left:23px; margin-left:6px;}
+	.headerbox1 .a7{ line-height:40px; background:url(img/xy_7.png) no-repeat 0 center; padding-left:14px;}
+	
+	.headerbox2{ width:970px; height:25px; border-bottom:3px solid #e6e6e6;}
+	.headerbox2 a{ float:left; margin-right:20px;}
+	.headerbox2 a:hover{ color:#06a7e1; height:25px; border-bottom:3px solid #06a7e1;}
+	.headerbox2 .a1{ font-size:16px; }
+	.headerbox2 .aa{  color:#06a7e1; height:25px; border-bottom:3px solid #06a7e1;}
+	.headerbox2 .a2{}
+	.headerbox2 .a2 i{ float:left; background:url(img/xy_8.png); width:4px; height:3px; margin:7px 4px 0;}
+	.headerbox2 .a2 span{ float:left; margin-top:3px;}
+	.headerbox2 .a2 b{ float:left; width:12px; height:12px; background:url(img/xy_9.png); margin-top:3px;}
+	
+	.headerbox3 a{ float:left; height:35px; padding-top:12px; margin-right:20px;}
+	.headerbox3 a:hover{ color:#06a7e1;}
+	.headerbox3 .a1{ color:#06a7e1;}
+	
+	.content{ width:970px; margin:0 auto;}
+	.contentbox1{ width:970px; height:410px; position:relative; margin-bottom:20px;}
+	.contentbox1 .img1{ position:absolute; left:0; bottom:50%; margin-bottom:-18px;}
+	.contentbox1 .img2{ position:absolute; right:0; bottom:50%; margin-bottom:-18px;}
+	.contentbox1 .div1{ width:180px; position:absolute; left:50%; margin-left:-90px; bottom:10px;}
+	.contentbox1 .div1 img{ float:left; margin-right:10px;}
+	
+	.contentbox2{ margin-bottom:41px;}
+	.contentbox2 .div1{ width:200px; height:160px; position:relative; float:left; margin-right:20px;}
+	.contentbox2 .div1 img{ cursor:pointer;}
+	.contentbox2 .div1 .img1{ position:absolute; top:8px; left:3px;}
+	.contentbox2 .div1 P{ position:absolute; top:13px; left:66px;}
+	.contentbox2 .div1 P a:hover{ color:#ef3f22;}
+	.contentbox2 .div2{ float:right;}
+	.contentbox2 .div2 h3{ width:530px; height:22px; background:#f5f5f5; margin-bottom:21px;}
+	.contentbox2 .div2 h3 p{ width:59px; height:22px; background:#909090; text-align:center; line-height:22px;}
+	.contentbox2 .div2 a{ margin-right:31px;}
+	.contentbox2 .div2 a:hover{ color:#ef3f22;}
+	.contentbox2 .div2 .diva{ margin-bottom:21px;}
+	.contentbox2 .div2 .divb{ margin-bottom:12px;}
+	
+	.contentbox3{ margin-bottom:20px;}
+	.contentbox3 .div1{ float:left; width:660px;}
+	.contentbox3 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}
+	.contentbox3 .div1 a{ float:right; line-height:30px; margin-right:20px;}
+	.contentbox3 .div1 a:hover{ color:red;}
+	.contentbox3 .div2{ float:left; width:62px; height:30px; text-align:center; line-height:30px; background:#06a7e1; color:#fff;}
+	
+	.contentbox4{ margin-bottom:28px;}
+	.contentbox4 .left{ float:left; width:660px;}
+	.contentbox4 .left .div1{ float:left; width:200px; height:110px; position:relative; cursor:pointer; margin-right:20px; margin-bottom:20px; }
+	.contentbox4 .left .div2{ float:left; cursor:pointer; }
+	.contentbox4 .left .div1 p{ position:absolute; color:#f1f1f1; left:5px; bottom:23px;}
+	.contentbox4 .left .div1 div{ position:absolute; left:5px; bottom:4px;}
+	.contentbox4 .left .div1 i{ float:left; width:12px; height:12px; background:url(img/xy_18.png);}
+	.contentbox4 .left .div1 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox4 .left .div1 b{ float:left; width:12px; height:12px; background:url(img/xy_19.png);}
+	
+	.contentbox4 .right{ float:right;}
+	.contentbox4 .right .div1{ width:310px; margin-bottom:20px;}
+	.contentbox4 .right .div1 div{ float:left; width:90px; height:50px; position:relative; cursor:pointer}
+	.contentbox4 .right .div1 div p{ width:20px; height:20px; color:#fff; background:#ef3f22; text-align:center; line-height:20px; position:absolute; left:0; top:0;}
+	.contentbox4 .right .div1 h3{ float:right; width:210px;}
+	.contentbox4 .right .div1 .p1{ float:left; cursor:pointer;}
+	.contentbox4 .right .div1 .p2{ float:right; color:#909090; cursor:pointer;}
+	.contentbox4 .right .div1 .p2:hover{ color:red;}
+	.contentbox4 .right .plast{ margin-top:34px;}
+	.contentbox4 .right p:hover{ color:red;}
+	
+	.contentbox5{ margin-bottom:20px;}
+	.contentbox5 .div1{ float:left; width:660px;}
+	.contentbox5 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090; margin-right:20px;}
+	.contentbox5 .div1 div{ float:left;}
+	.contentbox5 .div1 div .a1{ float:left; width:48px; height:30px;text-align:center; line-height:30px;}
+	.contentbox5 .div1 div .a1:hover{ background:#06a7e1; color:#fff;}
+	.contentbox5 .div1 div .aa{  background:#06a7e1; }
+	.contentbox5 .div1 .a2{ float:right; line-height:30px; margin-right:20px;}
+	.contentbox5 .div1 .a2:hover{ color:red;}
+	.contentbox5 .div2{ float:left;  height:30px; font-size:26px; color:#909090; }
+	
+	.contentbox6{ margin-bottom:40px;}
+	.contentbox6 .left{ float:left; width:660px;}
+	.contentbox6 .left .divbig{ float:left; margin-right:20px;}
+	.contentbox6 .left .divbot{ margin-bottom:20px;}
+	.contentbox6 .left .div1{ width:200px; height:160px; position:relative; cursor:pointer;}
+	.contentbox6 .left .div1 .img1{ position:absolute; left:3px; top:8px;}
+	.contentbox6 .left .div1 p{ position:absolute; color:#f1f1f1; left:65px; top:22px;}
+	.contentbox6 .left .div2{ width:194px; height:48px; background:#f5f5f5; padding:12px 0 0 6px; cursor:pointer;}
+	.contentbox6 .left .div2 p{ margin-bottom:10px;}
+	.contentbox6 .left .div2 i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox6 .left .div2 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox6 .left .div2 b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	.contentbox6 .right{ float:right;}
+	.contentbox6 .right .div1{ width:310px; margin-bottom:20px;}
+	.contentbox6 .right .div1 div{ float:left; width:90px; height:50px; position:relative; cursor:pointer}
+	.contentbox6 .right .div1 div p{ width:20px; height:20px; color:#fff; background:#ef3f22; text-align:center; line-height:20px; position:absolute; left:0; top:0;}
+	.contentbox6 .right .div1 h3{ float:right; width:210px;}
+	.contentbox6 .right .div1 .p1{ float:left; cursor:pointer;}
+	.contentbox6 .right .div1 .p2{ float:right; color:#909090; cursor:pointer;}
+	.contentbox6 .right .div1 .p2:hover{ color:red;}
+	.contentbox6 .right .plast{ margin-top:20px; width:310px;}
+	.contentbox6 .right p:hover{ color:red;}
+	
+	.contentbox7{ margin-bottom:43px;}
+	.contentbox7 .div1{ margin-right:-20px;}
+	.contentbox7 .div1 img{ float:left; margin-right:20px; cursor:pointer;}
+	
+	.contentbox8{ margin-bottom:20px;}
+	.contentbox8 .div1{ float:left; width:660px;}
+	.contentbox8 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}
+	.contentbox8 .div1 a{ float:right; line-height:30px; margin-right:20px;}
+	.contentbox8 .div1 a:hover{ color:red;}
+	.contentbox8 .div2{ float:left;  height:30px; font-size:26px; color:#909090;}
+
+	.contentbox9{ margin-bottom:43px;}
+	.contentbox9 .left{ float:left; width:660px;}
+	.contentbox9 .left .div1{ float:left; margin-right:20px;}
+	.contentbox9 .left .div1 .diva{ width:200px; height:110px; position:relative; cursor:pointer;}
+	.contentbox9 .left .div1 .diva .img1{ position:absolute; left:3px; bottom:-19px;}
+	.contentbox9 .left .div1 .divb{ width:200px; height:90px; background:#f5f5f5;}
+	.contentbox9 .left .div1 .divb .p1{ margin:4px 0 8px 42px; color:#909090; cursor:pointer;}
+	.contentbox9 .left .div1 .divb .p2{ margin-bottom:10px; margin-left:5px; cursor:pointer;}
+	.contentbox9 .left .div1 .divb div{ margin-left:5px;}
+	.contentbox9 .left .div1 .divb div span{ margin:0 10px 0 5px; cursor:pointer;}
+	.contentbox9 .left .div1 .divb i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox9 .left .div1 .divb span{ float:left;}
+	.contentbox9 .left .div1 .divb b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	.contentbox9 .right{ float:right; width:310px;}
+	.contentbox9 .right ul .a1{ float:left; width:20px; height:20px; background:#ef3f22; text-align:center; line-height:20px; color:#fff;}
+	.contentbox9 .right ul .aa{ background:#03a7e1;}
+	.contentbox9 .right ul li{ margin-bottom:10px;}
+	.contentbox9 .right ul .a2{ float:left; margin-left:11px; line-height:20px;}
+	.contentbox9 .right ul .a3{ float:right; line-height:20px;}
+	.contentbox9 .right ul a:hover{ color:red;}
+	.contentbox9 .right p{ margin-top:14px; cursor:red;}
+	.contentbox9 .right p:hover{ color:red;}
+	
+	.contentbox10{ margin-bottom:20px;}
+	.contentbox10 .div1{ float:left; width:660px;}
+	.contentbox10 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}
+	.contentbox10 .div2{ float:left;  height:30px; font-size:26px; color:#909090;}
+	
+	.contentbox11{ margin-bottom:43px;}
+	.contentbox11 .left{ float:left; width:660px;}
+	.contentbox11 .left .div1{ float:left; margin-right:20px;}
+	.contentbox11 .left .div1 .diva{ width:200px; height:110px; position:relative; cursor:pointer;}
+	.contentbox11 .left .div1 .diva .img1{ position:absolute; left:3px; bottom:-19px;}
+	.contentbox11 .left .div1 .divb{ width:200px; height:90px; background:#f5f5f5;}
+	.contentbox11 .left .div1 .divb .p1{ margin:4px 0 8px 42px; color:#909090; cursor:pointer;}
+	.contentbox11 .left .div1 .divb .p2{ margin-bottom:10px; margin-left:5px; cursor:pointer;}
+	.contentbox11 .left .div1 .divb div{ margin-left:5px;}
+	.contentbox11 .left .div1 .divb div span{ margin:0 10px 0 5px; cursor:pointer;}
+	.contentbox11 .left .div1 .divb i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox11 .left .div1 .divb span{ float:left;}
+	.contentbox11 .left .div1 .divb b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	.contentbox11 .right{ float:right; width:310px;}
+	.contentbox11 .right ul .a1{ float:left; width:20px; height:20px; background:#ef3f22; text-align:center; line-height:20px; color:#fff;}
+	.contentbox11 .right ul .aa{ background:#03a7e1;}
+	.contentbox11 .right ul li{ margin-bottom:10px;}
+	.contentbox11 .right ul .a2{ float:left; margin-left:11px; line-height:20px;}
+	.contentbox11 .right ul .a3{ float:right; line-height:20px;}
+	.contentbox11 .right ul a:hover{ color:red;}
+	.contentbox11 .right p{ margin-top:14px; cursor:red;}
+	.contentbox11 .right p:hover{ color:red;}
+	
+	.contentbox12{ margin-bottom:20px;}
+	.contentbox12 .div1{ float:left; width:660px;}
+	.contentbox12 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}
+	.contentbox12 .div2{ float:left;  height:30px; font-size:26px; color:#909090;}
+
+	.contentbox13{ margin-bottom:28px;}
+	.contentbox13 .left{ float:left; width:660px;}
+	.contentbox13 .left .div1{ float:left; width:200px; height:170px; cursor:pointer; margin-right:20px; margin-bottom:20px; background:#f5f5f5; }
+	.contentbox13 .left .div2{ float:left; cursor:pointer; }
+	.contentbox13 .left .div1 p{ margin:12px 0 0 5px;}
+	.contentbox13 .left .div1 div{  margin:10px 0 0 5px;}
+	.contentbox13 .left .div1 i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox13 .left .div1 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox13 .left .div1 b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	
+	.contentbox13 .right{ float:right;}
+	.contentbox13 .right .div1{ width:310px; margin-bottom:10px;}
+	.contentbox13 .right .divmar{ margin-bottom:20px;}
+	.contentbox13 .right .div1 .diva{ float:left; width:90px; height:50px; position:relative; cursor:pointer}
+	.contentbox13 .right .div1 .diva p{ width:38px; height:12px; color:#fff; background:#191919; text-align:center; line-height:12px; position:absolute; right:0; bottom:0;}
+	.contentbox13 .right .div1 h3{ float:right; width:210px;}
+	
+	.contentbox13 .right .div1 h3 p{ margin:5px 0 6px 0; cursor:pointer;}
+	.contentbox13 .right .div1 h3 div{}
+	.contentbox13 .right .div1 h3 i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox13 .right .div1 h3 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox13 .right .div1 h3 b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	
+	.contentbox13 .right .div1 .p1{ float:left; cursor:pointer;}
+	.contentbox13 .right .div1 .p2{ float:right; color:#909090; cursor:pointer;}
+	.contentbox13 .right .div1 .p2:hover{ color:red;}
+	.contentbox13 .right .plast{ margin-top:34px;}
+	.contentbox13 .right p:hover{ color:red;}
+	
+	.contentbox14{ margin-bottom:20px;}
+	.contentbox14 .div1{ float:left; width:660px;}
+	.contentbox14 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}	
+	
+	.contentbox15{ margin-bottom:28px;}
+	.contentbox15 .left{ float:left; width:660px;}
+	.contentbox15 .left .div1{ float:left; width:200px; height:170px; cursor:pointer; margin-right:20px; margin-bottom:20px; background:#f5f5f5; }
+	.contentbox15 .left .div1 p{ margin:12px 0 0 5px;}
+	.contentbox15 .left .div1 div{  margin:10px 0 0 5px;}
+	.contentbox15 .left .div1 i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox15 .left .div1 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox15 .left .div1 b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	
+	.contentbox15 .right{ float:right;}
+	.contentbox15 .right .div1{ width:310px; margin-bottom:10px;}
+	.contentbox15 .right .divmar{ margin-bottom:20px;}
+	.contentbox15 .right .div1 .diva{ float:left; width:90px; height:50px; position:relative; cursor:pointer}
+	.contentbox15 .right .div1 .diva p{ width:38px; height:12px; color:#fff; background:#191919; text-align:center; line-height:12px; position:absolute; right:0; bottom:0;}
+	.contentbox15 .right .div1 h3{ float:right; width:210px;}
+	
+	.contentbox15 .right .div1 h3 p{ margin:5px 0 6px 0; cursor:pointer;}
+	.contentbox15 .right .div1 h3 div{}
+	.contentbox15 .right .div1 h3 i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox15 .right .div1 h3 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox15 .right .div1 h3 b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	
+	.contentbox15 .right .div1 .p1{ float:left; cursor:pointer;}
+	.contentbox15 .right .div1 .p2{ float:right; color:#909090; cursor:pointer;}
+	.contentbox15 .right .div1 .p2:hover{ color:red;}
+	.contentbox15 .right .plast{ margin-top:34px;}
+	.contentbox15 .right p:hover{ color:red;}
+	
+	.contentbox16{ margin-bottom:20px;}
+	.contentbox16 .div1{ float:left; width:660px;}
+	.contentbox16 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}
+	
+	.contentbox17{ margin-bottom:28px;}
+	.contentbox17 .left{ float:left; width:660px;}
+	.contentbox17 .left .div1{ float:left; width:200px; height:170px; cursor:pointer; margin-right:20px; margin-bottom:20px; background:#f5f5f5; }
+	.contentbox17 .left .div1 p{ margin:12px 0 0 5px;}
+	.contentbox17 .left .div1 div{  margin:10px 0 0 5px;}
+	.contentbox17 .left .div1 i{ float:left; width:12px; height:12px; background:url(img/xy_22.png);}
+	.contentbox17 .left .div1 span{ float:left; color:#909090; margin:0 10px 0 5px;}
+	.contentbox17 .left .div1 b{ float:left; width:12px; height:12px; background:url(img/xy_23.png);}
+	.contentbox17 .right{ float:right;}
+	.contentbox17 .right img{ width:309px; cursor:pointer;}
+	
+	.contentbox18{ margin-bottom:20px;}
+	.contentbox18 .div1{ float:left; width:660px;}
+	.contentbox18 .div1 h2{ float:left; height:30px; font-size:26px; color:#909090;}
+	
+	.contentbox19{ padding-bottom:60px; margin-right:-20px;}
+	.contentbox19 .div1{ width:200px; height:200px; position:relative; cursor:pointer; float:left; margin-right:20px;}
+	.contentbox19 .div2{ width:90px; overflow:hidden;}
+	.contentbox19 .div1 i{ position:absolute; left:0; bottom:0; background:#000; opacity:0.5; filter:alpha(opacity:50); width:100%; height:34px;}
+	.contentbox19 .div1 p{ position:absolute; left:0; bottom:0; width:100%; height:34px; line-height:34px; color:#fff; margin-left:10px;}
+	
+	.footer{ width:970px; margin:0 auto;  border-top:2px solid #dddddd;}
+	.footerbox1{ margin-bottom:30px;}
+	.footerbox1 a:hover{ color:red;}
+	.footerbox1 dl{float:left;}
+	.footerbox1 .da{ margin-right:30px;}
+	.footerbox1 div{ float:left;}
+	.footerbox1 dt{ margin:24px 0 16px 0;}
+	.footerbox1 .dc{ color:#909090;}
+	.footerbox1 .diva .dc{ color:#000;}
+	.footerbox1 dd{ margin-bottom:16px;}
+	.footerbox1 .dm{ color:#909090;}
+	.footerbox1 dd a{ float:left; margin-right:10px;}
+	
+	.footerbox2 ul{ float:left; margin-right:46px;}
+	.footerbox2 ul li{ margin-bottom:12px;}
+	.footerbox2 ul li a:hover{ color:red;}
+	.footerbox2 ul li span{ color:#909090;}
+	.footerbox2 ul .li1{ height:16px; line-height:16px; background:url(img/xy_39.png) no-repeat 0 center; padding-left:18px;  margin-bottom:8px;}
+	.footerbox2 ul .li2{ margin-bottom:8px; height:16px; line-height:16px; background:url(img/xy_40.png) no-repeat 0 center; padding-left:18px;}
+	.footerbox2 ul .li3{ margin-bottom:8px; height:16px; line-height:16px; background:url(img/xy_41.png) no-repeat 0 center; padding-left:18px;}
+	.footerbox2 ul .li4{ margin-bottom:8px; height:16px; line-height:16px; background:url(img/xy_42.png) no-repeat 0 center; padding-left:18px;}
+	.footerbox2 .div1{ float:left;}
+	.footerbox2 .div1:hover a{ color:red;}
+	.footerbox2 .div1 img{ float:left;}
+	.footerbox2 .div1 div{ float:left; padding:20px 0 0 20px; font-size:16px;}
+	.footerbox2 .div1 div p{ margin-bottom:13px;}
+	
+	.footerbox3{  margin-top:24px; padding-bottom:25px;}
+	.footerbox3 p{ width:770px; margin:0 auto;}
+	.footerbox3 p span{ font-weight:bold;}
+	
+	.sidebar .img1{ position:absolute; top:0; right:0;}
+	.sidebar .img2{ position:fixed; top:428px; right:35px;}
+</style>
+</head>
+
+<body>
+<div class="sidebar">
+	<img class="img1" src="img/xy_43.png"/>
+    <img class="img2" src="img/xy_44.png">
+</div>
+<div class="header">
+	<div class="headerbox1 clearfix">
+    	<a href="#"><img src="img/xy_1.png"/></a>
+        <a class="a1" href="#">首页</a>
+        <a class="a2" href="#">频道</a>
+        <input type="text" value="&nbsp; " />
+        <a class="a3" href="#">搜索</a>
+        <a class="clearfix a4" href="#">
+            <i></i>
+            <span>上传</span>
+            <b></b>
+        </a>
+        <a class="a5" href="#">会员</a>
+        <a class="a5" href="#">APP下载</a>
+        <a class="a6" href="#">登陆</a>
+        <a class="a7" href="#">注册</a>
+    </div>
+    <div class="headerbox2 clearfix">
+    	<a class="a1" href="#">首页</a>
+        <a class="a1" href="#">电视剧</a>
+        <a class="a1" href="#">电影</a>
+        <a class="a1" href="#">综艺</a>
+        <a class="a1 aa" href="#">音乐</a>
+        <a class="a1" href="#">动漫</a>
+        <a class="a1" href="#">全部</a>
+        <a href="#" class="clearfix a2">
+            <span>资讯</span>
+            <i></i>
+            <span>科技</span>
+            <b></b>
+        </a>
+        <a href="#" class="clearfix a2">
+            <span>娱乐</span>
+            <i></i>
+            <span>搞笑</span>
+            <b></b>
+        </a>
+        <a href="#" class="clearfix a2">
+            <span>旅游</span>
+            <i></i>
+            <span>亲子</span>
+            <b></b>
+        </a>
+        <a href="#" class="clearfix a2"><span>排行</span></a>
+    </div>
+    <div class="headerbox3 clearfix">
+    	<a class="a1" href="#">音乐频道</a>
+        <a href="#">新歌频道</a>
+        <a href="#">华语</a>
+        <a href="#">日韩</a>
+        <a href="#">欧美</a>
+        <a href="#">热播</a>
+        <a href="#">明星</a>
+        <a href="#">音乐牛人</a>
+        <a href="#">来风直播</a>
+        <a href="#">音乐排行榜</a>
+        <a href="#">全部音乐</a>
+    </div>
+</div>
+<div class="content">
+	<div class="contentbox1">
+    	<a href="#"><img src="img/xy_10.png"/></a>
+        <a href="#"><img class="img1" src="img/xy_11.png"/></a>
+        <a href="#"><img class="img2" src="img/xy_12.png"/></a>
+        <div class="div1 clearfix">
+        	<a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_14.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+            <a href="#"><img src="img/xy_13.png"/></a>
+        </div>
+    </div>
+    <div class="contentbox2 clearfix">
+    	<div class="div1">
+        	<img src="img/xy_15.png"/>
+            <img class="img1" src="img/xy_16.png"/>
+            <p><a href="#">Beyonce_碧昂斯</a></p>
+        </div>
+        <div class="div1">
+        	<img src="img/xy_15.png"/>
+            <img class="img1" src="img/xy_16.png"/>
+            <p><a href="#">Beyonce_碧昂斯</a></p>
+        </div>
+        <div class="div2">
+        	<h3>
+            	<p>按地区</p>
+            </h3>
+            <div class="clearfix diva">
+            	<a href="#">大陆</a>
+                <a href="#">台湾</a>
+                <a href="#">日韩</a>
+                <a href="#">欧美</a>
+                <a href="#">其它</a>
+            </div>
+            <h3>
+            	<p>按类型</p>
+            </h3>
+            <div class="clearfix divb">
+            	<a href="#">大陆</a>
+                <a href="#">台湾</a>
+                <a href="#">日韩</a>
+                <a href="#">欧美</a>
+                <a href="#">R&B</a>
+                <a href="#">HIP-HOP</a>
+                <a href="#">乡村</a>
+                <a href="#">名族</a>
+            </div>
+            <div class="clearfix">
+            	<a href="#">大陆</a>
+                <a href="#">台湾</a>
+                <a href="#">日韩</a>
+                <a href="#">新世纪</a>
+                <a href="#">其它</a>
+                <a href="#">音乐剧</a>
+                <a href="#">轻音乐</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="contentbox3 clearfix">
+    	<div class="div1">
+        	<h2>新歌首播</h2>
+            <a href="#">更多</a>
+        </div>
+        <div class="div2">新歌榜</div>
+    </div>
+    <div class="contentbox4 clearfix">
+    	<div class="left">
+        	<div class="div1">
+            	<img src="img/xy_17.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_17.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_17.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_17.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_17.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_17.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div2">
+            	<img src="img/xy_20.png"/>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>1</p>
+                </div>
+                <h3>
+                	<p class="p1">在舞台中间</p>
+                    <p class="p2">歌手：平安</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>2</p>
+                </div>
+                <h3>
+                	<p class="p1">맨정신</p>
+                    <p class="p2">歌手：Remember</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>3</p>
+                </div>
+                <h3>
+                	<p class="p1">party</p>
+                    <p class="p2">歌手：[牛人]青春修炼手册</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>4</p>
+                </div>
+                <h3>
+                	<p class="p1">맨정신</p>
+                    <p class="p2">歌手：平安</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>5</p>
+                </div>
+                <h3>
+                	<p class="p1">从前的我</p>
+                    <p class="p2">歌手：平安</p>
+                </h3>
+            </div>
+            <p class="plast">更多榜单 &gt;&gt;</p>
+        </div>
+    </div>
+    <div class="contentbox5 clearfix">
+    	<div class="div1 clearfix">
+        	<h2>热播排行</h2>
+            <div class="clearfix">
+            	<a class="a1 aa" href="#">全部</a>
+                <a class="a1" href="#">华语</a>
+                <a class="a1" href="#">欧美</a>
+                <a class="a1" href="#">日韩</a>
+            </div>
+            <a class="a2" href="#">更多</a>
+        </div>
+        <div class="div2">头号明星</div>
+    </div>
+    <div class="contentbox6 clearfix">
+    	<div class="left">
+            <div class="divbig divbot">
+                <div class="div1">
+                    <img src="img/xy_15.png"/>
+                    <img class="img1" src="img/xy_16.png"/>
+                    <p><a href="#">Beyonce_碧昂斯</a></p>
+                </div>
+                <div class="div2 clearfix">
+                    <p>[牛人]小苹果</p>
+                    <div>
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                    </div>
+                </div>
+           </div>     
+ 			<div class="divbig divbot">
+                <div class="div1">
+                    <img src="img/xy_15.png"/>
+                    <img class="img1" src="img/xy_16.png"/>
+                    <p><a href="#">Beyonce_碧昂斯</a></p>
+                </div>
+                <div class="div2 clearfix">
+                    <p>[牛人]小苹果</p>
+                    <div>
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                    </div>
+                </div>
+           </div>
+            <div class="divbig divbot">
+                <div class="div1">
+                    <img src="img/xy_15.png"/>
+                    <img class="img1" src="img/xy_16.png"/>
+                    <p><a href="#">Beyonce_碧昂斯</a></p>
+                </div>
+                <div class="div2 clearfix">
+                    <p>[牛人]小苹果</p>
+                    <div>
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                    </div>
+                </div>
+           </div>
+            <div class="divbig">
+                <div class="div1">
+                    <img src="img/xy_15.png"/>
+                    <img class="img1" src="img/xy_16.png"/>
+                    <p><a href="#">Beyonce_碧昂斯</a></p>
+                </div>
+                <div class="div2 clearfix">
+                    <p>[牛人]小苹果</p>
+                    <div>
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                    </div>
+                </div>
+           </div>
+            <div class="divbig">
+                <div class="div1">
+                    <img src="img/xy_15.png"/>
+                    <img class="img1" src="img/xy_16.png"/>
+                    <p><a href="#">Beyonce_碧昂斯</a></p>
+                </div>
+                <div class="div2 clearfix">
+                    <p>[牛人]小苹果</p>
+                    <div>
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                    </div>
+                </div>
+           </div>
+            <div class="divbig">
+                <div class="div1">
+                    <img src="img/xy_15.png"/>
+                    <img class="img1" src="img/xy_16.png"/>
+                    <p><a href="#">Beyonce_碧昂斯</a></p>
+                </div>
+                <div class="div2 clearfix">
+                    <p>[牛人]小苹果</p>
+                    <div>
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="right">
+        	<div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>1</p>
+                </div>
+                <h3>
+                	<p class="p1">在舞台中间</p>
+                    <p class="p2">歌手：平安</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>2</p>
+                </div>
+                <h3>
+                	<p class="p1">맨정신</p>
+                    <p class="p2">歌手：Remember</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>3</p>
+                </div>
+                <h3>
+                	<p class="p1">party</p>
+                    <p class="p2">歌手：[牛人]青春修炼手册</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>4</p>
+                </div>
+                <h3>
+                	<p class="p1">맨정신</p>
+                    <p class="p2">歌手：平安</p>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div>
+            		<img src="img/xy_21.png"/>
+                    <p>5</p>
+                </div>
+                <h3>
+                	<p class="p1">从前的我</p>
+                    <p class="p2">歌手：平安</p>
+                </h3>
+            </div>
+            <div class="plast">
+            	<img src="img/xy_24.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="contentbox7 clearfix">
+    	<div class="div1 clearfix">
+        	<img src="img/xy_25.png"/>
+            <img src="img/xy_25.png"/>
+            <img src="img/xy_25.png"/>
+            <img src="img/xy_25.png"/>
+            <img src="img/xy_26.png"/>
+        </div>
+    </div>
+    <div class="contentbox8 clearfix">
+    	<div class="div1">
+        	<h2>音乐牛人</h2>
+            <a href="#">更多</a>
+        </div>
+        <div class="div2">音乐牛人榜</div>
+    </div>
+    <div class="contentbox9 clearfix">
+    	<div class="left">
+            <div class="div1">
+            	<div class="diva">
+                    <img src="img/xy_27.png"/>
+                    <img src="img/xy_28.png" class="img1"/>
+                </div>
+                <div class="divb">
+                	<p class="p1">马建楠Kennan</p>
+                    <p class="p2">"钓鱼岛"唱出世界华人的声音</p>
+                    <div class="clearfix">
+                    	<i></i>
+                        <span>10.4万</span>
+                        <b></b>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div1">
+            	<div class="diva">
+                    <img src="img/xy_27.png"/>
+                    <img src="img/xy_28.png" class="img1"/>
+                </div>
+                <div class="divb">
+                	<p class="p1">马建楠Kennan</p>
+                    <p class="p2">"钓鱼岛"唱出世界华人的声音</p>
+                    <div class="clearfix">
+                    	<i></i>
+                        <span>10.4万</span>
+                        <b></b>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div1">
+            	<div class="diva">
+                    <img src="img/xy_27.png"/>
+                    <img src="img/xy_28.png" class="img1"/>
+                </div>
+                <div class="divb">
+                	<p class="p1">马建楠Kennan</p>
+                    <p class="p2">"钓鱼岛"唱出世界华人的声音</p>
+                    <div class="clearfix">
+                    	<i></i>
+                        <span>10.4万</span>
+                        <b></b>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        	<ul>
+            	<li class="clearfix">
+                	<a class="a1" href="#">1</a>
+                    <a class="a2" href="#">[牛人]他说</a>
+                    <a class="a3" href="#">剪影姐</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1" href="#">2</a>
+                    <a class="a2" href="#">[牛人]听爸爸的话</a>
+                    <a class="a3" href="#">剪影姐</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1" href="#">3</a>
+                    <a class="a2" href="#">[牛人] 龙卷风/安/天空</a>
+                    <a class="a3" href="#">打扰一下乐坛</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1 aa" href="#">4</a>
+                    <a class="a2" href="#">[牛人]Bo beep</a>
+                    <a class="a3" href="#">剪影姐</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1 aa" href="#">5</a>
+                    <a class="a2" href="#">[牛人]他说</a>
+                    <a class="a3" href="#">剪影姐</a>
+                </li>
+            </ul>
+            <p>更多榜单 &gt;&gt;</p>
+        </div>
+    </div>
+    <div class="contentbox10 clearfix">
+    	<div class="div1">
+        	<h2>达人推荐</h2>
+        </div>
+        <div class="div2">达人人气榜</div>
+    </div>
+    <div class="contentbox11 clearfix">
+    	<div class="left">
+            <div class="div1">
+            	<div class="diva">
+                    <img src="img/xy_29.png"/>
+                    <img src="img/xy_28.png" class="img1"/>
+                </div>
+                <div class="divb">
+                	<p class="p1">马建楠Kennan</p>
+                    <p class="p2">"钓鱼岛"唱出世界华人的声音</p>
+                    <div class="clearfix">
+                    	<i></i>
+                        <span>10.4万</span>
+                        <b></b>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div1">
+            	<div class="diva">
+                    <img src="img/xy_29.png"/>
+                    <img src="img/xy_28.png" class="img1"/>
+                </div>
+                <div class="divb">
+                	<p class="p1">马建楠Kennan</p>
+                    <p class="p2">"钓鱼岛"唱出世界华人的声音</p>
+                    <div class="clearfix">
+                    	<i></i>
+                        <span>10.4万</span>
+                        <b></b>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div1">
+            	<div class="diva">
+                    <img src="img/xy_29.png"/>
+                    <img src="img/xy_28.png" class="img1"/>
+                </div>
+                <div class="divb">
+                	<p class="p1">马建楠Kennan</p>
+                    <p class="p2">"钓鱼岛"唱出世界华人的声音</p>
+                    <div class="clearfix">
+                    	<i></i>
+                        <span>10.4万</span>
+                        <b></b>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        	<ul>
+            	<li class="clearfix">
+                	<a class="a1" href="#">1</a>
+                    <a class="a2" href="#">[牛人]what's up 演唱会现场版</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1" href="#">2</a>
+                    <a class="a2" href="#">[牛人]听爸爸的话</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1" href="#">3</a>
+                    <a class="a2" href="#">[牛人] 龙卷风/安/天空</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1 aa" href="#">4</a>
+                    <a class="a2" href="#">[牛人]Bo beep</a>
+                </li>
+                <li class="clearfix">
+                	<a class="a1 aa" href="#">5</a>
+                    <a class="a2" href="#">[牛人]他说</a>
+                </li>
+            </ul>
+            <p>播放榜单 &gt;&gt;</p>
+        </div>
+    </div>
+    <div class="contentbox12 clearfix">
+    	<div class="div1">
+        	<h2>热门演出</h2>
+        </div>
+        <div class="div2">特别推荐</div>
+    </div>
+    <div class="contentbox13 clearfix">
+    	<div class="left">
+        	<div class="div1">
+            	<img src="img/xy_32.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_32.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_32.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div2">
+            	<img src="img/xy_30.png"/>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="div1 clearfix">
+            	<div class="diva">
+            		<img src="img/xy_31.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div class="diva">
+            		<img src="img/xy_31.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            <div class="div1 divmar clearfix">
+            	<div class="diva">
+            		<img src="img/xy_31.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div class="diva">
+            		<img src="img/xy_31.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div class="diva">
+            		<img src="img/xy_31.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+           
+        </div>
+    </div>
+    <div class="contentbox14 clearfix">
+    	<div class="div1">
+        	<h2>舞蹈</h2>
+        </div>
+    </div>
+    <div class="contentbox15 clearfix">
+    	<div class="left">
+        	<div class="div1">
+            	<img src="img/xy_33.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_33.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_33.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="div1 clearfix">
+            	<div class="diva">
+            		<img src="img/xy_34.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            <div class="div1 clearfix">
+            	<div class="diva">
+            		<img src="img/xy_34.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            <div class="div1 divmar clearfix">
+            	<div class="diva">
+            		<img src="img/xy_34.png"/>
+                    <p>06:02</p>
+                </div>
+                <h3>
+                	<p>周董新单&lt;手写的从前&gt;抢先看</p>
+                	<div  class="clearfix">
+                        <i></i>
+                        <span>10.2万</span>
+                        <b></b>
+                        <span>185</span>
+                	</div>
+                </h3>
+            </div>
+            
+        </div>
+    </div>
+    <div class="contentbox16 clearfix">
+    	<div class="div1">
+        	<h2>来风直播</h2>
+        </div>
+    </div>
+    <div class="contentbox17 clearfix">
+    	<div class="left">
+        	<div class="div1">
+            	<img src="img/xy_35.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_35.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+            <div class="div1">
+            	<img src="img/xy_35.png"/>
+                <p>周董新单&lt;手写的从前&gt;抢先看</p>
+                <div>
+                	<i></i>
+                    <span>10.2万</span>
+                    <b></b>
+                    <span>185</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+			<img src="img/xy_36.png"/>   
+        </div>
+    </div>
+    <div class="contentbox18 clearfix">
+    	<div class="div1">
+        	<h2>热播专辑</h2>
+        </div>
+    </div>
+    <div class="contentbox19 clearfix">
+    	<div class="div1">
+        	<img src="img/xy_37.png"/>
+            <i></i>
+            <p>励志女神阿兰巡演来袭</p>
+        </div>
+        <div class="div1">
+        	<img src="img/xy_37.png"/>
+            <i></i>
+            <p>励志女神阿兰巡演来袭</p>
+        </div>
+        <div class="div1">
+        	<img src="img/xy_37.png"/>
+            <i></i>
+            <p>励志女神阿兰巡演来袭</p>
+        </div>
+        <div class="div1">
+        	<img src="img/xy_37.png"/>
+            <i></i>
+            <p>励志女神阿兰巡演来袭</p>
+        </div>
+        <div class="div1 div2">
+        	<img src="img/xy_37.png"/>
+            <i></i>
+            <p>励志女神阿兰巡演来袭</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="footerbox1 clearfix">
+    	<dl class="da">
+        	<dt class="dc">资源</dt>
+            <dd class="clearfix">
+            	<a href="#">电视剧</a>
+                <a href="#">电影</a>
+                <a href="#">综艺</a>
+                <a href="#">动漫</a>
+                <a href="#">音乐</a>
+                <a href="#">全部</a>
+            </dd>
+            <dd class="dm">用户</dd>
+            <dd class="clearfix">
+            	<a href="#">个性化首页</a>
+                <a href="#">优酷认证</a>
+                <a href="#">分享计划</a>
+            </dd>
+        </dl>
+        <dl class="da">
+        	<dt class="dc">分类</dt>
+            <dd class="clearfix">
+            	<a href="#">电剧</a>
+                <a href="#">电影</a>
+                <a href="#">综艺</a>
+                <a href="#">动漫</a>
+                <a href="#">音乐</a>
+                <a href="#">全部</a>
+            </dd>
+            <dd class="clearfix">
+            	<a href="#">视剧</a>
+                <a href="#">电影</a>
+                <a href="#">综艺</a>
+                <a href="#">动漫</a>
+                <a href="#">音乐</a>
+                <a href="#">全部</a>
+            </dd>
+            <dd class="clearfix">
+            	<a href="#">电影</a>
+                <a href="#">综艺</a>
+                <a href="#">动漫</a>
+                <a href="#">音乐</a>
+                <a href="#">全部</a>
+            </dd>
+        </dl>
+        <dl class="da">
+        	<dt class="dc">软件</dt>
+            <dd class="clearfix">
+            	<a href="#">PC客户端</a>
+                <a href="#">优酷iDo</a>
+                
+            </dd>
+            <dd class="clearfix">
+            	<a href="#">手机客户端</a>
+                <a href="#">电影</a>
+               
+            </dd>
+            <dd class="clearfix">
+            	<a href="#">电发影</a>
+                <a href="#">综东方艺</a>
+            </dd>
+        </dl>
+        <dl class="da">
+        	<dt class="dc">支持</dt>
+            <dd class="clearfix">
+            	<a href="#">客户端</a>
+            </dd>
+            <dd class="clearfix">
+            	<a href="#">手客户端</a>
+            </dd>
+            <dd class="clearfix">
+            	<a href="#">帮助中心</a>
+            </dd>
+        </dl>
+        <div class="diva">
+            <dl>
+                <dt class="dc">优酷土豆集团</dt>
+                <dd class="clearfix">
+                    <a href="#">yukou tudou inc</a>
+                </dd>
+                <dd class="clearfix">
+                    <a href="#">手客户端</a>
+                </dd>
+                <dd class="clearfix">
+                    <a href="#">帮助中心</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="dc">优酷</dt>
+                <dd class="clearfix">
+                    <a href="#">yukou.com</a>
+                </dd>
+                <dd class="clearfix">
+                    <a href="#">手客户端</a>
+                </dd>
+                <dd class="clearfix">
+                    <a href="#">帮助中心</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="dc">土豆</dt>
+                <dd class="clearfix">
+                    <a href="#">tudou.com</a>
+                </dd>
+                <dd class="clearfix">
+                    <a href="#">手客户端</a>
+                </dd>
+                <dd class="clearfix">
+                    <a href="#">帮助中心</a>
+                </dd>
+            </dl>
+        </div>
+    </div> 
+    <div class="footerbox2 clearfix">
+		<ul>
+        	<li class="li1"><a href="#">经营性网站备案信息</a></li>
+            <li class="li2"><a href="#">中国互联网诚信联盟</a></li>
+            <li class="li3"><a href="#">违法和不良信息举报中心</a></li>
+            <li class="li4"><a href="#">网络文化经营单位</a></li>
+        </ul>
+        <ul>
+        	<li><a href="#">京ICP证060288号</a></li>
+            <li><a href="#">网络视听许可证0108283号</a></li>
+            <li><a href="#">北京互联网举报中心</a></li>
+            <li><a href="#">北京12318文化市场举报热线</a></li>
+        </ul>
+        <ul>
+        	<li><a href="#">网络文化经营许可证 京网文[2014]0934-236号</a></li>
+            <li><a href="#">新出网证(京)字160号</a> <span>节目制作经营许可证京字670号</span></li>
+            <li><a href="#">京卫网审[2013]第0209号</a> <span>京公网安备110000000017号</span></li>
+            <li><a href="#">网络110报警服务</a> <span>药品服务许可证(京)-经营-2010-0048</span></li>
+        </ul>
+        <div class="div1">
+        	<img src="img/xy_38.png"/>
+            <div>
+            	<p><a href="#">优酷App</a></p>
+                <p><a href="#">扫描或点击下载</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footerbox3 clearfix">
+    	<p>请使用者仔细阅读优酷使用协议、<span>版权声明</span>、反盗版盗链声明 Copyright©2015 优酷 youku.com 版权所有 不良信息举报电话: 4008100580</p>
+    </div>
+     
+</div>
+</body>
+</html>

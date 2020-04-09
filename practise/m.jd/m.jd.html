@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/baseAll.css" />
+    <style>
+        html,
+        body {
+            background: #f5f5f5;
+            min-width: 300px;
+            max-width: 640px;
+        }
+
+        header {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .h-nav {
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 40px;
+            background: rgba(255, 0, 0, 0.5);
+            display: -webkit-box;
+            position: fixed;
+            z-index: 99;
+        }
+
+        .h-nav-l {
+            width: 56px;
+            height: 21px;
+            background: url("images/jd-sprites.png") no-repeat 0 -109px;
+            background-size: 200px 200px;
+            margin: 10px;
+        }
+
+        .h-nav-m {
+            -webkit-box-flex: 1;
+            position: relative;
+        }
+
+        .h-nav-m input {
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            margin-top: 5px;
+            text-indent: 34px;
+        }
+
+        .h-nav-m b {
+            position: absolute;
+            top: 12px;
+            left: 8px;
+            background: url("images/jd-sprites.png") no-repeat -60px -110px;
+            background-size: 200px 200px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .h-nav-r {
+            width: 30px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 15px;
+            color: #fff;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .h-ad {
+            position: relative;
+        }
+
+        .h-ad li img {
+            width: 100%;
+        }
+
+        .list-c {
+            width: 144px;
+            position: absolute;
+            left: 50%;
+            margin-left: -48px;
+            bottom: 10px;
+        }
+
+        .list-c i {
+            float: left;
+            width: 4px;
+            height: 4px;
+            border: 1px solid #fff;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .list-c .bgc-i {
+            background: #fff;
+        }
+
+        .con-item {
+            background: #fff;
+            height: 148px;
+        }
+
+        .c-item-t {}
+
+        .c-item-t li {
+            width: 25%;
+            height: 69px;
+            float: left;
+            text-align: center;
+        }
+
+        .c-item-t li img {
+            height: 50%;
+            margin: 11px 0 5px;
+        }
+
+        .c-item-t li p {
+            width: 100%;
+            text-align: center;
+        }
+
+        .content {
+            min-width: 300px;
+            max-width: 630px;
+            margin: 8px auto;
+        }
+
+        .content-time {
+            padding-bottom: 10px;
+            background: #fff;
+        }
+
+        .content-time i {
+            float: left;
+            width: 18px;
+            height: 22px;
+            background: url("images/jd-sprite.png") no-repeat -85px -110px;
+            background-size: 200px 200px;
+            margin: 4px 0 0 10px;
+        }
+
+        .content-time p {
+            float: left;
+            margin: 9px 10px 0 4px;
+            color: red;
+            font-size: 14px;
+        }
+
+        .content-time b {
+            float: left;
+            width: 20px;
+            height: 18px;
+            background: #3d3d3d;
+            border-radius: 2px;
+            color: #fff;
+            text-align: center;
+            line-height: 18px;
+            margin-top: 8px;
+        }
+
+        .content-time span {
+            float: left;
+            margin: 9px 4px;
+            font-size: 14px;
+        }
+
+        .content-time strong {
+            float: right;
+            font-size: 14px;
+            color: #444;
+            margin: 10px 10px 0 0;
+        }
+
+        .content-item {
+            display: -webkit-box;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .content-item li {
+            -webkit-box-flex: 1;
+            padding: 10px;
+        }
+
+        .content-item li img {
+            width: 80%;
+            border-right: 1px solid #f7f7f7;
+            padding-right: 30px;
+            margin-left: 20px;
+        }
+
+        .content-item p {
+            color: red;
+            font-size: 16px;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .content-item div {
+            color: #888888;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: line-through;
+        }
+
+        .content-pm {
+            margin-top: 7px;
+            background: #fff;
+        }
+
+        .content-pm p {
+            height: 32px;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .content-pm p i {
+            float: left;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+            margin: 9px 7px 0 7px;
+        }
+
+        .content-pm p b {
+            float: left;
+            font-size: 16px;
+            color: #7f7f7f;
+            margin-top: 7px;
+        }
+
+        .content-pm div {
+            padding: 5px;
+        }
+
+        .content-pm div img {
+            width: 100%;
+        }
+
+        .content-value {
+            margin-top: 7px;
+            background: #fff;
+        }
+
+        .content-value p {
+            height: 32px;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .content-value p i {
+            float: left;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+            margin: 9px 7px 0 7px;
+        }
+
+        .content-value p b {
+            float: left;
+            font-size: 16px;
+            color: #7f7f7f;
+            margin-top: 7px;
+        }
+
+        .content-value .itemAll {
+            border-bottom: 2px solid #ededed
+        }
+
+        .content-value .itemAll .item1 {
+            height: 100%;
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .content-value .itemAll .item1 img {
+            width: 100%;
+        }
+
+        .content-value .itemAll .item2 {
+            width: 50%;
+            float: left;
+        }
+
+        .content-value .itemAll .item2 img {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ededed;
+        }
+
+        .content-value .itemAll .item2 .mar-mN {
+            border-bottom: none;
+        }
+
+        .content-value1 {
+            margin-top: 7px;
+            background: #fff;
+        }
+
+        .content-value1 p {
+            height: 32px;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .content-value1 p i {
+            float: left;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+            margin: 9px 7px 0 7px;
+        }
+
+        .content-value1 p b {
+            float: left;
+            font-size: 16px;
+            color: #7f7f7f;
+            margin-top: 7px;
+        }
+
+        .content-value1 .itemAll {
+            border-bottom: 2px solid #ededed
+        }
+
+        .content-value1 .itemAll .item1 {
+            height: 100%;
+            width: 50%;
+            border-left: 1px solid #ededed;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .content-value1 .itemAll .item1 img {
+            width: 100%;
+        }
+
+        .content-value1 .itemAll .item2 {
+            width: 50%;
+            float: left;
+        }
+
+        .content-value1 .itemAll .item2 img {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .content-value1 .itemAll .item2 .mar-mN {
+            border-bottom: none;
+        }
+
+        .content-value2 {
+            margin-top: 7px;
+            background: #fff;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+
+        .content-value2 p {
+            height: 32px;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .content-value2 p i {
+            float: left;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+            margin: 9px 7px 0 7px;
+        }
+
+        .content-value2 p b {
+            float: left;
+            font-size: 16px;
+            color: #7f7f7f;
+            margin-top: 7px;
+        }
+
+        .content-park {}
+
+        .content-park li {
+            float: left;
+            width: 50%;
+            padding: 8px 8px 0 8px;
+            box-sizing: border-box;
+        }
+
+        .content-park .pad-1 {
+            padding-right: 4px;
+        }
+
+        .content-park .pad-2 {
+            padding-left: 4px;
+        }
+
+        .content-park li img {
+            width: 100%;
+        }
+
+        .content-value3 {
+            margin-top: 7px;
+            background: #fff;
+        }
+
+        .content-value3 .guessL {
+            float: left;
+            height: 32px;
+        }
+
+        .content-value3 .guessL i {
+            float: left;
+            width: 3px;
+            height: 12px;
+            background: #d8505c;
+            margin: 9px 7px 0 7px;
+        }
+
+        .content-value3 .guessL b {
+            float: left;
+            font-size: 14px;
+            color: #7f7f7f;
+            margin-top: 8px;
+        }
+
+        .content-value3 .guessR {
+            position: relative;
+            float: right;
+            height: 32px;
+            color: #f15353;
+            line-height: 32px;
+            margin-right: 12px;
+        }
+
+        .content-value3 .guessR i {
+            position: absolute;
+            top: 8px;
+            left: -23px;
+            width: 17px;
+            height: 17px;
+            background: url("images/m.jd-icon-5.png") no-repeat;
+            background-size: 17px 17px;
+        }
+
+        .content-value4 {
+            background: #fff;
+        }
+
+        .content-value4 li {
+            float: left;
+            width: 50%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        .content-value4 li img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .content-value4 li p {
+            padding: 8px 0 10px 0;
+            line-height: 15px;
+            margin: 0 7px 0 5px;
+            border-bottom: 1px solid #d7d7d7;
+        }
+
+        .content-value4 li div {
+            margin: 4px 9px 0 6px;
+        }
+
+        .content-value4 li div .shopL {
+            float: left;
+            color: red;
+            font-size: 14px;
+        }
+
+        .content-value4 li div .shopR {
+            float: right;
+            width: 48px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+
+        .v4mar {
+            padding-bottom: 10px;
+        }
+
+        .goLoad {
+            height: 32px;
+            background: #f3f5f7;
+            border: 1px solid #d9dadb;
+            font-size: 14px;
+            text-align: center;
+            line-height: 32px;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            min-width: 300px;
+            max-width: 640px;
+            margin: 0 auto;
+            background: #f8f8f8;
+        }
+
+        .footer-nav {
+            height: 52px;
+            border-top: 1px solid #dbdbdb;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .footer-nav-W {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .footer-nav a {
+            float: left;
+            font-size: 14px;
+            color: #848689;
+            margin-top: 18px;
+        }
+
+        .footer-nav i {
+            float: left;
+            font-size: 15px;
+            color: #d7d7d7;
+            margin: 18px 24px 0;
+        }
+
+        .footer-load {
+            height: 69px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .footer-l-P {
+            width: 260px;
+            margin: 0 auto;
+        }
+
+        .footer-l-P li {
+            float: left;
+            cursor: pointer;
+        }
+
+        .footer-l-P .f-mar {
+            margin: 0 70px;
+        }
+
+        .footer-l-P li i {
+            display: block;
+            width: 33px;
+            height: 33px;
+            background: url("images/jd-sprite.png") no-repeat;
+            background-size: 200px 200px;
+            margin: 9px 0 5px 3px;
+        }
+
+        .footer-l-P li .host {
+            background-position: -120px -70px;
+        }
+
+        .footer-l-P li .ph {
+            background-position: -40px -70px;
+        }
+
+        .footer-l-P li .pc {
+            background-position: -80px -70px;
+        }
+
+        .footer-copyR {
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="h-nav">
+            <div class="h-nav-l"></div>
+            <div class="h-nav-m">
+                <input type="text" />
+                <b></b>
+            </div>
+            <p class="h-nav-r">登陆</p>
+        </section>
+        <section class="h-ad">
+            <ul>
+                <li>
+                    <img src="images/a124390.jpg" alt="图片" />
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="list-c clearfix">
+                <i class="bgc-i"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </section>
+        <section class="con-item">
+            <ul class="c-item-t clearfix">
+                <li>
+                    <img src="images/m.jd-icon-1.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+                <li>
+                    <img src="images/m.jd-icon-2.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+                <li>
+                    <img src="images/m.jd-icon-3.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+                <li>
+                    <img src="images/m.jd-icon-4.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+            </ul>
+            <ul class="c-item-t clearfix">
+                <li>
+                    <img src="images/m.jd-icon-1.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+                <li>
+                    <img src="images/m.jd-icon-2.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+                <li>
+                    <img src="images/m.jd-icon-3.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+                <li>
+                    <img src="images/m.jd-icon-4.png" alt="" />
+                    <p>分类查询</p>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <section class="content">
+        <div class="content-time clearfix">
+            <i></i>
+            <p>掌上秒杀</p>
+            <b>09</b>
+            <span>:</span>
+            <b>30</b>
+            <span>:</span>
+            <b>26</b>
+            <strong>更多秒杀 ></strong>
+        </div>
+        <ul class="content-item">
+            <li>
+                <img src="images/pg1.jpg" alt="" />
+                <p>￥1</p>
+                <div>￥38</div>
+            </li>
+            <li>
+                <img src="images/pg1.jpg" alt="" />
+                <p>￥11.1</p>
+                <div>￥138</div>
+            </li>
+            <li>
+                <img src="images/pg1.jpg" alt="" />
+                <p>￥21.4</p>
+                <div>￥380</div>
+            </li>
+        </ul>
+        <div class="content-pm">
+            <p class="clearfix">
+                <i></i>
+                <b>充话费赢茅台酒</b>
+            </p>
+            <div>
+                <img src="images/pg2.jpg" alt="" />
+            </div>
+        </div>
+        <div class="content-value">
+            <p class="clearfix">
+                <i></i>
+                <b>超值购</b>
+            </p>
+            <ul class="itemAll clearfix">
+                <li class="item1">
+                    <img src="images/pg3.jpg" alt="" />
+                </li>
+                <li class="item2">
+                    <img src="images/pg4.jpg" alt="" />
+                    <img class="mar-mN" src="images/pg5.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+        <div class="content-value1">
+            <p class="clearfix">
+                <i></i>
+                <b>热门活动</b>
+            </p>
+            <ul class="itemAll clearfix">
+                <li class="item2">
+                    <img src="images/pg6.jpg" alt="" />
+                    <img class="mar-mN" src="images/pg7.jpg" alt="" />
+                </li>
+                <li class="item1">
+                    <img src="images/pg8.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+        <div class="content-value2">
+            <p class="clearfix">
+                <i></i>
+                <b>主题馆</b>
+            </p>
+            <ul class="content-park clearfix">
+                <li class="pad-1">
+                    <img src="images/pg9.jpg" alt="" />
+                </li>
+                <li class="pad-2">
+                    <img src="images/pg10.jpg" alt="" />
+                </li>
+            </ul>
+            <ul class="content-park clearfix">
+                <li class="pad-1">
+                    <img src="images/pg11.jpg" alt="" />
+                </li>
+                <li class="pad-2">
+                    <img src="images/pg12.jpg" alt="" />
+                </li>
+            </ul>
+            <ul class="content-park clearfix">
+                <li class="pad-1">
+                    <img src="images/pg13.jpg" alt="" />
+                </li>
+                <li class="pad-2">
+                    <img src="images/pg14.jpg" alt="" />
+                </li>
+            </ul>
+            <ul class="content-park clearfix">
+                <li class="pad-1">
+                    <img src="images/pg15.jpg" alt="" />
+                </li>
+                <li class="pad-2">
+                    <img src="images/pg16.jpg" alt="" />
+                </li>
+            </ul>
+            <ul class="content-park clearfix">
+                <li class="pad-1">
+                    <img src="images/pg17.jpg" alt="" />
+                </li>
+                <li class="pad-2">
+                    <img src="images/pg10.jpg" alt="" />
+                </li>
+            </ul>
+            <ul class="content-park clearfix">
+                <li class="pad-1">
+                    <img src="images/pg9.jpg" alt="" />
+                </li>
+                <li class="pad-2">
+                    <img src="images/pg14.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+        <div class="content-value3 clearfix">
+            <p class="guessL">
+                <i></i>
+                <b>猜你喜欢</b>
+            </p>
+            <p class="guessR">登陆后更懂你 >
+                <i></i>
+            </p>
+        </div>
+        <ul class="content-value4 clearfix">
+            <li>
+                <img src="images/pg20.jpg" alt="" />
+                <p>士力架花生夹心巧克力家庭装460g（加量装随机发送）</p>
+                <div class="clearfix">
+                    <a class="shopL" href="javascript:;">￥27.90</a>
+                    <a class="shopR" href="javascript:;">看相似</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/pg19.jpg" alt="" />
+                <p>士力架花生夹心巧克力家庭装460g（加量装随机发送）</p>
+                <div class="clearfix">
+                    <a class="shopL" href="javascript:;">￥27.90</a>
+                    <a class="shopR" href="javascript:;">看相似</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="content-value4 clearfix">
+            <li>
+                <img src="images/pg22.jpg" alt="" />
+                <p>士力架花生夹心巧克力家庭装发送）</p>
+                <div class="clearfix">
+                    <a class="shopL" href="javascript:;">￥27.90</a>
+                    <a class="shopR" href="javascript:;">看相似</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/pg23.jpg" alt="" />
+                <p>士力架花生夹心巧加量装随机发送）</p>
+                <div class="clearfix">
+                    <a class="shopL" href="javascript:;">￥27.90</a>
+                    <a class="shopR" href="javascript:;">看相似</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="content-value4 v4mar clearfix">
+            <li>
+                <img src="images/pg18.jpg" alt="" />
+                <p>士力架花生夹心巧克力</p>
+                <div class="clearfix">
+                    <a class="shopL" href="javascript:;">￥27.90</a>
+                    <a class="shopR" href="javascript:;">看相似</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/pg21.jpg" alt="" />
+                <p>士力架花生夹心巧克力家庭装460g</p>
+                <div class="clearfix">
+                    <a class="shopL" href="javascript:;">￥27.90</a>
+                    <a class="shopR" href="javascript:;">看相似</a>
+                </div>
+            </li>
+        </ul>
+        <p class="goLoad">点击继续加载</p>
+    </section>
+    <footer>
+        <section class="footer-nav ">
+            <div class="footer-nav-W clearfix">
+                <a href="javascript:;">登陆</a>
+                <i>|</i>
+                <a href="javascript:;">注册</a>
+                <i>|</i>
+                <a href="javascript:;">反馈</a>
+                <i>|</i>
+                <a href="javascript:;">回到顶部</a>
+            </div>
+        </section>
+        <section class="footer-load">
+            <ul class="footer-l-P clearfix">
+                <li>
+                    <i class="host"></i>
+                    <p>客户端</p>
+                </li>
+                <li class="f-mar">
+                    <i class="ph"></i>
+                    <p>触摸屏</p>
+                </li>
+                <li>
+                    <i class="pc"></i>
+                    <p>电脑版</p>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-copyR">
+            Copyright © 2012-2016 京东JD.com 版权所有
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/baseAll.css" />
+    <style>
+        html {
+            font-size: 20px;
+            overflow-x: hidden;
+        }
+
+        .wrap {
+            width: 16rem;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 16rem;
+            height: 2.325rem;
+            background: #262626;
+            border-bottom: 0.1rem solid #49caac;
+            /*box-sizing: border-box;*/
+            display: -webkit-box;
+        }
+
+        header menu {
+            display: block;
+            text-indent: -9999rem;
+            width: 2.225rem;
+            height: 2.25rem;
+            background: url("images/menu.jpg") no-repeat center center;
+            background-size: 50%;
+        }
+
+        header h1 {
+            -webkit-box-flex: 1;
+            font-size: 1rem;
+            color: #fff;
+            font-weight: normal;
+            line-height: 2.325rem;
+            text-align: center;
+        }
+
+        header a {
+            display: block;
+            text-indent: -9999rem;
+            width: 2.225rem;
+            height: 2.25rem;
+            background: url("images/pc.jpg") no-repeat center center;
+            background-size: 50%;
+        }
+
+        .userN {
+            display: -webkit-box;
+            box-sizing: border-box;
+            background: #fafafa;
+            border-bottom: 1px solid #dfdfdf;
+        }
+
+        .userN-l {
+            height: 2.05rem;
+            -webkit-box-flex: 1;
+            padding-left: 1.45rem;
+        }
+
+        .userN-l i {
+            float: left;
+            width: 1.45rem;
+            height: 2.05rem;
+            background: url("images/user1.jpg") no-repeat center center;
+            background-size: 50%;
+            padding-left: 1.45rem;
+        }
+
+        .userN-l p {
+            float: left;
+            font-size: 0.7rem;
+            line-height: 2.05rem;
+            color: #b1b0b5;
+        }
+
+        span {
+            color: #e6e6e6;
+            font-size: 1.45rem;
+            line-height: 1.80rem;
+        }
+
+        .userN-r {
+            height: 2.05rem;
+            -webkit-box-flex: 1;
+            margin-right: 1.45rem;
+        }
+
+        .userN-r i {
+            float: left;
+            width: 1.45rem;
+            height: 2.05rem;
+            background: url("images/user2.jpg") no-repeat center center;
+            background-size: 50%;
+            padding-left: 1.45rem;
+        }
+
+        .userN-r p {
+            float: left;
+            font-size: 0.7rem;
+            line-height: 2.05rem;
+            color: #b1b0b5;
+        }
+
+        .content-pg {
+            width: 16rem;
+        }
+
+        .content-pg img {
+            width: 16rem;
+        }
+
+        .content-new {
+            width: 16rem;
+        }
+
+        .content-new ul {
+            border-bottom: 0.1rem solid #57c0af;
+        }
+
+        .content-new li {
+            width: 15.25rem;
+            border-bottom: 1px solid #efefef;
+            font-size: 0.75rem;
+            line-height: 2rem;
+            color: #000000;
+            margin-left: 0.375rem;
+        }
+
+        .content-ans {
+            border-bottom: 1px solid #e2e2e2;
+            background: #fafafa;
+        }
+
+        .content-hotM {
+            border-top: 0.1rem solid #53c5ae;
+        }
+
+        .content-ans p {
+            float: left;
+            font-size: 0.7rem;
+            line-height: 2rem;
+            margin-left: 0.75rem;
+        }
+
+        .content-ans i {
+            float: right;
+            height: 2rem;
+            width: 1.5rem;
+            background: url("images/user3.jpg") no-repeat center center;
+            background-size: 50%;
+            padding-right: 1.5rem;
+        }
+
+        .content-oth {
+            width: 16rem;
+            height: 2.05rem;
+            border: 1px solid #eaeaea;
+        }
+
+        .content-oth a {
+            float: left;
+            width: 3.1rem;
+            height: 2.0rem;
+            text-align: center;
+            line-height: 2.0rem;
+            font-size: 0.75rem;
+        }
+
+        .content-oth .cont-bm {
+            border-bottom: 2px solid #d43553;
+        }
+
+        .content-suc {
+            padding-left: 0.75rem;
+        }
+
+        .content-suc .c-suc-h {
+            height: 2.05rem;
+            font-size: 0.75rem;
+            line-height: 2.05rem;
+        }
+
+        .content-suc .c-s-t {
+            border-top: 1px solid #999;
+        }
+
+        .content-suc .c-suc-img {
+            box-sizing: border-box;
+        }
+
+        .content-suc .c-suc-img i {
+            float: left;
+            width: 5.25rem;
+            height: 3.7rem;
+            /*background:url("images/Q.jpg") no-repeat;*/
+            background-size: 100%;
+            margin-bottom: 0.75rem;
+        }
+
+        .content-suc .c-suc-img .bg-i1 {
+            background: url("images/Q.jpg") no-repeat;
+            background-size: 100%;
+        }
+
+        .content-suc .c-suc-img .bg-i2 {
+            background: url("images/Q1.jpg") no-repeat;
+            background-size: 100%;
+        }
+
+        .content-suc .c-suc-img p {
+            float: left;
+            width: 8.4rem;
+            height: 3.7rem;
+            font-size: 0.65rem;
+            line-height: 1.1rem;
+            padding-left: 1rem;
+            color: #999;
+        }
+
+        .f-top {
+            height: 3rem;
+            background: #fafafa;
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 0.1rem solid #50cdab;
+        }
+
+        .f-top-bg {
+            width: 5.2rem;
+            margin: 0 auto;
+        }
+
+        .f-top-bg i {
+            float: left;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: url("images/user4.jpg") no-repeat;
+            background-size: 100%;
+            margin: 0.75rem 0.45rem 0 0;
+        }
+
+        .f-top-bg p {
+            font-size: 0.7rem;
+            line-height: 3rem;
+        }
+
+        footer {
+            height: 3.75rem;
+            background: #262626;
+            box-sizing: border-box;
+        }
+
+        footer .f-l {
+            float: left;
+            margin-top: 0.9rem;
+            padding: 0.2rem 2.05rem 0.1rem 2.05rem;
+            border-right: 0.1rem solid #666;
+            box-sizing: border-box;
+
+        }
+
+        footer .f-l i {
+            float: left;
+            width: 1.6rem;
+            height: 1.45rem;
+            background: url("images/pc.jpg") no-repeat;
+            background-size: 100%;
+        }
+
+        footer .f-l p {
+            float: left;
+            font-size: 0.75rem;
+            color: #a6a6a6;
+            margin: 0.2rem 0 0 0.6rem;
+        }
+
+        footer .f-r {
+            float: left;
+            margin-top: 0.9rem;
+            padding: 0.2rem 1.75rem 0.1rem 1.75rem;
+            box-sizing: border-box;
+
+        }
+
+        footer .f-r i {
+            float: left;
+            width: 0.675rem;
+            height: 1.2rem;
+            background: url("images/pc2.jpg") no-repeat;
+            background-size: 100%;
+        }
+
+        footer .f-r p {
+            float: left;
+            font-size: 0.75rem;
+            color: #a6a6a6;
+            margin: 0.2rem 0 0 0.6rem;
+        }
+    </style>
+    <script>
+        (function (win, doc) {
+            win.onload = win.onresize = function () {
+                doc.documentElement.style.fontSize = 20 * doc.documentElement.clientWidth / 320 + 'px'
+            };
+        })(window, document);
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <menu>菜单</menu>
+            <h1>GuoKr.com</h1>
+            <a href="javascript:;">pc</a>
+        </header>
+        <section class="userN">
+            <div class="userN-l clearfix">
+                <i></i>
+                <p>用户登陆</p>
+            </div>
+            <span>|</span>
+            <div class="userN-r clearfix">
+                <i></i>
+                <p>用户注册</p>
+            </div>
+        </section>
+        <section class="content-pg">
+            <img src="images/pg-1.jpg" alt="" />
+        </section>
+        <section class="content-new">
+            <ul>
+                <li>你新年的第一个冷笑话</li>
+                <li>家鹅：计算战斗力美食物种</li>
+                <li>你以为猫咪只会喵喵叫？人家学啥像啥！</li>
+                <li>和什么样的人做朋友，可能决定了你的人生</li>
+                <li>把两个人的神经接一起，可共享意识吗？</li>
+                <li>考古学都做什么工作？</li>
+                <li>“相对论”可能是物理史上最差的名字</li>
+                <li>2015年度科学丑闻来一打</li>
+            </ul>
+        </section>
+        <section class="content-ans clearfix">
+            <p>热门回答</p>
+            <i></i>
+        </section>
+        <section class="content-oth">
+            <a class="cont-bm" href="javascript:;">科技</a>
+            <a href="javascript:;">人文</a>
+            <a href="javascript:;">生活</a>
+            <a href="javascript:;">自然</a>
+        </section>
+        <section class="content-suc">
+            <div class="c-suc-h">
+                用X光能检测出私藏的钻石吗？
+            </div>
+            <div class="c-suc-img clearfix">
+                <i class="bg-i1"></i>
+                <p>现在一些机场安检使用的那种全身扫比尔斯公司开发的，目的就是检查在钻...</p>
+            </div>
+            <div class="c-suc-h c-s-t">
+                弓箭齐射的力能否震脱士兵的盾牌？
+            </div>
+            <div class="c-suc-h c-s-t">
+                高尔顿钉板用物理如何解释？
+            </div>
+            <div class="c-suc-h c-s-t">
+                如果把两个人的神经接在一起，能共享...
+            </div>
+            <div class="c-suc-h c-s-t">
+                仰卧起坐并不练腹肌吗？
+            </div>
+        </section>
+        <section class="content-ans content-hotM clearfix">
+            <p>小组热帖</p>
+            <i></i>
+        </section>
+        <section class="content-oth">
+            <a class="cont-bm" href="javascript:;">科技</a>
+            <a href="javascript:;">人文</a>
+            <a href="javascript:;">生活</a>
+            <a href="javascript:;">自然</a>
+        </section>
+        <section class="content-suc">
+            <div class="c-suc-h">
+                用X光能检测出私藏的钻石吗？
+            </div>
+            <div class="c-suc-img clearfix">
+                <i class="bg-i2"></i>
+                <p>现在一些机场安检使用的那种全身扫比尔斯公司开发的，目的就是检查在钻...</p>
+            </div>
+            <div class="c-suc-h c-s-t">
+                弓箭齐射的力能否震脱士兵的盾牌？
+            </div>
+            <div class="c-suc-h c-s-t">
+                高尔顿钉板用物理如何解释？
+            </div>
+            <div class="c-suc-h c-s-t">
+                如果把两个人的神经接在一起，能共享...
+            </div>
+            <div class="c-suc-h c-s-t">
+                仰卧起坐并不练腹肌吗？
+            </div>
+        </section>
+        <section class="f-top">
+            <div class="f-top-bg clearfix">
+                <i></i>
+                <p>回到顶部</p>
+            </div>
+        </section>
+        <footer class="footer clearfix">
+            <div class="f-l clearfix">
+                <i></i>
+                <p>PC</p>
+            </div>
+            <div class="f-r">
+                <i></i>
+                <p>移动应用</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

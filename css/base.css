@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    line-height: 100%;
+    font-weight: normal;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+input {
+    outline: none;
+    border: none 0;
+    padding: 0;
+}
+
+th,
+td {
+    border: 1px solid red;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}

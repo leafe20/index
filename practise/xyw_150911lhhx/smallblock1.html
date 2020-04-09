@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/xy_base.css" />
+
+<style>
+	.contentbox5 .right{ float:right;}
+	.contentbox5 .right h2{ margin-bottom:17px;}
+	.contentbox5 .right h2 i{ float:left; width:28px; height:31px; background:url(img/xy6_sprite.jpg) -628px 0;}
+	.contentbox5 .right h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	
+	.contentbox5 .right ul h3{ background: url(img/xy17_sever.png);  width: 319px;}
+	.contentbox5 .right ul .xyactive{ display:none;}
+	.contentbox5 .right ul h3 i{ float:left; width:4px; height:7px; background:url(img/xy3_cyou_sprite.png) -209px -41px; margin:9px 12px 0 11px;}
+	.contentbox5 .right ul p a{ float:left; color:#a6b2d8; line-height:25px;}
+	.contentbox5 .right ul p a:hover{ text-decoration:underline;}
+	
+	.contentbox5 .right ul .div1{ width: 319px; height:149px; border:1px solid #433b4f; position:relative; cursor:pointer; margin-bottom:3px; display:none; }
+	.contentbox5 .right ul .xyshow{ display:block;}
+	
+	.contentbox5 .right ul .div1 .opa{ position:absolute; left:0; bottom:0; background:#000; opacity:0.5; filter:alpha(opacity:50); height:36px; width:100%; margin:0;}
+	.contentbox5 .right ul .div1 i{ float:left; width:4px; height:7px; background:url(img/xy3_cyou_sprite.png) -209px -41px; margin:9px 12px 0 11px;}
+	.contentbox5 .right ul .div1 p{  position:absolute; left:0; bottom:0; width:100%; height:36px;}
+	.contentbox5 .right ul .div1 p .aa{ float:left; color:#fff; line-height:36px; font-weight:bold; margin-left:4px;}
+	.contentbox5 .right ul .div1 p .ab{ float:right; color:#a997c3; line-height:36px; background:url(img/xy16_sever.png) no-repeat 0 center; padding-left:21px;}
+	
+</style>
+
+<script>
+	window.onload=function(){
+		var divjsb2=document.getElementById('divjsb2');
+		var aH=divjsb2.getElementsByTagName('h3');
+		var aD=divjsb2.getElementsByTagName('div');
+		
+		for(var i=0;i<aH.length;i++){
+			aH[i].index=i;
+			aH[i].onmouseover=function(){
+				for(var j=0;j<aH.length;j++){
+					aH[j].className='clearfix';
+					aD[j].className='div1';
+				}
+				this.className='clearfix xyactive';
+				aD[this.index].className='div1 xyshow';
+			}
+		}
+	};
+</script>
+</head>
+
+<body>
+
+<div class="contentbox5 clearfix">
+        <div class="right">
+            <h2 class="clearfix">
+                <i></i>
+                <p>活动中心</p>
+            </h2>
+            <div id="divjsb2">
+                <ul>
+                    <li>
+                        <h3 class="clearfix xyactive">
+                            <i></i>
+                            <p><a href="#">神谕者的成长礼</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                    	<div class="div1 xyshow">
+                            <img src="img/xy11.jpg"/>
+                            <i class="opa"></i>
+                            <p class="clearfix">
+                                <a class="aa" href="#">女武神的秘宝</a>
+                                <a class="ab" href="#">共 7,294,712人关注</a>
+                            </p>
+                        </div>
+                	</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="clearfix ">
+                            <i></i>
+                            <p><a href="#">神谕者的成长礼</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                    	<div class="div1">
+                            <img src="img/xy11.jpg"/>
+                            <i class="opa"></i>
+                            <p class="clearfix">
+                                <a class="aa" href="#">女武神的秘宝</a>
+                                <a class="ab" href="#">共 7,294,712人关注</a>
+                            </p>
+                        </div>
+                	</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="clearfix ">
+                            <i></i>
+                            <p><a href="#">神谕者的成长礼</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                    	<div class="div1 ">
+                            <img src="img/xy11.jpg"/>
+                            <i class="opa"></i>
+                            <p class="clearfix">
+                                <a class="aa" href="#">女武神的秘宝</a>
+                                <a class="ab" href="#">共 7,294,712人关注</a>
+                            </p>
+                        </div>
+                	</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="clearfix ">
+                            <i></i>
+                            <p><a href="#">神谕者的成长礼</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                    	<div class="div1 ">
+                            <img src="img/xy11.jpg"/>
+                            <i class="opa"></i>
+                            <p class="clearfix">
+                                <a class="aa" href="#">女武神的秘宝</a>
+                                <a class="ab" href="#">共 7,294,712人关注</a>
+                            </p>
+                        </div>
+                	</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="clearfix ">
+                            <i></i>
+                            <p><a href="#">神谕者的成长礼</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                    	<div class="div1 ">
+                            <img src="img/xy11.jpg"/>
+                            <i class="opa"></i>
+                            <p class="clearfix">
+                                <a class="aa" href="#">女武神的秘宝</a>
+                                <a class="ab" href="#">共 7,294,712人关注</a>
+                            </p>
+                        </div>
+                	</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="clearfix ">
+                            <i></i>
+                            <p><a href="#">神谕者的成长礼</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                    	<div class="div1 ">
+                            <img src="img/xy11.jpg"/>
+                            <i class="opa"></i>
+                            <p class="clearfix">
+                                <a class="aa" href="#">女武神的秘宝</a>
+                                <a class="ab" href="#">共 7,294,712人关注</a>
+                            </p>
+                        </div>
+                	</li>
+                </ul>    
+                
+             </div> 
+       
+       </div>
+</div>
+</body>
+</html>

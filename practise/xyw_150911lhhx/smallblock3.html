@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/xy_base.css" />
+<style>
+	.contentbox6 .mid{ width:424px; float:left;}
+	.contentbox6 .mid .divbig{ margin-bottom:38px;}
+	.contentbox6 .mid h2{ margin-bottom:12px;}
+	.contentbox6 .mid h2 i{ float:left; width:49px; height:31px; background:url(img/xy6_sprite.jpg) -607px -349px;}
+	.contentbox6 .mid h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	.contentbox6 .mid .ula li{ float:left; width:104px; height:46px; border:1px solid #433b4f; border-right:none; font-size:14px; color:#a295b7; text-align: center; line-height:46px; cursor:pointer;}
+	.contentbox6 .mid .ula .lia{ border-bottom:none; color:#fff; height:47px; background:#322b3c;}
+	.contentbox6 .mid .ula .lib{ border-top:none; width:88px; height:32px; padding-left:20px; padding-top:15px;}
+	.contentbox6 .mid ul span{ float:right; background:url(img/xy14_sever.png); width:13px; height:13px;}
+	.contentbox6 .mid ul b{ float:right; margin-left:4px; }
+	.contentbox6 .mid .div1 img{ float:left; margin:22px 14px 24px 15px;}
+	.contentbox6 .mid .div1{ width:422px; height:256px; border:1px solid #433b4f; border-top:none; background:#322b3c; display:none;}
+	.contentbox6 .mid .active4{ display:block;}
+	.contentbox6 .mid .div1 ul{ float:left; margin-top:28px;}
+	.contentbox6 .mid .div1 ul li{ background:url(img/xy18_sever.png) no-repeat 0 center; padding-left:3px; margin-bottom:14px;}
+	.contentbox6 .mid .div1 ul a{ color:#9587ab;}
+	.contentbox6 .mid .div1 ul a:hover{ text-decoration:underline;}
+	
+	.contentbox6 .right .divbig{ margin-top:38px;}
+	.contentbox6 .right h2{ margin-bottom:12px;}
+	.contentbox6 .right h2 i{ float:left; width:49px; height:31px; background:url(img/xy6_sprite.jpg) -607px -349px;}
+	.contentbox6 .right h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	.contentbox6 .right .ula li{ float:left; width:104px; height:46px; border:1px solid #433b4f; border-right:none; font-size:14px; color:#a295b7; text-align: center; line-height:46px; cursor:pointer;}
+	.contentbox6 .right .ula .lia{ border-bottom:none; color:#fff; height:47px; background:#322b3c;}
+	.contentbox6 .right .ula .lib{ border-top:none; width:91px; height:32px; padding-left:20px; padding-top:15px;}
+	.contentbox6 .right ul span{ float:right; background:url(img/xy14_sever.png); width:13px; height:13px;}
+	.contentbox6 .right ul b{ float:right; margin-left:4px; }
+	.contentbox6 .right .div1 img{ float:left; margin:23px 0 0 15px; cursor:pointer; }
+	.contentbox6 .right .div1{ width:320px; height:256px; border:1px solid #433b4f; border-top:none; background:#322b3c; display:none;}
+	.contentbox6 .right .active6{ display:block;}
+	.contentbox6 .right .div1 ul{ float:left; margin-top:28px;}
+	.contentbox6 .right .div1 ul li{ background:url(img/xy18_sever.png) no-repeat 0 center; padding-left:3px; margin-bottom:14px;}
+	.contentbox6 .right .div1 ul a{ color:#9587ab;}
+	.contentbox6 .right .div1 ul a:hover{ text-decoration:underline;}
+</style>
+<script>
+	window.onload=function(){
+		var xy_js4=document.getElementById('xy_js4');
+		var ali=xy_js4.getElementsByTagName('li');
+		var aDiv=xy_js4.getElementsByTagName('div');
+		
+		for(var i=0;i<3;i++){
+			ali[i].index=i;
+			ali[i].onmouseover=function(){
+				for(var j=0;j<3;j++){
+					ali[j].className='';
+					aDiv[j].className='div1';
+				}
+				this.className='lia';
+				aDiv[this.index].className='div1 active4';
+			}
+		}
+		
+		var xy_js5=document.getElementById('xy_js5');
+		var ali5=xy_js5.getElementsByTagName('li');
+		var aDiv5=xy_js5.getElementsByTagName('div');
+		
+		for(var i=0;i<3;i++){
+			ali5[i].index=i;
+			ali5[i].onmouseover=function(){
+				for(var j=0;j<3;j++){
+					ali5[j].className='';
+					aDiv5[j].className='div1';
+				}
+				this.className='lia';
+				aDiv5[this.index].className='div1 active4';
+			}
+		}
+		
+		var xy_js6=document.getElementById('xy_js6');
+		var ali6=xy_js6.getElementsByTagName('li');
+		var aDiv6=xy_js6.getElementsByTagName('div');
+		
+		for(var i=0;i<2;i++){
+			ali6[i].index=i;
+			ali6[i].onmouseover=function(){
+				for(var j=0;j<2;j++){
+					ali6[j].className='';
+					aDiv6[j].className='div1';
+				}
+				this.className='lia';
+				aDiv6[this.index].className='div1 active6';
+			}
+		}
+		
+	};
+</script>
+
+</head>
+<body>
+
+<div class="contentbox6">
+            <div class="clearfix">
+                
+                <div class="mid">
+                    <div class="divbig" id="xy_js4">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>玩家交流</p>
+                        </h2>
+                        <ul class="ula clearfix">
+                            <li class="lia">玩家攻略</li>
+                            <li>热门论坛</li>
+                            <li>社区精华</li>
+                            <li class="lib">
+                                <b>更多信息&gt;</b>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="div1 active4 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">阻止萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能之烹饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活d技能详细解读</a></li>
+                                <li><a href="#">阻止科萨雄】成就攻略！</a></li>
+                                <li><a href="#">独家攻略效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂东方响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">称号：发现森房东看房林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生详细解读</a></li>
+                                <li><a href="#">阻止科萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divbig" id="xy_js5">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>玩家交流</p>
+                        </h2>
+                        <ul class="ula clearfix">
+                            <li class="lia">玩家攻略</li>
+                            <li>热门论坛</li>
+                            <li>社区精华</li>
+                            <li class="lib">
+                                <b>更多信息&gt;</b>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="div1 active4 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">阻止萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能之烹饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活d技能详细解读</a></li>
+                                <li><a href="#">阻止科萨雄】成就攻略！</a></li>
+                                <li><a href="#">独家攻略效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂东方响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">称号：发现森房东看房林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生详细解读</a></li>
+                                <li><a href="#">阻止科萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="righta">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>玩家交流</p>
+                        </h2>
+                        <div class="diva">
+                            <ul>
+                                <li class="clearfix">
+                                    <p>新手入门</p>
+                                    <img class="imga" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="clearfix">
+                                    <p>职业介绍</p>
+                                    <img class="imga" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="clearfix">
+                                    <p>旅行者日记</p>
+                                    <img class="imga imgb" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="clearfix lia">
+                                    <p>神谕者指引</p>
+                                    <img class="imga imgb" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="lia"><h3>进入资料站</h3></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="divbig" id="xy_js6">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>媒体专区</p>
+                        </h2>
+                        <ul class="ula clearfix">
+                            <li class="lia">17173</li>
+                            <li>热门论坛</li>
+                            <li class="lib">
+                                <b>更多信息&gt;</b>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="div1 active6 clearfix">
+                            <img src="img/xy1a.jpg"/>
+                            <img src="img/xy2a.jpg"/>
+                            <img src="img/xy3a.jpg"/>
+                            <img src="img/xy4a.jpg"/>
+                        </div>
+                         <div class="div1 clearfix">
+                            <img src="img/xy1a.jpg"/>
+                            <img src="img/xy2a.jpg"/>
+                            <img src="img/xy3a.jpg"/>
+                            <img src="img/xy4a.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

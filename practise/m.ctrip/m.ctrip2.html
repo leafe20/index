@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="css/baseall.css" />
+    <style>
+        header {
+            width: 100%;
+            height: 43px;
+            background: #f6f6f6;
+            border-top: 1px solid #CCCCCC;
+            border-bottom: 1px solid #CCCCCC;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: -webkit-box;
+            z-index: 99;
+        }
+
+        header section {
+            -webkit-box-flex: 1;
+            padding-left: 8px;
+            position: relative;
+            margin-top: 7px;
+        }
+
+        header section input {
+            display: block;
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            text-indent: 25px;
+            box-shadow: 3px 3px 3px #999;
+        }
+
+        header section i {
+            position: absolute;
+            top: 5px;
+            left: 17px;
+            width: 14px;
+            height: 14px;
+            background: url("images/sprits.png") no-repeat -60px -278px;
+            background-size: 104px 326px;
+        }
+
+        header div {
+            width: 28px;
+            height: 36px;
+            margin: 4px 12px 0 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        header div i {
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            background: url("images/sprits.png") no-repeat -59px -193px;
+            background-size: 104px 326px;
+        }
+
+        header div p {
+            color: #2EAAE0;
+        }
+
+        .content {}
+
+        .content-card {
+            margin-top: 43px;
+            position: relative;
+        }
+
+        .content-card li {
+            display: none;
+        }
+
+        .content-card .show {
+            display: block;
+        }
+
+        .content-card li img {
+            display: block;
+            width: 100%;
+        }
+
+        .content-list {
+            width: 100px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -50px;
+        }
+
+        .content-list i {
+            float: left;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #fff;
+            background: #aba9a8;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .content-list .list-btn {
+            border: 1px solid #aba9a8;
+            background: #fff;
+        }
+
+        .content-hotel {
+            border-radius: 3px;
+            margin: 5px 6px 0;
+            display: -webkit-box;
+            box-sizing: border-box;
+        }
+
+        .content-hotel .content-hotel-c1 {
+            -webkit-box-flex: 1;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            height: 89px;
+            position: relative;
+            background: #ff697a;
+            box-sizing: border-box;
+        }
+
+        .content-hotel .content-hotel-c1 h6 {
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            margin: 16px 0 14px 0;
+        }
+
+        .content-hotel .content-hotel-c1 i {
+            display: block;
+            width: 40px;
+            height: 33px;
+            background: url("images/sprits.png") no-repeat 0 -129px;
+            background-size: 104px 326px;
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+        }
+
+        .content-hotel .content-hotel-c2 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+            margin: 0 1px 0 1px;
+            box-sizing: border-box;
+        }
+
+        .content-hotel .content-hotel-c2 li {
+            height: 44px;
+            background: #ff697a;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-hotel .content-hotel-c2 .li-mar {
+            margin-bottom: 1px;
+        }
+
+        .content-hotel .content-hotel-c3 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+            box-sizing: border-box;
+        }
+
+        .content-hotel .content-hotel-c3 li {
+            height: 44px;
+            background: #ff697a;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-hotel .content-hotel-c3 .li-mar {
+            margin-bottom: 1px;
+            border-top-right-radius: 5px;
+        }
+
+        .content-hotel .content-hotel-c3 .li-rad {
+            border-bottom-right-radius: 5px;
+        }
+
+        .content-ticket {
+            border-radius: 3px;
+            margin: 5px 6px 0;
+            display: -webkit-box;
+        }
+
+        .content-ticket .content-hotel-c1 {
+            -webkit-box-flex: 1;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            height: 89px;
+            position: relative;
+            background: #3d98ff;
+        }
+
+        .content-ticket .content-hotel-c1 h6 {
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            margin: 16px 0 14px 0;
+        }
+
+        .content-ticket .content-hotel-c1 i {
+            display: block;
+            width: 41px;
+            height: 24px;
+            background: url("images/sprits.png") no-repeat -51px -122px;
+            background-size: 104px 326px;
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+        }
+
+        .content-ticket .content-hotel-c2 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            box-sizing: border-box;
+        }
+
+        .content-ticket .content-hotel-c2 li {
+            height: 44px;
+            background: #3d98ff;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-ticket .content-hotel-c2 .li-mar {
+            margin-bottom: 1px;
+        }
+
+        .content-ticket .content-hotel-c3 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+        }
+
+        .content-ticket .content-hotel-c3 li {
+            height: 44px;
+            background: #3d98ff;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-ticket .content-hotel-c3 .li-mar {
+            margin-bottom: 1px;
+            border-top-right-radius: 5px;
+        }
+
+        .content-ticket .content-hotel-c3 .li-rad {
+            border-bottom-right-radius: 5px;
+        }
+
+        .content-trip {
+            border-radius: 3px;
+            margin: 5px 6px 0;
+            display: -webkit-box;
+        }
+
+        .content-trip .content-hotel-c1 {
+            -webkit-box-flex: 1;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            height: 89px;
+            position: relative;
+            background: #44c522;
+        }
+
+        .content-trip .content-hotel-c1 h6 {
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            margin: 16px 0 14px 0;
+        }
+
+        .content-trip .content-hotel-c1 i {
+            display: block;
+            width: 33px;
+            height: 40px;
+            background: url("images/sprits.png") no-repeat 0 -181px;
+            background-size: 104px 326px;
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+        }
+
+        .content-trip .content-hotel-c2 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+            margin: 0 1px 0 1px;
+        }
+
+        .content-trip .content-hotel-c2 li {
+            height: 44px;
+            background: #44c522;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-trip .content-hotel-c2 .li-mar {
+            margin-bottom: 1px;
+        }
+
+        .content-trip .content-hotel-c3 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+        }
+
+        .content-trip .content-hotel-c3 li {
+            height: 44px;
+            background: #44c522;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-trip .content-hotel-c3 .li-mar {
+            margin-bottom: 1px;
+            border-top-right-radius: 5px;
+        }
+
+        .content-trip .content-hotel-c3 .li-rad {
+            border-bottom-right-radius: 5px;
+        }
+
+        .content-play {
+            border-radius: 3px;
+            margin: 5px 6px 0;
+            display: -webkit-box;
+        }
+
+        .content-play .content-hotel-c1 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+        }
+
+        .content-play .content-hotel-c1 li {
+            height: 44px;
+            background: #ff697a;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-play .content-hotel-c1 .li-mar {
+            margin-bottom: 1px;
+            border-top-left-radius: 5px;
+        }
+
+        .content-play .content-hotel-c1 .li-rad {
+            border-bottom-left-radius: 5px;
+        }
+
+        .content-play .content-hotel-c2 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+            margin: 0 1px 0 1px;
+        }
+
+        .content-play .content-hotel-c2 li {
+            height: 44px;
+            background: #ff697a;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-play .content-hotel-c2 .li-mar {
+            margin-bottom: 1px;
+        }
+
+        .content-play .content-hotel-c3 {
+            -webkit-box-flex: 1;
+            height: 89px;
+            background: #fff;
+        }
+
+        .content-play .content-hotel-c3 li {
+            height: 44px;
+            background: #ff697a;
+            text-align: center;
+            line-height: 44px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .content-play .content-hotel-c3 .li-mar {
+            margin-bottom: 1px;
+            border-top-right-radius: 5px;
+        }
+
+        .content-play .content-hotel-c3 .li-rad {
+            border-bottom-right-radius: 5px;
+        }
+
+        .content-ad ul {
+            display: -webkit-box;
+            border: 1px solid #d8d8d8;
+            margin: 5px 6px 0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .content-ad ul li {
+            -webkit-box-flex: 1;
+        }
+
+        .content-ad ul .ad-1 {
+            border-right: 1px solid #d8d8d8;
+        }
+
+        .content-ad ul li img {
+            width: 100%;
+        }
+
+        .content-data ul {
+            display: -webkit-box;
+            height: 50px;
+            border-top: 1px solid #CCCCCC;
+            border-bottom: 1px solid #CCCCCC;
+            margin-top: 5px;
+        }
+
+        .content-data ul li {
+            -webkit-box-flex: 1;
+            height: 100%;
+            position: relative;
+        }
+
+        .content-data ul li p {
+            text-align: center;
+            padding-top: 30px;
+            cursor: pointer;
+        }
+
+        .content-data ul li .con1 {
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            margin-left: -8px;
+            width: 16px;
+            height: 16px;
+            background: url("images/sprits.png") no-repeat -60px -153px;
+            background-size: 104px 326px;
+        }
+
+        .content-data ul li .con2 {
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            margin-left: -8px;
+            width: 16px;
+            height: 16px;
+            background: url("images/sprits.png") no-repeat -60px -174px;
+            background-size: 104px 326px;
+        }
+
+        .content-data ul li .con3 {
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            margin-left: -9px;
+            width: 18px;
+            height: 18px;
+            background: url("images/sprits.png") no-repeat -60px -308px;
+            background-size: 104px 326px;
+        }
+
+        .footer ul {
+            height: 59px;
+        }
+
+        .footer ul li {
+            text-align: center;
+        }
+
+        .footer ul .f-l {
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oCard = document.querySelector('.content-card');
+            var aLi = oCard.querySelectorAll('li');
+            //            alert(aLi.length);
+            var aBtn = oCard.querySelectorAll('i');
+            var now = 0;
+
+            for (var i = 0; i < aBtn.length; i++) {
+                (function (index) {
+                    aBtn[i].onclick = function () {
+                        for (var i = 0; i < aBtn.length; i++) {
+                            aBtn[i].className = '';
+                            aLi[i].className = '';
+                        }
+                        this.className = 'list-btn';
+                        aLi[index].className = 'show';
+                    };
+                })(i);
+            }
+
+            function next() {
+                now++;
+                if (now == aBtn.length) {
+                    now = 0;
+                }
+
+                for (var i = 0; i < aBtn.length; i++) {
+                    aBtn[i].className = '';
+                    aLi[i].className = '';
+                }
+                aBtn[now].className = 'list-btn';
+                aLi[now].className = 'show';
+            }
+
+            var timer = setInterval(next, 2000);
+
+            oCard.onmouseover = function () {
+                clearInterval(timer);
+            };
+
+            oCard.onmouseout = function () {
+                timer = setInterval(next, 2000);
+            };
+
+            (function () {
+                var aBclick = document.querySelectorAll('.B-click');
+                //alert(aBclick.length);
+                var aSclick = document.querySelectorAll('.box-click');
+                //                alert(aSclick.length);
+
+                for (var j = 0; j < aBclick.length; j++) {
+                    aBclick[j].onmousedown = function () {
+                        //alert(1);
+                        this.style.transition = '0.4s all ease';
+                        this.style.transform = 'scale(0.7)';
+                    };
+
+                    aBclick[j].onmouseup = function () {
+                        //alert(1);
+                        this.style.transition = '0.4s all ease';
+                        this.style.transform = 'scale(1)';
+                    };
+                }
+
+                for (var i = 0; i < aSclick.length; i++) {
+                    aSclick[i].onmousedown = function () {
+                        //alert(1);
+                        this.style.transition = '0.4s all ease';
+                        this.style.transform = 'scale(0.7)';
+                    };
+
+                    aSclick[i].onmouseup = function () {
+                        //alert(1);
+                        this.style.transition = '.4s all ease';
+                        this.style.transform = 'scale(1)';
+                    };
+                }
+            })();
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <input type="text" placeholder="搜索:目的地/酒店/景点/航班号" />
+            <i></i>
+        </section>
+        <div>
+            <i></i>
+            <p>我 的</p>
+        </div>
+    </header>
+    <div class="content">
+        <ul class="content-card">
+            <li class="show">
+                <img src="images/1.jpg" alt="1.jpg" />
+            </li>
+            <li>
+                <img src="images/2.jpg" alt="1.jpg" />
+            </li>
+            <li>
+                <img src="images/3.png" alt="1.jpg" />
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="1.jpg" />
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="1.jpg" />
+            </li>
+
+            <ul class="content-list clearfix">
+                <i class="list-btn"></i><i></i><i></i><i></i><i></i>
+            </ul>
+        </ul>
+    </div>
+
+    <section class="content-hotel">
+        <div class="content-hotel-c1 B-click">
+            <h6>酒店</h6>
+            <i></i>
+        </div>
+        <ul class="content-hotel-c2">
+            <li class="li-mar box-click">外酒店</li>
+            <li class="box-click">惠酒店</li>
+        </ul>
+        <ul class="content-hotel-c3">
+            <li class="li-mar box-click">团购</li>
+            <li class="li-rad box-click">客栈的▪公寓</li>
+        </ul>
+    </section>
+
+    <section class="content-ticket clearfix">
+        <div class="content-hotel-c1 B-click">
+            <h6>机票</h6>
+            <i></i>
+        </div>
+        <ul class="content-hotel-c2">
+            <li class="li-mar box-click">火车票</li>
+            <li class="box-click">国际机票</li>
+        </ul>
+        <ul class="content-hotel-c3">
+            <li class="li-mar box-click">汽车票▪船票</li>
+            <li class="li-rad box-click">自驾▪转车</li>
+        </ul>
+    </section>
+
+    <section class="content-trip clearfix">
+        <div class="content-hotel-c1 B-click">
+            <h6>酒店</h6>
+            <i></i>
+        </div>
+        <ul class="content-hotel-c2">
+            <li class="li-mar box-click">海外酒店</li>
+            <li class="box-click">特惠酒店</li>
+        </ul>
+        <ul class="content-hotel-c3">
+            <li class="li-mar box-click">团购</li>
+            <li class="li-rad box-click">客栈▪公寓</li>
+        </ul>
+    </section>
+
+    <section class="content-play clearfix">
+        <ul class="content-hotel-c1">
+            <li class="li-mar box-click">门票</li>
+            <li class="li-rad box-click">礼品</li>
+        </ul>
+        <ul class="content-hotel-c2">
+            <li class="li-mar box-click">美食</li>
+            <li class="box-click">特惠酒店</li>
+        </ul>
+        <ul class="content-hotel-c3">
+            <li class="li-mar box-click">客栈的▪公寓</li>
+            <li class="li-rad box-click">更多</li>
+        </ul>
+    </section>
+
+    <section class="content-ad">
+        <ul>
+            <li class="ad-1">
+                <img src="images/salead01.png" alt="" />
+            </li>
+            <li>
+                <img src="images/salead02.png" alt="" />
+            </li>
+        </ul>
+    </section>
+
+    <section class="content-data">
+        <ul>
+            <li>
+                <i class="con1"></i>
+                <p>电话预定</p>
+            </li>
+
+            <li>
+                <i class="con2"></i>
+                <p>下载客户端</p>
+            </li>
+            <li>
+                <i class="con3"></i>
+                <p>我的</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="footer">
+        <ul>
+            <li class="f-l">
+                <a href="javascript:;">网站地图电脑版</a>
+                <a href="javascript:;">|ENGLISH｜</a>
+                <a href="javascript:;">电脑版</a>
+            </li>
+            <li>©2016 携程旅行</li>
+        </ul>
+    </section>
+
+
+</body>
+
+</html>

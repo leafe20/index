@@ -1,0 +1,1185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/xy_base.css" />
+
+<style>
+	.banner{ position:fixed; top:300px; cursor:pointer;}
+	.headerwrap1{ height:55px; background: url(img/xy1_nav_bg.png);}
+	.header1{ width:1000px; margin:0 auto;}
+	.headerbox1 .aa{ float:left; padding-top:5px;}
+	.headerbox1 .left1{ width:90px; height:36px; background:url(img/xy2_logo_dark.png) 0 -5px; border-right:1px solid #cecece; padding-right:13px;}
+	
+	.headerbox1 .divbig{ float:right;}
+	.headerbox1 .right1{ float:left;}
+	.headerbox1 .right1 li{ float:left; height:50px; border-right:1px solid #cecece; cursor:pointer;}
+	.headerbox1 .right1 .lia{ border-right:none;}
+	.headerbox1 .right1 .lib{ margin:0 21px; border-right:none;}
+	.headerbox1 .right1 .lid{ padding-right:9px; }
+	.headerbox1 .right1 .ia{ float:left; width:24px; height:24px; background:url(img/xy3_cyou_sprite.png) -139px 0; margin-top:11px;}
+	.headerbox1 .right1 .ib{ float:left; width:24px; height:24px; background:url(img/xy3_cyou_sprite.png) -189px 0; margin-top:11px;}
+	.headerbox1 .right1 .ic{ float:left; width:24px; height:24px; background:url(img/xy3_cyou_sprite.png) 0 -104px; margin-top:11px;}
+	.headerbox1 .right2 .id{ float:left; width:7px; height:4px; background:url(img/xy3_cyou_sprite.png) -206px -148px; margin-top:23px; margin-left:5px;}
+	.headerbox1 .right1 b{ float:left; line-height:50px; margin-left:6px;}
+	.headerbox1 .right1 b:hover{ color:red;}
+	.headerbox1 .right2{ float:left;}
+	.headerbox1 .right2 li{ float:left; height:50px; border-right:1px solid #cecece; cursor:pointer;}
+	
+	
+	.headerbox1 .right2 .lie{ width:82px; position:relative;}
+	
+	.headerbox1 .right2 .lif1{ height:50px; position:relative; z-index:2; }
+	.headerbox1 .right2 .lie .divjs1{ width:328px; height:267px; border:1px solid #bbbbbb; position:absolute; z-index:1; right:-1px; top:50px; display:none; }
+	
+	.headerbox1 .right2 .lie:hover .lif1{ background:#f2f2f2; height:51px;}
+	.headerbox1 .right2 .lie:hover .divjs1{ display:block;}
+	
+	.headerbox1 .right2 .lie .divjs1 .h2a{ width:328px; height:32px; border-bottom:1px solid #dbdbdb; font-weight:bold; line-height:32px; background:#f2f2f2 url(img/xy24_sever.png) no-repeat 22px center; text-indent:47px;}
+	.headerbox1 .right2 .lie .divjs1 .diva{ width:328px; height:33px; background:#fcfcfc; border-bottom:1px solid #dbdbdb;}
+	.headerbox1 .right2 .lie .divjs1 .diva a{ float:left; width:111px; height:33px;  border-right:1px solid #dbdbdb; text-align:center; line-height:33px;}
+	.headerbox1 .right2 .lie .divjs1 .diva .a1{ width:103px; border-right:none;}
+	
+	
+	.headerbox1 .right2 .lif{ width:112px; position:relative; }
+	.headerbox1 .right2 .lif2{ height:50px; position:relative; z-index:2;}
+	.headerbox1 .right2 .lif .divjs1{ width:328px; height:267px; border:1px solid #bbbbbb; position:absolute; z-index:1; right:-1px; top:50px; display:none; }
+	.headerbox1 .right2 .lif:hover .lif2{ background:#f2f2f2; height:51px;}
+	.headerbox1 .right2 .lif:hover .divjs1{ display:block;}
+	
+	.headerbox1 .right2 .lif .divjs1 .h2a{ width:328px; height:32px; border-bottom:1px solid #dbdbdb; font-weight:bold; line-height:32px; background:#f2f2f2 url(img/xy24_sever.png) no-repeat 22px center; text-indent:47px;}
+	.headerbox1 .right2 .lif .divjs1 .diva{ width:328px; height:33px; background:#fcfcfc; border-bottom:1px solid #dbdbdb;}
+	.headerbox1 .right2 .lif .divjs1 .diva a{ float:left; width:111px; height:33px;  border-right:1px solid #dbdbdb; text-align:center; line-height:33px;}
+	.headerbox1 .right2 .lif .divjs1 .diva .a1{ width:103px; border-right:none;}
+	
+	
+	.headerbox1 .right2 .lig{ width:112px; position:relative;}
+	.headerbox1 .right2 .lif3{ height:50px; position:relative; z-index:2; }
+	.headerbox1 .right2 .lig .divjs1{ width:328px; height:267px; border:1px solid #bbbbbb; position:absolute; z-index:1; right:-1px; top:50px; display:none;}
+	.headerbox1 .right2 .lig:hover .lif3{ background:#f2f2f2; height:51px;}
+	.headerbox1 .right2 .lig:hover .divjs1{ display:block;}
+	
+	.headerbox1 .right2 .lig .divjs1 .h2a{ width:328px; height:32px; border-bottom:1px solid #dbdbdb; font-weight:bold; line-height:32px; background:#f2f2f2 url(img/xy24_sever.png) no-repeat 22px center; text-indent:47px;}
+	.headerbox1 .right2 .lig .divjs1 .diva{ width:328px; height:33px; background:#fcfcfc; border-bottom:1px solid #dbdbdb;}
+	.headerbox1 .right2 .lig .divjs1 .diva a{ float:left; width:111px; height:33px;  border-right:1px solid #dbdbdb; text-align:center; line-height:33px;}
+	.headerbox1 .right2 .lig .divjs1 .diva .a1{ width:103px; border-right:none;}
+
+	.headerbox1 .right2 .id{ float:left; width:7px; height:4px; background:url(img/xy3_cyou_sprite.png) -206px -148px; margin-top:23px; margin-left:5px;}
+	.headerbox1 .right2 b{ float:left; line-height:50px; margin-left:29px;}
+	.headerbox1 .right2 b:hover{ color:red;}
+
+	.contentwrap{ height:1605px; background: url(img/xy4_.jpg) center;}
+	.content{ width:1000px; margin:0 auto; background: url(img/content.jpg);}
+	.contentbox1{ width:1000px; height:551px; position:relative;}
+	.contentbox1 ul{ position:absolute; left:0; top:0; width:1000px;}
+	.contentbox1 li{ float:left; cursor:pointer; height:110px;}
+	.contentbox1 .lib1{ margin:0 3px;}
+	.contentbox1 .litiao{ margin:0 5px;}
+	.contentbox1 .lib1:hover{ border-bottom:3px solid #fff9ef; height:107px;}
+	.contentbox1 .lib2{ position:relative;}
+	.contentbox1 .lib2 .divh{ width:82px; height:77px; background: url(img/nav_new_hover.jpg); padding-top:33px; position:absolute; left:0; bottom:0; display:none;}
+	.contentbox1 .lib2 .divh1{ background: url(img/xy13.jpg);}
+	.contentbox1 .lib2 .divh2{ background: url(img/xy14.jpg);}
+	.contentbox1 .lib2 .divh3{ background: url(img/xy15.jpg);}
+	.contentbox1 .lib2 .divh4{ background: url(img/xy16.jpg); width:75px;}
+
+	.contentbox1 .lib2:hover .divh{ display:block;}
+	.contentbox1 .lib2:hover .divh1{ display:block;}
+	.contentbox1 .lib2:hover .divh2{ display:block;}
+	.contentbox1 .lib2:hover .divh3{ display:block;}
+	.contentbox1 .lib2:hover .divh4{ display:block;}
+	
+	
+	.contentbox1 .lib2 .divh .ph1{ margin-bottom:12px;}
+	.contentbox1 .lib2 .divh .ph2{ margin-bottom:12px;}
+	
+	.contentbox1 li p{ text-align:center; color:#c6d2fa;}
+	.contentbox1 li p a{ color:#c6d2fa; padding-left:4px;}
+	.contentbox1 li p a:hover{ color:#f3ca90; background:url(img/xy23_sever.png) no-repeat 0 center; padding-left:4px;}
+	.contentbox1 li .p1{  font-size:16px; margin:37px 0 6px 0;}
+	.contentbox1 li .p2{ color:#606795;}
+	.contentbox1 .lia{ width:60px; margin-left:36px;}
+	.contentbox1 .lib{ width:86px;}
+	.contentbox1 .lic{ width:75px; margin-left:5px;}
+	.contentbox2 .left{ float:left; width:617px;}
+	.contentbox2 .left i{ float:left; cursor:pointer;}
+	.contentbox2 .left .ia{ width:216px; height:110px; background: url(img/xy8_sever.png);}
+	.contentbox2 .left .ib{ width:100px; height:110px; background: url(img/xy6_sprite.jpg) -216px 0;}
+	.contentbox2 .left .ic{ width:100px; height:110px; background: url(img/xy6_sprite.jpg) -316px 0;}
+	.contentbox2 .left .id{ width:100px; height:110px; background: url(img/xy6_sprite.jpg) -416px 0;}
+	.contentbox2 .left .ie{ width:100px; height:110px; background: url(img/xy6_sprite.jpg) -516px 0;}
+	.contentbox2 .left .ia:hover{ background: url(img/xy6_sprite.jpg);}
+	.contentbox2 .left .ib:hover{ background-position: -216px -110px;}
+	.contentbox2 .left .ic:hover{ background-position: -316px -110px;}
+	.contentbox2 .left .id:hover{ background-position: -416px -110px;}
+	.contentbox2 .left .ie:hover{ background-position: -516px -110px;}
+	
+	.contentbox2 .right{ float:left;}
+	.contentbox2 .right .div1{ width:361px; height:45px; background:url(img/xy7_sever.png); margin:7px 0 4px 12px; padding-top:10px;}
+	.contentbox2 .right .div1 p{ padding-left:84px; color:#adb9e0; cursor:pointer;}
+	.contentbox2 .right .div1 .p1{ margin-bottom:10px;}
+	.contentbox2 .right .div1 p span{ color:#f00000; font-weight:bold;}
+	.contentbox2 .right .div2{ width:376px; height:28px; border:1px solid #433b4f; background:url(img/xy9_sever.png) repeat-x; padding:15px 0 0 5px; position:relative; border-bottom:none;}
+	.contentbox2 .right .div2 p{ float:left; color:#adb9e0}
+	.contentbox2 .right .div2 p span{ color:#f93d1a; text-decoration:underline;}
+	.contentbox2 .right .div2 a{ float:left; color:#adb9e0}
+	.contentbox2 .right .div2 .aa{ width:14px; height:14px; background:url(img/xy6_sprite.jpg) -603px -227px; margin:0 30px 0 5px;}
+	.contentbox2 .right .div2 .ab{ width:83px; border-right:1px solid #4b4f5a;}
+	.contentbox2 .right .div2 .ac{ width:49px; border-right:1px solid #4b4f5a; text-indent:-999em;}
+	.contentbox2 .right .div2 .ad{ width:46px; text-indent:-999em;}
+	.contentbox2 .right .div2 .ia{ position:absolute; left:240px; bottom:0px; width:41px; height:41px; background:url(img/xy6_sprite.jpg) -243px -220px;}
+	.contentbox2 .right .div2 .ib{ position:absolute; left:288px; bottom:0px; width:41px; height:41px; background:url(img/xy6_sprite.jpg) -288px -220px;}
+	.contentbox2 .right .div2 .ic{ position:absolute; left:338px; bottom:0px; width:41px; height:41px; background:url(img/xy6_sprite.jpg) -338px -220px;}
+	.contentbox2 .right .div2 .ia:hover{ background-position: -398px -221px;}
+	.contentbox2 .right .div2 .ib:hover{ background-position: -442px -221px;}
+	.contentbox2 .right .div2 .ic:hover{ background-position: -486px -221px;}
+	
+	.contentbox3 .left{ float:left; width:616px; height:303px; border:1px solid #443b4f; border-top:none; position:relative; cursor:pointer;}
+	.contentbox3 .left .img1{ position:absolute; top:10px; left:10px;}
+	.contentbox3 .left .img2{ position:absolute; top:83px; left:10px;}
+	.contentbox3 .left .div1{ position:absolute; right:10px; bottom:10px;}
+	.contentbox3 .left .div1 i{ float:left; margin-left:4px;}
+	.contentbox3 .left .imga { width:14px; height:14px; background:url(img/xy3_cyou_sprite.png) -200px -190px;}
+	.contentbox3 .left .imgb{  width:14px; height:14px; background:url(img/xy3_cyou_sprite.png) -200px -209px;}
+	
+	.contentbox3 .right{ float:left; background:#322e3f; height:303px; border-right:1px solid #443b4f;  border-bottom:1px solid #443b4f;}
+	.contentbox3 .right .div1{ width:380px; height:54px; border:1px solid #443b4f; border-left:none; padding-top:3px; background:url(img/xy13_sever.png) repeat-x; margin-bottom:17px;}
+	.contentbox3 .right .div1 a{ float:left; color:#fff; font-weight:bold; width:95px; height:53px;  text-align:center; line-height:53px; background:url(img/xy12_sever.png) no-repeat right 0;}
+	.contentbox3 .right .div1 .a1{ height:55px;  background:url(img/xy6_sprite.jpg) 0 -323px;}
+	.contentbox3 .right .div1 .a2{ height:55px;  background:url(img/xy6_sprite.jpg) -94px -323px;}
+	.contentbox3 .right .div1 .a3{ height:55px;  background:url(img/xy6_sprite.jpg) -189px -323px;}
+	.contentbox3 .right .div1 .a4{ height:55px;  background:url(img/xy6_sprite.jpg) -284px -323px;}
+	
+	.contentbox3 .right h2{ width:347px; height:25px; background:url(img/xy6_sprite.jpg) 0 -378px; padding-top:9px; margin-bottom:12px; cursor:pointer; margin-left:-6px;}
+	.contentbox3 .right h2 p{ font-size:16px; color:#ff4606; font-weight:bold; text-align:center;}
+	.contentbox3 .right ul{ margin-left:24px; position:absolute; display:none;}
+	.contentbox3 .right .show3{ display:block;}
+	.contentbox3 .right ul li{ margin-bottom:14px;  color:#9ca7ca; cursor:pointer;}
+	.contentbox3 .right ul p { float:left; width:300px; }
+	.contentbox3 .right ul p:hover{ color:#ff4606; }
+	.contentbox3 .right ul i{ float:left; color:#9ca7ca;}
+	.contentbox3 .right ul span{ float:right; background:url(img/xy14_sever.png); width:13px; height:13px; margin-right:4px;}
+	.contentbox3 .right ul b{ float:right; margin-right:24px;}
+	
+	.contentbox4{ margin:30px 0 30px 0;}
+	.contentbox4 .div1{ margin-right:-8px;}
+	.contentbox4 img{ float:left; border:1px solid #433b4f; margin-right:8px;}
+	
+	.contentbox5{ margin-bottom:30px;}
+	.contentbox5 .left{  float:left; }
+	.contentbox5 .left .div1{ width:656px; height:58px; border:1px solid #433b4f; background:url(img/xy15_sever.png) repeat-x;}
+	.contentbox5 .left .div1 .a1{ float:left; width:110px; height:58px; background:url(img/xy6_sprite.jpg) 0 -412px;}
+	.contentbox5 .left .div1 .a2{ float:left; width:110px; height:58px; background:url(img/xy6_sprite.jpg) -110px -412px;}
+	.contentbox5 .left .div1 .a3{ float:left; width:110px; height:58px; background:url(img/xy6_sprite.jpg) -220px -412px;}
+	.contentbox5 .left .div1 .a4{ float:left; width:110px; height:58px; background:url(img/xy6_sprite.jpg) -330px -412px;}
+	.contentbox5 .left .div1 .a5{ float:left; width:110px; height:58px; background:url(img/xy6_sprite.jpg) -440px -412px;}
+	.contentbox5 .left .div1 .a6{ float:left; width:106px; height:58px; background:url(img/xy6_sprite.jpg) -550px -412px;}
+	
+	.contentbox5 .left .div1 .active1{ background-position:0 -471px;}
+	.contentbox5 .left .div1 .active2{ background-position:-110px -471px;}
+	.contentbox5 .left .div1 .active3{ background-position:-220px -471px;}
+	.contentbox5 .left .div1 .active4{ background-position:-330px -471px;}
+	.contentbox5 .left .div1 .active5{ background-position:-440px -471px;}
+	.contentbox5 .left .div1 .active6{ background-position:-550px -471px;}
+	
+	.contentbox5 .left li{ border:1px solid #433b4f; border-top:none; position:absolute; display:none;}
+	.contentbox5 .left .show{ display:block;}
+	
+	.contentbox5 .right{ float:right;}
+	.contentbox5 .right h2{ margin-bottom:17px;}
+	.contentbox5 .right h2 i{ float:left; width:28px; height:31px; background:url(img/xy6_sprite.jpg) -628px 0;}
+	.contentbox5 .right h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	
+	.contentbox5 .right ul{ margin-bottom:4px; }
+	.contentbox5 .right ul h3{ background: url(img/xy17_sever.png); width:319px;}
+	.contentbox5 .right ul .xyactive{ display:none;}
+	.contentbox5 .right ul h3 i{ float:left; width:4px; height:7px; background:url(img/xy3_cyou_sprite.png) -209px -41px; margin:9px 12px 0 11px;}
+	.contentbox5 .right ul p a{ float:left; color:#a6b2d8; line-height:25px;}
+	.contentbox5 .right ul p a:hover{ text-decoration:underline;}
+	
+	.contentbox5 .right ul .div1{ width: 319px; height:149px; border:1px solid #433b4f; position:relative; cursor:pointer; margin-bottom:3px; display:none; }
+	.contentbox5 .right ul .xyshow{ display:block;}
+	
+	.contentbox5 .right ul .div1 .opa{ position:absolute; left:0; bottom:0; background:#000; opacity:0.5; filter:alpha(opacity:50); height:36px; width:100%; margin:0;}
+	.contentbox5 .right ul .div1 i{ float:left; width:4px; height:7px; background:url(img/xy3_cyou_sprite.png) -209px -41px; margin:9px 12px 0 11px;}
+	.contentbox5 .right ul .div1 p{  position:absolute; left:0; bottom:0; width:100%; height:36px;}
+	.contentbox5 .right ul .div1 p .aa{ float:left; color:#fff; line-height:36px; font-weight:bold; margin-left:4px;}
+	.contentbox5 .right ul .div1 p .ab{ float:right; color:#a997c3; line-height:36px; background:url(img/xy16_sever.png) no-repeat 0 center; padding-left:21px;}
+	
+	.contentbox6 .left{ float:left; margin-right:20px;}
+	.contentbox6 .left .div1{ width:215px; height:189px; background:url(img/xy6_sprite.jpg) 0 -555px; margin-bottom:25px;}
+	.contentbox6 .left .div1 p{ height:48px; line-height:48px; text-align:center; font-size:16px; color:#f3ca90; margin-bottom:19px;}
+	.contentbox6 .left .div1 .ula{ float:left; width:94px; margin-left:25px; }
+	.contentbox6 .left .div1 .ula li{ margin-bottom:16px; background:url(img/xy18_sever.png) no-repeat 0 center; padding-left:3px;}
+	.contentbox6 .left .div1 .ula li a:hover{ text-decoration:underline; }
+	.contentbox6 .left .div1 .ula a{ color:#9587ab;}
+	.contentbox6 .left .div1 .ulb{ float:left;}
+	.contentbox6 .left .div1 .ulb li{ margin-bottom:16px; background:url(img/xy18_sever.png) no-repeat 0 center; padding-left:3px;}
+	.contentbox6 .left .div1 .ulb li a:hover{ text-decoration:underline; }
+	.contentbox6 .left .div1 .ulb a{ color:#9587ab;}
+	.contentbox6 .left .div2{ width:215px; cursor:pointer;}
+	.contentbox6 .left .div2 h2{ width:205px; height:35px; border:6px solid #322b3c; font-size:14px; color:#a295b7; text-align: center; line-height:35px; background:url(img/xy6_sprite.jpg) -451px -273px; cursor:pointer;}
+	.contentbox6 .left .div3{ width:215px; height:268px; background:url(img/examen.jpg); cursor:pointer;}
+	.contentbox6 .left .div3:hover{ background-position:-215px 0;}
+	.contentbox6 .mid{ width:424px; float:left;}
+	.contentbox6 .mid .divbig{ margin-bottom:38px;}
+	.contentbox6 .mid h2{ margin-bottom:12px;}
+	.contentbox6 .mid h2 i{ float:left; width:49px; height:31px; background:url(img/xy6_sprite.jpg) -607px -349px;}
+	.contentbox6 .mid h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	.contentbox6 .mid .ula li{ float:left; width:104px; height:46px; border:1px solid #433b4f; border-right:none; font-size:14px; color:#a295b7; text-align: center; line-height:46px; cursor:pointer;}
+	.contentbox6 .mid .ula .lia{ border-bottom:none; color:#fff; height:47px; background:#322b3c;}
+	.contentbox6 .mid .ula .lib{ border-top:none; width:88px; height:32px; padding-left:20px; padding-top:15px; }
+	.contentbox6 .mid ul span{ float:right; background:url(img/xy14_sever.png); width:13px; height:13px;}
+	.contentbox6 .mid ul b{ float:right; margin-left:4px; margin-right:10px;}
+	.contentbox6 .mid .div1 img{ float:left; margin:22px 14px 24px 15px;}
+	.contentbox6 .mid .div1{ width:422px; height:256px; border:1px solid #433b4f; border-top:none; background:#322b3c; display:none;}
+	.contentbox6 .mid .active4{ display:block;}
+	.contentbox6 .mid .div1 ul{ float:left; margin-top:28px;}
+	.contentbox6 .mid .div1 ul li{ background:url(img/xy18_sever.png) no-repeat 0 center; padding-left:3px; margin-bottom:14px;}
+	.contentbox6 .mid .div1 ul a{ color:#9587ab;}
+	.contentbox6 .mid .div1 ul a:hover{ text-decoration:underline;}
+	.contentbox6 .right{ float:right;}
+	.contentbox6 .righta{ width:322px;}
+	.contentbox6 .right h2{ margin-bottom:12px;}
+	.contentbox6 .right h2 i{ float:left; width:49px; height:31px; background:url(img/xy6_sprite.jpg) -607px -349px;}
+	.contentbox6 .right h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	.contentbox6 .righta .diva{ width:320px; height:303px; border:1px solid #4b3f5c; background:#26212d;}
+	.contentbox6 .righta .diva li{ width:286px; height:58px; border-bottom:1px dashed #594f67; margin-left:17px; }
+	.contentbox6 .righta .diva .lia{ border-bottom:none;}
+	.contentbox6 .righta .diva li p{ float:left; padding:0 7px; height:26px; background:#594f67; color:#fff; text-align:center; line-height:26px; margin-top:16px;}
+	.contentbox6 .righta .diva li .imga{ float:left; margin-top:24px; margin-right:18px;}
+	.contentbox6 .righta .diva li .imgb{ margin-right:9px;}
+	.contentbox6 .righta .diva li a{ float:left;  margin-top:24px; color:#9587ab;}
+	.contentbox6 .righta .diva li a:hover{ text-decoration:underline;}
+	.contentbox6 .righta .diva li .img1{ float:left; margin-top:23px;}
+	.contentbox6 .righta h3{ width:279px; height:39px; border:3px solid #4b3f5c; color:#b1a1ca; text-align:center; line-height:39px; font-weight:bold; font-size:20px; cursor:pointer;}
+	.contentbox6 .righta h3:hover{ border-color:#b1a1ca;}
+	
+	.contentbox6 .right .divbig{ margin-top:38px;}
+	.contentbox6 .right h2{ margin-bottom:12px;}
+	.contentbox6 .right h2 i{ float:left; width:49px; height:31px; background:url(img/xy6_sprite.jpg) -607px -349px;}
+	.contentbox6 .right h2 p{ float:left; font-size:19px; color:#f1cc9f; line-height:31px; margin-left:15px;}
+	.contentbox6 .right .ula li{ float:left; width:104px; height:46px; border:1px solid #433b4f; border-right:none; font-size:14px; color:#a295b7; text-align: center; line-height:46px; cursor:pointer;}
+	.contentbox6 .right .ula .lia{ border-bottom:none; color:#fff; height:47px; background:#322b3c;}
+	.contentbox6 .right .ula .lib{ border-top:none; width:91px; height:32px; padding-left:20px; padding-top:15px;}
+	.contentbox6 .right ul span{ float:right; background:url(img/xy14_sever.png); width:13px; height:13px;}
+	.contentbox6 .right ul b{ float:right; margin-left:4px; margin-right:10px;}
+	.contentbox6 .right .div1 img{ float:left; margin:23px 0 0 15px; cursor:pointer; }
+	.contentbox6 .right .div1{ width:320px; height:256px; border:1px solid #433b4f; border-top:none; background:#322b3c; display:none;}
+	.contentbox6 .right .active6{ display:block;}
+	.contentbox6 .right .div1 ul{ float:left; margin-top:28px;}
+	.contentbox6 .right .div1 ul li{ background:url(img/xy18_sever.png) no-repeat 0 center; padding-left:3px; margin-bottom:14px;}
+	.contentbox6 .right .div1 ul a{ color:#9587ab;}
+	.contentbox6 .right .div1 ul a:hover{ text-decoration:underline;}
+	
+	.contentbox6 .divf1{ width:893px; height:16px; margin:0 auto 22px; background:url(img/game_anc.jpg) 0 -14px; text-align:center; position:relative; color:#9587ab; line-height:16px; font-size:16px; }
+	.contentbox6 .pf1{ color:#615770; font-size:16px; width:910px; margin:0 auto 15px;}
+	.contentbox6 .pf2{ color:#615770; font-size:16px;  width:893px; margin:0 auto; text-align:center;}
+	
+	.footerwrap1{ height:848px; background:url(img/xy20_sever.png) center;}
+	.footerwrap2{ height:10px; background:url(img/xy1_nav_bg.png) 0 -55px;}
+	
+	.footerwrap3{ height:100px; background:#181818;}
+	.footer3{ width:870px; margin:0 auto;}
+	.footer3 a{ float:left;}
+	.footer3 .aa{ width:120px; height:70px; background:url(img/logo_dark.png) 0 -50px; margin-top:10px;}
+	.footer3 .ab{ width:30px; height:38px; background:url(img/cyou_copyright_sprite.png) -1px -5px; margin-top:26px;}
+	.footer3 div{ float:left; margin-top:32px; margin-left:17px;}
+	.footer3 div .p1{ color:#535353; margin-bottom:10px;}
+	.footer3 div .p2{ color:#767676;}
+	
+</style>
+
+<script>
+	window.onload=function(){
+		var divjs1=document.getElementById('divjs1');
+		var abtn=divjs1.getElementsByTagName('a');
+		var libox=divjs1.getElementsByTagName('li');
+		
+		for(var i=0;i<abtn.length;i++){
+			abtn[i].index=i;
+			abtn[i].onmouseover=function(){
+				for(var j=0;j<abtn.length;j++){
+					libox[j].className='';	
+					abtn[j].className='a'+(j+1);
+				}
+				this.className='a'+(this.index+1)+' active'+(this.index+1);
+				libox[this.index].className='show';
+			}	
+		}
+		
+		var divjsb2=document.getElementById('divjsb2');
+		var aH=divjsb2.getElementsByTagName('h3');
+		var aD=divjsb2.getElementsByTagName('div');
+		
+		for(var i=0;i<aH.length;i++){
+			aH[i].index=i;
+			aH[i].onmouseover=function(){
+				for(var j=0;j<aH.length;j++){
+					aH[j].className='clearfix';
+					aD[j].className='div1';
+				}
+				this.className='clearfix xyactive';
+				aD[this.index].className='div1 xyshow';
+			}
+			
+		}
+		
+		var xy_js3=document.getElementById('xy_js3');
+		var aA=xy_js3.getElementsByTagName('a');
+		var	aU=xy_js3.getElementsByTagName('ul');
+		for(var i=0;i<aA.length;i++){
+			aA[i].index=i;
+			aA[i].onmouseover=function(){
+				for(var j=0;j<aA.length;j++){
+					aA[j].className='';
+					aU[j].className='';
+				}
+				this.className='a'+(this.index+1);
+				aU[this.index].className='show3';
+			}
+		}
+		
+		var xy_js4=document.getElementById('xy_js4');
+		var ali=xy_js4.getElementsByTagName('li');
+		var aDiv=xy_js4.getElementsByTagName('div');
+		
+		for(var i=0;i<3;i++){
+			ali[i].index=i;
+			ali[i].onmouseover=function(){
+				for(var j=0;j<3;j++){
+					ali[j].className='';
+					aDiv[j].className='div1';
+				}
+				this.className='lia';
+				aDiv[this.index].className='div1 active4';
+			}
+		}
+		
+		var xy_js5=document.getElementById('xy_js5');
+		var ali5=xy_js5.getElementsByTagName('li');
+		var aDiv5=xy_js5.getElementsByTagName('div');
+		
+		for(var i=0;i<3;i++){
+			ali5[i].index=i;
+			ali5[i].onmouseover=function(){
+				for(var j=0;j<3;j++){
+					ali5[j].className='';
+					aDiv5[j].className='div1';
+				}
+				this.className='lia';
+				aDiv5[this.index].className='div1 active4';
+			}
+		}
+		
+		var xy_js6=document.getElementById('xy_js6');
+		var ali6=xy_js6.getElementsByTagName('li');
+		var aDiv6=xy_js6.getElementsByTagName('div');
+		
+		for(var i=0;i<2;i++){
+			ali6[i].index=i;
+			ali6[i].onmouseover=function(){
+				for(var j=0;j<2;j++){
+					ali6[j].className='';
+					aDiv6[j].className='div1';
+				}
+				this.className='lia';
+				aDiv6[this.index].className='div1 active6';
+			}
+		}
+		
+	};
+</script>
+</head>
+<body>
+<div class="banner">
+	<img class="zan" src="img/xy4_cyou_sprite.png"/>
+</div>    
+<div class="headerwrap1">
+	<div class="header1">
+    	<div class="headerbox1 clearfix">
+        	<a class="aa" href="#">
+            	<div class="left1"></div>
+            </a>
+            <div class="divbig">
+            	<ul class="right1">
+                    <li class="clearfix lia">
+                        <i class="ia"></i>
+                        <b>注册</b>
+                    </li>
+                    <li class="clearfix lib">
+                        <i class="ib"></i>
+                        <b>充值</b>
+                    </li>
+                    <li class="clearfix lid">
+                        <i class="ic"></i>
+                        <b>充值+</b>
+                    </li>
+                </ul>
+                <ul class="right2" id="ulcard">  
+                    <li class="lie">
+                        <div class="clearfix lif1">
+                            <b>客服</b>
+                            <i class="id"></i>
+                         </div>   
+                         <div class="divjs1">
+                        	<h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="lif">
+                        <div class="clearfix lif2">
+                            <b>畅游全服务</b>
+                            <i class="id"></i>
+                        </div>
+                        <div class="divjs1">
+                        	<h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="lig">
+                    <div class="clearfix lif3">
+                        <b>畅游全游戏</b>
+                        <i class="id"></i>
+                    </div>    
+                        <div class="divjs1">
+                        	<h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                            <h2 class="h2a">
+                            	我的通行证
+                            </h2>
+                            <div class="diva clearfix">
+                            	<a href="#">密码修改</a>
+                                <a href="#">密码修改</a>
+                                <a class="a1" href="#">密码修改</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+        	</div>
+        </div>
+    </div>
+</div>
+<div class="contentwrap">
+	<div class="content">
+    	<div class="contentbox1">
+        	<img src="img/xy5_header_main.jpg"/>
+            <ul class="clearfix">
+            	<li>
+                	<img src="img/xy_1logo.gif"/>
+                </li>
+                <li class="lia lib1">
+                	<p class="p1">首页</p>
+                    <p class="p2">HOME</p>
+                </li>
+                <li class="lib lib2">
+                	<p class="p1">新闻公告</p>
+                    <p class="p2">NEWS</p>
+                    <div class="divh">
+                    	<p class="ph1"><a href="#">游戏新闻</a></p>
+                        <p class="ph2"><a href="#">官方公告</a></p>
+                    </div>
+                </li>
+                <li class="lib lib1">
+                	<p class="p1">游戏特色</p>
+                    <p class="p2">FEATURES</p>
+                </li>
+                <li class="lib lib2">
+                	<p class="p1">游戏特色</p>
+                    <p class="p2">FEATURES</p>
+                    <div class=" divh divh1">
+                    	<p class="ph1"><a href="#">游戏新闻</a></p>
+                        <p class="ph2"><a href="#">官方公告</a></p>
+                        <p class="ph2"><a href="#">官方公告</a></p>
+                    </div>
+                </li>
+                <li class="lib lib1">
+                	<p class="p1">游戏特色</p>
+                    <p class="p2">FEATURES</p>
+                </li>
+                <li class="lib lib1">
+                	<p class="p1">游戏特色</p>
+                    <p class="p2">FEATURES</p>
+                </li>
+                <li class="lib lib2">
+                	<p class="p1">视觉欣赏</p>
+                    <p class="p2">VIDEO&PICTURE</p>
+                    <div class="divh divh2">
+                    	<p class="ph1"><a href="#">游戏新闻</a></p>
+                        <p class="ph2"><a href="#">官方公告</a></p>
+                    </div>
+                </li>
+                <li class="lib lib2 litiao">
+                	<p class="p1">游戏特色</p>
+                    <p class="p2">FEATURES</p>
+                    <div class="divh divh3">
+                    	<p class="ph1"><a href="#">游戏新闻</a></p>
+                        <p class="ph2"><a href="#">官方公告</a></p>
+                    </div>
+                </li>
+                <li class="lib lic lib2">
+                	<p class="p1">客服服务</p>
+                    <p class="p2">SERVICES</p>
+                    <div class="divh divh4">
+                    	<p class="ph1"><a href="#">游戏新闻</a></p>
+                        <p class="ph2"><a href="#">官方公告</a></p>
+                    </div>
+                </li>
+                
+            </ul>
+            
+        </div>
+        <div class="contentbox2 clearfix">
+        	<div class="left">
+            	<i class="ia"></i>
+                <i class="ib"></i>
+                <i class="ic"></i>
+                <i class="id"></i>
+                <i class="ie"></i>
+            </div>
+            <div class="right">
+            	<div class="div1">
+                	<p class="p1">电信一区<span> 【魔神降临】</span>欢迎进驻！</p>
+                    <p>网通一区<span> 【异界之门】</span>欢迎进驻！</p>
+                </div>
+                <div class="div2">
+                	<p>距你上次访问有<span> 200 </span>条更新</p>
+                    <a class="aa" href="#"></a>
+                    <a class="ab clearfix" href="#">关注：
+                    </a>
+                    <a class="ac" href="#">f</a>
+                    <a class="ad" href="#">f</a>
+                    <i class="ia"></i>
+                    <i class="ib"></i>
+                    <i class="ic"></i>
+                </div>
+            </div>
+        </div>
+        <div class="contentbox3 clearfix">
+        	<div class="left">
+            	<img src="img/xy10.jpg"/>
+                <img src="img/xy10_sever.png" class="img1"/>
+                <img src="img/xy11_sever.png" class="img2"/>
+                <div class="div1">
+                	<i class="imga"></i>
+                    <i class="imgb"></i>
+                    <i class="imgb"></i>
+                    <i class="imgb"></i>
+                    <i class="imgb"></i>
+                </div>
+            </div>
+            <div class="right" id="xy_js3">
+            	<div class="div1">
+                	<a class="a1" href="#">综合</a>
+                    <a href="#">新闻</a>
+                    <a href="#">公告</a>
+                    <a href="#">媒体</a>
+                </div>
+                <ul class="show3">
+                	<li>
+                    	<h2>
+                			<p>1全新Raid暗黑城堡 今日决战开启</p>
+                        </h2>
+                    </li>
+                	<li class="clearfix">
+                    	<p>【新闻】决战开启！6月4日全新Raid本“暗黑城</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启 新职业新震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启新战场震撼上!</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li>
+                    	<b>更多信息 &gt;</b>
+                        <span></span>
+                    </li>
+                </ul>
+                <ul>
+                	<li>
+                    	<h2>
+                			<p>2全新Raid暗黑城堡 今日决战开启</p>
+                        </h2>
+                    </li>
+                	<li class="clearfix">
+                    	<p>【公告】2015年9月2日-4日论坛维护公告</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【公告】2015年9月2日-4日论坛维护公告上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【公告】2015年9月2日-4日论坛维护公告</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【公告】2015年9月2日-4日论坛维护公告震撼上!</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【公告】2015年9月2日-4日论坛维护公告</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【公告】2015年9月2日-4日论坛维护公告场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li>
+                    	<b>更多信息 &gt;</b>
+                        <span></span>
+                    </li>
+                </ul>
+                <ul>
+                	<li>
+                    	<h2>
+                			<p>3全新Raid暗黑城堡 今日决战开启</p>
+                        </h2>
+                    </li>
+                	<li class="clearfix">
+                    	<p>【新闻】决战开启！6月4日全新Raid本“暗黑城</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启 新职业新震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启新战场震撼上!</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度大版今日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【新闻】年度日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li>
+                    	<b>更多信息 &gt;</b>
+                        <span></span>
+                    </li>
+                </ul>
+                <ul>
+                	<li>
+                    	<h2>
+                			<p>4全新Raid暗黑城堡 今日决战开启</p>
+                        </h2>
+                    </li>
+                	<li class="clearfix">
+                    	<p>【媒体】【17173】新Raid本“柯兰海姆”玩法</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【媒体】【17173】新Raid本“柯兰海姆”玩法震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【媒体】年度大版今日开启 新职业新震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【媒体】年度大今日开启新战场震撼上!</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【媒体】年度大版今日媒体媒体开启 新新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li class="clearfix">
+                    	<p>【媒体】年度日开启 新职业新战场震撼上</p>
+                        <i>06/02</i>
+                    </li>
+                    <li>
+                    	<b>更多信息 &gt;</b>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentbox4">
+        	<div class="div1 clearfix">
+            	<img src="img/main_a2.jpg"/>
+                <img src="img/main_a2 (1).jpg"/>
+                <img src="img/main_a22.jpg"/>
+                <img src="img/main_a2xy.jpg"/>
+            </div>
+        </div>
+        <div class="contentbox5 clearfix">
+        	<div class="left" id="divjs1">
+            	<div class="div1">
+                	<a class="a1 active1" href="#"></a>
+                    <a class="a2" href="#"></a>
+                    <a class="a3" href="#"></a>
+                    <a class="a4" href="#"></a>
+                    <a class="a5" href="#"></a>
+                    <a class="a6" href="#"></a>
+                </div>
+                <ul>
+                	<li class="show"><img src="img/shenshe.jpg"/></li>
+                    <li><img src="img/zhanshi.jpg"/></li>
+                    <li><img src="img/shouhu1.jpg"/></li>
+                    <li><img src="img/shushi1.jpg"/></li>
+                    <li><img src="img/mofa2.jpg"/></li>
+                    <li><img src="img/shenshe.jpg"/></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2 class="clearfix">
+                    <i></i>
+                    <p>活动中心</p>
+                </h2>
+                <div id="divjsb2">
+                    <ul>
+                        <li>
+                            <h3 class="clearfix xyactive">
+                                <i></i>
+                                <p><a href="#">神谕者的成长礼</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="div1 xyshow">
+                                <img src="img/xy11.jpg"/>
+                                <i class="opa"></i>
+                                <p class="clearfix">
+                                    <a class="aa" href="#">女武神的秘宝</a>
+                                    <a class="ab" href="#">共 7,294,712人关注</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3 class="clearfix ">
+                                <i></i>
+                                <p><a href="#">神谕者的成长礼</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="div1">
+                                <img src="img/xy11.jpg"/>
+                                <i class="opa"></i>
+                                <p class="clearfix">
+                                    <a class="aa" href="#">女武神的秘宝</a>
+                                    <a class="ab" href="#">共 7,294,712人关注</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3 class="clearfix ">
+                                <i></i>
+                                <p><a href="#">神谕者的成长礼</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="div1 ">
+                                <img src="img/xy11.jpg"/>
+                                <i class="opa"></i>
+                                <p class="clearfix">
+                                    <a class="aa" href="#">女武神的秘宝</a>
+                                    <a class="ab" href="#">共 7,294,712人关注</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3 class="clearfix ">
+                                <i></i>
+                                <p><a href="#">神谕者的成长礼</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="div1 ">
+                                <img src="img/xy11.jpg"/>
+                                <i class="opa"></i>
+                                <p class="clearfix">
+                                    <a class="aa" href="#">女武神的秘宝</a>
+                                    <a class="ab" href="#">共 7,294,712人关注</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3 class="clearfix ">
+                                <i></i>
+                                <p><a href="#">神谕者的成长礼</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="div1 ">
+                                <img src="img/xy11.jpg"/>
+                                <i class="opa"></i>
+                                <p class="clearfix">
+                                    <a class="aa" href="#">女武神的秘宝</a>
+                                    <a class="ab" href="#">共 7,294,712人关注</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3 class="clearfix ">
+                                <i></i>
+                                <p><a href="#">神谕者的成长礼</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="div1 ">
+                                <img src="img/xy11.jpg"/>
+                                <i class="opa"></i>
+                                <p class="clearfix">
+                                    <a class="aa" href="#">女武神的秘宝</a>
+                                    <a class="ab" href="#">共 7,294,712人关注</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>      
+                 </div> 
+      		</div>
+        </div>
+        <div class="contentbox6">
+            <div class="clearfix">
+                <div class="left">
+                    <div class="div1">
+                        <p>快捷入口</p>
+                        <div class="diva1 clearfix">
+                            <ul class="ula">
+                                <li><a href="#">账号管理</a></li>
+                                <li><a href="#">兑换中心</a></li>
+                                <li><a href="#">账号安全</a></li>
+                                <li><a href="#">BUG提交</a></li>
+                            </ul>
+                            <ul class="ulb">
+                                <li><a href="#">账号管理</a></li>
+                                <li><a href="#">兑换中心</a></li>
+                                <li><a href="#">账号安全</a></li>
+                                <li><a href="#">BUG提交</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="img/main_a3_3.jpg"/>
+                        <h2>媒体合作专区</h2>
+                    </div>
+                    <div class="div3"></div>
+                </div>
+                <div class="mid">
+                    <div class="divbig" id="xy_js4">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>玩家交流</p>
+                        </h2>
+                        <ul class="ula clearfix">
+                            <li class="lia">玩家攻略</li>
+                            <li>热门论坛</li>
+                            <li>社区精华</li>
+                            <li class="lib">
+                                <b>更多信息&gt;</b>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="div1 active4 clearfix">
+                            <img src="img/xy12.jpg"/>
+                            <ul>
+                                <li><a href="#">生饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">阻止萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy19.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能之烹饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活d技能详细解读</a></li>
+                                <li><a href="#">阻止科萨雄】成就攻略！</a></li>
+                                <li><a href="#">独家攻略效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂东方响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy20.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">称号：发现森房东看房林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生详细解读</a></li>
+                                <li><a href="#">阻止科萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divbig" id="xy_js5">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>玩家交流</p>
+                        </h2>
+                        <ul class="ula clearfix">
+                            <li class="lia">玩家攻略</li>
+                            <li>热门论坛</li>
+                            <li>社区精华</li>
+                            <li class="lib">
+                                <b>更多信息&gt;</b>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="div1 active4 clearfix">
+                            <img src="img/xy21.jpg"/>
+                            <ul>
+                                <li><a href="#">生饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">阻止萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy19.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能之烹饪技能详细解读</a></li>
+                                <li><a href="#">称号：发现森林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生活d技能详细解读</a></li>
+                                <li><a href="#">阻止科萨雄】成就攻略！</a></li>
+                                <li><a href="#">独家攻略效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂东方响生活技能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                        <div class="div1 clearfix">
+                            <img src="img/xy20.jpg"/>
+                            <ul>
+                                <li><a href="#">生活技能详细解读</a></li>
+                                <li><a href="#">称号：发现森房东看房林之秘 任务全程攻略</a></li>
+                                <li><a href="#">屌丝逆袭 大神成长计划开启</a></li>
+                                <li><a href="#">生详细解读</a></li>
+                                <li><a href="#">阻止科萨特复活【英雄】成就攻略！</a></li>
+                                <li><a href="#">独家魂回响效率冲级攻略！</a></li>
+                                <li><a href="#">灵魂回响生能玩法介绍(二)</a></li>
+                                <li><a href="#">灵魂回响生活技能玩法介绍(一)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="righta">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>玩家交流</p>
+                        </h2>
+                        <div class="diva">
+                            <ul>
+                                <li class="clearfix">
+                                    <p>新手入门</p>
+                                    <img class="imga" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="clearfix">
+                                    <p>职业介绍</p>
+                                    <img class="imga" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="clearfix">
+                                    <p>旅行者日记</p>
+                                    <img class="imga imgb" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="clearfix lia">
+                                    <p>神谕者指引</p>
+                                    <img class="imga imgb" src="img/xy21_sever.png"/>
+                                    <a href="#">注册账号</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">下载游戏</a>
+                                    <img class="img1" src="img/xy22_sever.png"/>
+                                    <a href="#">登录游戏</a>
+                                </li>
+                                <li class="lia"><h3>进入资料站</h3></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="divbig" id="xy_js6">
+                        <h2 class="clearfix">
+                            <i></i>
+                            <p>媒体专区</p>
+                        </h2>
+                        <ul class="ula clearfix">
+                            <li class="lia">17173</li>
+                            <li>热门论坛</li>
+                            <li class="lib">
+                                <b>更多信息&gt;</b>
+                                <span></span>
+                            </li>
+                        </ul>
+                        <div class="div1 active6 clearfix">
+                            <img src="img/xy1a.jpg"/>
+                            <img src="img/xy2a.jpg"/>
+                            <img src="img/xy3a.jpg"/>
+                            <img src="img/xy4a.jpg"/>
+                        </div>
+                         <div class="div1 clearfix">
+                            <img src="img/xy17.jpg"/>
+                            <img src="img/xy17.jpg"/>
+                            <img src="img/xy18.jpg"/>
+                            <img src="img/xy18.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divf1">健康游戏公告</div>
+            <p class="pf1">&nbsp;抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+            <p class="pf2">本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+        </div>
+    </div>
+</div>
+<div class="footerwrap1"></div>
+<div class="footerwrap2"></div>
+<div class="footerwrap3">
+    <div class="footer3 clearfix">
+        <a class="aa" href="#"></a>
+        <a class="ab" href="#"></a>
+        <div>
+            <p class="p1">北京畅游时代数码技术有限公司版权所有 Copyright © 2011 ChangYou.com Limited. All rights reserved. 法律声明 | 联系我们</p>
+            <p class="p2">京网文[2014]0949-249号 | 京ICP证：070525号 </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
